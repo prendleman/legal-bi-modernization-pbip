@@ -1,6 +1,8 @@
-# Sidley Austin BI Modernization - PBIP Demo Kit
+# Legal BI Modernization PBIP Demo Kit
 
-A fast-start, source-control-friendly Power BI Project (PBIP) tailored to the Sidley Austin **Senior Business Intelligence Engineer** role. It demonstrates:
+> **Synthetic data only.** This demo uses synthetic professional-services / legal-operations data only. It contains **no Sidley, client, matter, financial, or confidential data**. Public Sidley.com attorney names appear in `dim_attorney` for realism only; see `docs/ATTORNEY_NAMES_ATTRIBUTION.md`. Sidley Austin did not commission, sponsor, or review this repo.
+
+A fast-start, source-control-friendly Power BI Project (PBIP) **built for a Sidley Austin interview process** and aimed at the **Senior Business Intelligence Engineer** role. It demonstrates:
 
 - Power BI specialist depth (semantic model, DAX, calc groups, hierarchies, RLS)
 - Enterprise BI modernization from Cognos / SSRS into Power BI
