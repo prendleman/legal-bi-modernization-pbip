@@ -9,10 +9,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 ### Added
 
 - `previews/` folder with data previews generated from synthetic gold CSVs:
-  - 8 per-page PNGs in `previews/pages/` rendered by `sidley_pbip_spinup_package/scripts/render_page_previews.py` (matplotlib + pandas).
-  - Single-page HTML dashboard mockup at `previews/dashboard_mockup.html` rendered by `sidley_pbip_spinup_package/scripts/build_html_mockup.py` (pandas + inline SVG, no extra deps).
+  - 8 per-page PNGs in `previews/pages/` rendered by `legal_bi_pbip_kit/scripts/render_page_previews.py` (matplotlib + pandas).
+  - Single-page HTML dashboard mockup at `previews/dashboard_mockup.html` rendered by `legal_bi_pbip_kit/scripts/build_html_mockup.py` (pandas + inline SVG, no extra deps).
   - `previews/README.md` explains what these are (data previews, not Power BI screenshots), what the real PBIP build adds on top, and how to regenerate.
-- `sidley_pbip_spinup_package/requirements-preview.txt` pinning matplotlib + pandas for the preview pipeline.
+- `legal_bi_pbip_kit/requirements-preview.txt` pinning matplotlib + pandas for the preview pipeline.
 - Both root and package READMEs now embed the previews so the GitHub landing page is skim-friendly without launching Power BI Desktop.
 
 ### Planned
@@ -25,7 +25,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 ### Added
 
 - Initial public release of the Legal BI Modernization PBIP Demo Kit.
-- One-command PBIP generator: `sidley_pbip_spinup_package/scripts/generate_sidley_pbip.py`.
+- One-command PBIP generator: `legal_bi_pbip_kit/scripts/generate_legal_bi_pbip.py`.
 - 8-page PBIP report + TMSL semantic model (`model.bim`) with measures, calc group, hierarchies, three RLS roles, and Power Query parameters.
 - Two-mode data source: local CSV (default) or Databricks SQL Warehouse via `pDataSource` parameter.
 - Databricks integration: idempotent Unity Catalog provisioning, gold-layer DDL emission, CSV upload to UC volume, and `COPY INTO` of Delta tables (`--databricks`, with `--dry-run`).

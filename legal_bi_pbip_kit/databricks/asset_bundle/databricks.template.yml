@@ -1,0 +1,83 @@
+# Copy to the repository root as `databricks.yml` after setting `WORKSPACE_HOST` (or override `targets.dev.workspace.host`).
+# CLI: databricks bundle validate  |  databricks bundle deploy --target dev
+#
+# Docs: https://docs.databricks.com/dev-tools/bundles/index.html
+#
+# Pairs with:
+#   - legal_bi_pbip_kit/docs/databricks_notebook.py  (bronze -> silver -> gold)
+#   - legal_bi_pbip_kit/docs/gold_layer_ddl.sql      (gold-layer DDL)
+#   - legal_bi_pbip_kit/scripts/generate_legal_bi_pbip.py --databricks  (UC provisioning + COPY INTO)
+#
+# Production: split jobs, add UC volumes, approvals, and per-target service principals - not in this template.
+
+bundle:
+  name: sidley_bi_modernization_demo
+
+variables:
+  workspace_host:
+    description: "Databricks workspace URL, e.g. https://adb-123.4.azuredatabricks.net"
+    default: "${WORKSPACE_HOST}"
+
+  catalog:
+    description: "Unity Catalog catalog for the legal-BI demo (matches generate_legal_bi_pbip.py --catalog)"
+    default: "sidley_demo"
+
+  schema:
+    description: "Schema holding the gold tables (matches generate_legal_bi_pbip.py --schema)"
+    default: "gold"
+
+  volume:
+    description: "UC volume used as the CSV landing zone (matches generate_legal_bi_pbip.py --volume)"
+    default: "landing"
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: ${var.workspace_host}
+
+  test:
+    mode: production
+    workspace:
+      host: ${var.workspace_host}
+
+  prod:
+    mode: production
+    workspace:
+      host: ${var.workspace_host}
+
+resources:
+  jobs:
+    sidley_bronze_silver_gold:
+      name: "[demo] Sidley BI - bronze -> silver -> gold"
+      max_concurrent_runs: 1
+      job_clusters:
+        - job_cluster_key: shared_cluster
+          new_cluster:
+            spark_version: 15.4.x-scala2.12
+            node_type_id: Standard_DS3_v2
+            num_workers: 1
+      tasks:
+        - task_key: build_gold
+          job_cluster_key: shared_cluster
+          notebook_task:
+            notebook_path: ./legal_bi_pbip_kit/docs/databricks_notebook
+            base_parameters:
+              ENV: "demo"
+              CATALOG: ${var.catalog}
+              SCHEMA: ${var.schema}
+              VOLUME: ${var.volume}
+
+        - task_key: export_csv_for_pbip
+          depends_on:
+            - task_key: build_gold
+          job_cluster_key: shared_cluster
+          notebook_task:
+            notebook_path: ./legal_bi_pbip_kit/docs/databricks_notebook
+            base_parameters:
+              ENV: "demo"
+              CATALOG: ${var.catalog}
+              SCHEMA: ${var.schema}
+              VOLUME: ${var.volume}
+              EXPORT_CSV_FOR_PBIP: "true"

@@ -1,0 +1,188 @@
+-- Sidley BI Modernization Demo - measure layer
+-- These measures are emitted into model.bim by generate_legal_bi_pbip.py with
+-- format strings, display folders, and descriptions. This file mirrors that
+-- catalog so it can be pasted into Power BI Desktop manually if needed.
+
+-- ============================================================
+-- Display folder: Financial
+-- ============================================================
+
+Total Billings = SUM ( fact_billings[BillingAmount] )
+-- format: "$"#,0;-"$"#,0;"$"#,0
+
+Total Fees = SUM ( fact_billings[FeeAmount] )
+-- format: "$"#,0;-"$"#,0;"$"#,0
+
+Total Costs = SUM ( fact_billings[CostAmount] )
+-- format: "$"#,0;-"$"#,0;"$"#,0
+
+Gross Margin = [Total Fees] - [Total Costs]
+-- format: "$"#,0;-"$"#,0;"$"#,0
+
+Gross Margin % = DIVIDE ( [Gross Margin], [Total Fees] )
+-- format: 0.0%;-0.0%;0.0%
+
+Cash Collected = SUM ( fact_billings[CashCollected] )
+-- format: "$"#,0;-"$"#,0;"$"#,0
+
+Collection Rate = DIVIDE ( [Cash Collected], [Total Billings] )
+-- format: 0.0%;-0.0%;0.0%
+
+AR Outstanding = SUM ( fact_billings[AROutstanding] )
+-- format: "$"#,0;-"$"#,0;"$"#,0
+
+WIP Amount = SUM ( fact_billings[WIPAmount] )
+-- format: "$"#,0;-"$"#,0;"$"#,0
+
+-- ============================================================
+-- Display folder: Productivity
+-- ============================================================
+
+Billed Hours = SUM ( fact_billings[BilledHours] )
+-- format: #,0
+
+Total Hours = SUM ( fact_time_entries[Hours] )
+-- format: #,0
+
+Billable Hours =
+CALCULATE (
+    SUM ( fact_time_entries[Hours] ),
+    fact_time_entries[WorkType] = "Billable"
+)
+-- format: #,0
+
+Nonbillable Hours =
+CALCULATE (
+    SUM ( fact_time_entries[Hours] ),
+    fact_time_entries[WorkType] <> "Billable"
+)
+-- format: #,0
+
+Billable % = DIVIDE ( [Billable Hours], [Total Hours] )
+-- format: 0.0%;-0.0%;0.0%
+
+Realization Rate = DIVIDE ( [Billed Hours], [Billable Hours] )
+-- format: 0.0%;-0.0%;0.0%
+
+Average Bill Rate = DIVIDE ( [Total Fees], [Billed Hours] )
+-- format: "$"#,0;-"$"#,0;"$"#,0
+
+Active Matters = DISTINCTCOUNT ( dim_matter[MatterKey] )
+-- format: #,0
+
+Open Matters =
+CALCULATE ( DISTINCTCOUNT ( dim_matter[MatterKey] ), dim_matter[MatterStatus] <> "Closed" )
+-- format: #,0
+
+On Hold Matters =
+CALCULATE ( DISTINCTCOUNT ( dim_matter[MatterKey] ), dim_matter[MatterStatus] = "On Hold" )
+-- format: #,0
+
+Active Clients = DISTINCTCOUNT ( dim_client[ClientKey] )
+-- format: #,0
+
+-- ============================================================
+-- Display folder: Migration
+-- ============================================================
+
+Legacy Reports = COUNTROWS ( fact_legacy_report_inventory )
+
+Reports Migrated =
+CALCULATE (
+    COUNTROWS ( fact_legacy_report_inventory ),
+    fact_legacy_report_inventory[MigrationStatus] = "Migrated"
+)
+
+Reports Validated =
+CALCULATE (
+    COUNTROWS ( fact_legacy_report_inventory ),
+    fact_legacy_report_inventory[ValidationStatus] = "Validated"
+)
+
+Migration % Complete = DIVIDE ( [Reports Migrated], [Legacy Reports] )
+-- format: 0.0%;-0.0%;0.0%
+
+Validation % Complete = DIVIDE ( [Reports Validated], [Legacy Reports] )
+-- format: 0.0%;-0.0%;0.0%
+
+High Complexity Legacy Reports =
+CALCULATE (
+    COUNTROWS ( fact_legacy_report_inventory ),
+    fact_legacy_report_inventory[Complexity] = "High"
+)
+
+-- ============================================================
+-- Display folder: Operations
+-- ============================================================
+
+Open Stakeholder Requests =
+CALCULATE (
+    COUNTROWS ( fact_requirements_backlog ),
+    fact_requirements_backlog[RequestStatus] IN { "New", "In Discovery", "In Build", "Blocked" }
+)
+
+Completed Stakeholder Requests =
+CALCULATE (
+    COUNTROWS ( fact_requirements_backlog ),
+    fact_requirements_backlog[RequestStatus] = "Complete"
+)
+
+SLA Breach Count =
+CALCULATE (
+    COUNTROWS ( fact_requirements_backlog ),
+    fact_requirements_backlog[SLABreachFlag] = 1
+)
+
+-- ============================================================
+-- Display folder: Quality
+-- ============================================================
+
+Refresh Events = COUNTROWS ( fact_refresh_log )
+
+Successful Refreshes =
+CALCULATE (
+    COUNTROWS ( fact_refresh_log ),
+    fact_refresh_log[RefreshStatus] = "Success"
+)
+
+Failed Refreshes =
+CALCULATE (
+    COUNTROWS ( fact_refresh_log ),
+    fact_refresh_log[RefreshStatus] = "Failed"
+)
+
+Refresh Success Rate = DIVIDE ( [Successful Refreshes], [Refresh Events] )
+-- format: 0.0%;-0.0%;0.0%
+
+Avg Refresh Duration Minutes = AVERAGE ( fact_refresh_log[DurationMinutes] )
+-- format: 0.0
+
+-- Scalar date for Card visuals (classic Card does not render text measures).
+As of date =
+VAR lk =
+    CALCULATE ( MAX ( fact_refresh_log[DateKey] ), REMOVEFILTERS () )
+RETURN
+    IF ( ISBLANK ( lk ), BLANK (), LOOKUPVALUE ( dim_date[Date], dim_date[DateKey], lk ) )
+-- format: yyyy-MM-dd
+
+-- ============================================================
+-- Display folder: Composite KPI
+-- ============================================================
+
+-- Modernization Health Score - 0..100 blended score
+-- 40% migration progress, 30% validation, 30% refresh reliability.
+Modernization Health Score =
+VAR MigrationScore = [Migration % Complete] * 40
+VAR ValidationScore = [Validation % Complete] * 30
+VAR RefreshScore = [Refresh Success Rate] * 30
+RETURN
+    MigrationScore + ValidationScore + RefreshScore
+
+-- ============================================================
+-- Calculation group: Time Intelligence (provisioned in model.bim)
+-- ============================================================
+-- Items: Current, MTD, QTD, YTD, PY, PYTD, YoY, YoY %
+-- Reuse: place "Time Intelligence[Time Calculation]" on a slicer or column
+-- header. Every measure picks up the variant via SELECTEDMEASURE().
+-- Pair with a report slicer on dim_date[Date] (Between) for the visible calendar
+-- window; the calc group does not shrink the axis by itself.
