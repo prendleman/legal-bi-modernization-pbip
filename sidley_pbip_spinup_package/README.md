@@ -80,7 +80,8 @@ py scripts\generate_sidley_pbip.py [--out PATH] [--seed N] [--rows N]
 | `--dry-run` | Combined with `--databricks`, log every call without executing. |
 | `--catalog` / `--schema` / `--volume` | Override Unity Catalog targets. |
 
-## What gets generated
+<details>
+<summary><strong>What gets generated</strong> (click to expand)</summary>
 
 ```text
 output/Sidley_BI_Modernization_Demo/
@@ -94,6 +95,7 @@ output/Sidley_BI_Modernization_Demo/
   data/                                      # 11 curated CSVs (gold layer)
   docs/
     DAX_MEASURES.dax
+    DAX_DEEP_DIVE.md                         # Design choices behind 4 key measures
     MODEL_DESIGN.md                          # Mermaid star schema diagram
     PAGE_BUILD_PLAN.md                       # Per-page build recipe + bookmarks
     BOOKMARKS_AND_NAV.md                     # Bookmarks (Desktop) + optional tooltip notes
@@ -102,11 +104,12 @@ output/Sidley_BI_Modernization_Demo/
     ATTORNEY_NAMES_ATTRIBUTION.md            # Why public Sidley.com names appear in synthetic dim_attorney
     JD_TO_DEMO_MAP.md                        # Full jd.txt → demo mapping (interview checklist)
     CERT_PREP.md                             # PL-300 / DP-600 study map tied to this repo
-    SQL_GOLD_LAYER_SAMPLES.sql             # Sample joins for SQL depth (JD)
+    SQL_GOLD_LAYER_SAMPLES.sql               # Sample joins for SQL depth (JD)
     DEPLOYMENT.md                            # Dev/Test/Prod, RLS, retirement flow
     DATABRICKS_INTEGRATION.md                # Architecture + config + pipeline
     PRODUCTIONIZATION_UC_MLFLOW.md           # Asset bundle + UC + future MLflow hooks
     AI_GOVERNANCE.md                         # Data classification, RLS, certification, Copilot framing
+    MIGRATION_CASE_STUDY.md                  # 1 legacy Cognos report end-to-end
     gold_layer_ddl.sql                       # CREATE OR REPLACE TABLE (Delta)
     databricks_notebook.py                   # Bronze -> silver -> gold PySpark
     data_quality_report.md                   # FK / PK / coverage validation
@@ -115,6 +118,8 @@ output/Sidley_BI_Modernization_Demo/
       README.md                              # Databricks Asset Bundles walkthrough
       databricks.template.yml                # DAB template (bronze->silver->gold + CSV export)
 ```
+
+</details>
 
 ## Highlights aimed at the Sidley JD
 

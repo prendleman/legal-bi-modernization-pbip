@@ -1,0 +1,38 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    name: PBIP smoke
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Show Python version
+        run: python --version
+
+      - name: Install demo dependencies (optional path; generator runs on stdlib)
+        run: |
+          if [ -f sidley_pbip_spinup_package/requirements.txt ]; then
+            python -m pip install --upgrade pip
+            python -m pip install -r sidley_pbip_spinup_package/requirements.txt
+          fi
+
+      - name: Run PBIP smoke
+        run: python scripts/smoke_pbip.py

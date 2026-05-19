@@ -1,0 +1,24 @@
+# Normalize line endings across Windows / macOS / Linux to keep PBIP diffs clean.
+* text=auto eol=lf
+
+*.bim    text eol=lf
+*.json   text eol=lf
+*.pbip   text eol=lf
+*.pbir   text eol=lf
+*.pbism  text eol=lf
+
+*.csv    text eol=lf
+*.dax    text eol=lf
+*.sql    text eol=lf
+
+*.md     text eol=lf
+*.py     text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+
+*.bat    text eol=crlf
+*.ps1    text eol=crlf
+
+*.png    binary
+*.pdf    binary
+*.pbix   binary
