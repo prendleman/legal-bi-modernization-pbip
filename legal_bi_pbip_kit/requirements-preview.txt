@@ -5,5 +5,5 @@
 # These render "data previews" (not Power BI screenshots) into previews/.
 # Install with:
 #   pip install -r legal_bi_pbip_kit/requirements-preview.txt
-matplotlib>=3.7,<4.0
+matplotlib>=3.10.9,<4.0
 pandas>=2.0,<3.0
