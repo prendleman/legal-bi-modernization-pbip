@@ -1,0 +1,68 @@
+Sidley Austin
+
+Senior Business Intelligence Engineer
+
+Location: US-IL-Chicago
+
+Attendance: All positions are full-time and require five days in the office. This position offers the privilege of some flexibility with a minimum of three days in the office per week. Regular, reliable attendance is expected and required. Additional hours may be required during periods of heavy workload. Flexibility is required in the daily work schedule to accommodate lawyers and general Firm requirements.
+
+Why Open
+The team is driving a firm-wide BI transformation, consolidating reporting from Cognos, SSRS, and other legacy systems into a modern Power BI + Databricks ecosystem. Hence, needing a Power BI Specialist.
+This is a high-impact, highly visible role with the opportunity to shape how analytics is delivered across the business while working closely with stakeholders on critical reporting needs.
+
+Overview
+We are virtually looking for a Power BI Specialist and this role reports directly to Ilya Eydis and sits within a core BI team responsible for delivering business-facing analytics products, primarily dashboards and light data models on the Data Engineering team. The focus is on the front-end BI layer, this is not a data engineering role.
+The hire will work in the end-user analytics and reporting space, partnering with product managers and business stakeholders to gather requirements, shape reporting needs, and translate those into deliverables that engineering teams can support.
+
+What the Role Focuses On
+Designing and building Power BI dashboards and reports
+Developing semantic/data models where needed
+Translating business requirements into technical specifications
+Partnering with stakeholders (Finance, Marketing, etc.) to define KPIs
+Collaborating with data engineers when new data ingestion is required
+Supporting migration from legacy tools (Cognos, SSRS)
+Breakdown: ~80% hands-on development, ~20% stakeholder engagement
+
+Success in the First 6 Months
+Deliver high-quality, production-ready dashboards
+Effectively partner with stakeholders to define and execute reporting needs
+Contribute to migration of legacy reporting into Power BI
+
+Strong hire: operates independently, produces polished outputs quickly, engages stakeholders well
+Miss: lacks Power BI depth, struggles with ambiguity or stakeholder communication
+
+Environment & Data Stack
+Power BI as the primary reporting platform
+Databricks (or similar cloud platform) as the data foundation
+Data is generally clean and curated, but gaps may require coordination with data engineering
+Organization is moving toward a model where most logic lives upstream, so this role is more visualization-focused vs heavy backend modeling
+
+Candidate Profile (Key Requirements)
+Top three items to look for:
+-5 years designing and delivering enterprise BI solutions
+-Education requirements met (BA)
+-Databricks or data platform exposure
+-Expert in Power BI
+-Legal of Professional Services Exp
+
+More details:
+-5+ years of experience designing and delivering enterprise BI solutions
+-Strong Power BI expertise (critical) - Experience with one or more additional enterprise BI platforms such as Tableau, Cognos, Looker, or Qlik is also acceptable, provided the candidate is willing and able to develop deep Power BI expertise.
+-Strong SQL and Data querying skills
+-Experience building semantic models, Advanced dashboards using DAX and Power Query data modeling, visualization best practices
+-Experience working directly with business stakeholders
+-Exposure to cloud data platforms (e.g., Databricks (preferred), Snowflake, Azure Synapse etc.)
+
+Preferred:
+Legal industry experience (highly valued)
+Professional services background (e.g., Deloitte, KPMG)
+Experience in BI modernization or migration efforts
+Certifications - PL-300 (Power BI Data Analyst) or DP-600 (Fabric Analytics Engineer)
+
+Ideal profile:
+A Power BI specialist (not a generalist) who can hit the ground running and operate between business and technical teams.
+
+Team & Growth
+Works alongside similar profiles – a few other Business Intelligence Engineers
+Opportunity for future leadership or supervisory growth is available as the team expands
+Role sits at the intersection of business, technology, and functional requirements

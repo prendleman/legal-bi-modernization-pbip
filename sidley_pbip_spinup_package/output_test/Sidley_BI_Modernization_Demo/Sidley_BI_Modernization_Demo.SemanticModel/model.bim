@@ -1,0 +1,1551 @@
+{
+  "name": "Sidley_BI_Modernization_Demo",
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "en-US",
+    "discourageImplicitMeasures": true,
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "expressions": [
+      {
+        "name": "pDataSource",
+        "kind": "m",
+        "expression": "\"CSV\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ]
+      },
+      {
+        "name": "pDatabricksHost",
+        "kind": "m",
+        "expression": "\"adb-0000000000000000.0.azuredatabricks.net\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ]
+      },
+      {
+        "name": "pDatabricksHttpPath",
+        "kind": "m",
+        "expression": "\"/sql/1.0/warehouses/REPLACE_WAREHOUSE_ID\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ]
+      },
+      {
+        "name": "pDatabricksCatalog",
+        "kind": "m",
+        "expression": "\"sidley_demo\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ]
+      },
+      {
+        "name": "pDatabricksSchema",
+        "kind": "m",
+        "expression": "\"gold\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ]
+      },
+      {
+        "name": "pCsvRoot",
+        "kind": "m",
+        "expression": "\"\\\\\\\\MRCFS1\\\\Shared\\\\MOPR\\\\IT\\\\sid\\\\sidley_pbip_spinup_package\\\\output_test\\\\Sidley_BI_Modernization_Demo\\\\data\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "dim_date",
+        "columns": [
+          {
+            "name": "DateKey",
+            "dataType": "int64",
+            "sourceColumn": "DateKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date"
+          },
+          {
+            "name": "Year",
+            "dataType": "int64",
+            "sourceColumn": "Year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Quarter",
+            "dataType": "string",
+            "sourceColumn": "Quarter"
+          },
+          {
+            "name": "MonthNumber",
+            "dataType": "int64",
+            "sourceColumn": "MonthNumber",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonthName",
+            "dataType": "string",
+            "sourceColumn": "MonthName"
+          },
+          {
+            "name": "MonthYear",
+            "dataType": "string",
+            "sourceColumn": "MonthYear"
+          },
+          {
+            "name": "WeekdayName",
+            "dataType": "string",
+            "sourceColumn": "WeekdayName"
+          },
+          {
+            "name": "IsWeekend",
+            "dataType": "int64",
+            "sourceColumn": "IsWeekend",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "IsMonthEnd",
+            "dataType": "int64",
+            "sourceColumn": "IsMonthEnd",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "IsHoliday",
+            "dataType": "int64",
+            "sourceColumn": "IsHoliday",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FiscalYear",
+            "dataType": "int64",
+            "sourceColumn": "FiscalYear",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FiscalQuarter",
+            "dataType": "string",
+            "sourceColumn": "FiscalQuarter"
+          },
+          {
+            "name": "FiscalMonth",
+            "dataType": "int64",
+            "sourceColumn": "FiscalMonth",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_date",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    CsvPath = \"\\\\\\\\MRCFS1\\\\Shared\\\\MOPR\\\\IT\\\\sid\\\\sidley_pbip_spinup_package\\\\output_test\\\\Sidley_BI_Modernization_Demo\\\\data\\\\dim_date.csv\",\n    NavItem = Text.Combine({\"dim\", \"date\"}, \"_\"),\n    FromDatabricks = () =>\n        let\n            Source = Databricks.Catalogs(pDatabricksHost, pDatabricksHttpPath, [Catalog = pDatabricksCatalog, Database = pDatabricksSchema]),\n            Table = Source{[Item = NavItem, Schema = pDatabricksSchema, Kind = \"Table\"]}[Data]\n        in\n            Table,\n    FromCsv = () =>\n        let\n            Source = Csv.Document(File.Contents(CsvPath), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n            PromotedHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n            ChangedType = Table.TransformColumnTypes(PromotedHeaders, {{\"DateKey\", Int64.Type}, {\"Date\", type date}, {\"Year\", Int64.Type}, {\"Quarter\", type text}, {\"MonthNumber\", Int64.Type}, {\"MonthName\", type text}, {\"MonthYear\", type text}, {\"WeekdayName\", type text}, {\"IsWeekend\", Int64.Type}, {\"IsMonthEnd\", Int64.Type}, {\"IsHoliday\", Int64.Type}, {\"FiscalYear\", Int64.Type}, {\"FiscalQuarter\", type text}, {\"FiscalMonth\", Int64.Type}})\n        in\n            ChangedType,\n    Result = if pDataSource = \"Databricks\" then FromDatabricks() else FromCsv()\nin\n    Result"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "dataCategory": "Time",
+        "hierarchies": [
+          {
+            "name": "Calendar",
+            "levels": [
+              {
+                "name": "Year",
+                "ordinal": 0,
+                "column": "Year"
+              },
+              {
+                "name": "Quarter",
+                "ordinal": 1,
+                "column": "Quarter"
+              },
+              {
+                "name": "Month",
+                "ordinal": 2,
+                "column": "MonthName"
+              },
+              {
+                "name": "Date",
+                "ordinal": 3,
+                "column": "Date"
+              }
+            ]
+          },
+          {
+            "name": "Fiscal",
+            "levels": [
+              {
+                "name": "Fiscal Year",
+                "ordinal": 0,
+                "column": "FiscalYear"
+              },
+              {
+                "name": "Fiscal Quarter",
+                "ordinal": 1,
+                "column": "FiscalQuarter"
+              },
+              {
+                "name": "Fiscal Month",
+                "ordinal": 2,
+                "column": "FiscalMonth"
+              },
+              {
+                "name": "Date",
+                "ordinal": 3,
+                "column": "Date"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "dim_office",
+        "columns": [
+          {
+            "name": "OfficeKey",
+            "dataType": "int64",
+            "sourceColumn": "OfficeKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OfficeName",
+            "dataType": "string",
+            "sourceColumn": "OfficeName"
+          },
+          {
+            "name": "Region",
+            "dataType": "string",
+            "sourceColumn": "Region"
+          },
+          {
+            "name": "Country",
+            "dataType": "string",
+            "sourceColumn": "Country"
+          },
+          {
+            "name": "TimeZoneGroup",
+            "dataType": "string",
+            "sourceColumn": "TimeZoneGroup"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_office",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    CsvPath = \"\\\\\\\\MRCFS1\\\\Shared\\\\MOPR\\\\IT\\\\sid\\\\sidley_pbip_spinup_package\\\\output_test\\\\Sidley_BI_Modernization_Demo\\\\data\\\\dim_office.csv\",\n    NavItem = Text.Combine({\"dim\", \"office\"}, \"_\"),\n    FromDatabricks = () =>\n        let\n            Source = Databricks.Catalogs(pDatabricksHost, pDatabricksHttpPath, [Catalog = pDatabricksCatalog, Database = pDatabricksSchema]),\n            Table = Source{[Item = NavItem, Schema = pDatabricksSchema, Kind = \"Table\"]}[Data]\n        in\n            Table,\n    FromCsv = () =>\n        let\n            Source = Csv.Document(File.Contents(CsvPath), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n            PromotedHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n            ChangedType = Table.TransformColumnTypes(PromotedHeaders, {{\"OfficeKey\", Int64.Type}, {\"OfficeName\", type text}, {\"Region\", type text}, {\"Country\", type text}, {\"TimeZoneGroup\", type text}})\n        in\n            ChangedType,\n    Result = if pDataSource = \"Databricks\" then FromDatabricks() else FromCsv()\nin\n    Result"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Geography",
+            "levels": [
+              {
+                "name": "Region",
+                "ordinal": 0,
+                "column": "Region"
+              },
+              {
+                "name": "Country",
+                "ordinal": 1,
+                "column": "Country"
+              },
+              {
+                "name": "Office",
+                "ordinal": 2,
+                "column": "OfficeName"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "dim_practice",
+        "columns": [
+          {
+            "name": "PracticeKey",
+            "dataType": "int64",
+            "sourceColumn": "PracticeKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PracticeName",
+            "dataType": "string",
+            "sourceColumn": "PracticeName"
+          },
+          {
+            "name": "PracticeGroup",
+            "dataType": "string",
+            "sourceColumn": "PracticeGroup"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_practice",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    CsvPath = \"\\\\\\\\MRCFS1\\\\Shared\\\\MOPR\\\\IT\\\\sid\\\\sidley_pbip_spinup_package\\\\output_test\\\\Sidley_BI_Modernization_Demo\\\\data\\\\dim_practice.csv\",\n    NavItem = Text.Combine({\"dim\", \"practice\"}, \"_\"),\n    FromDatabricks = () =>\n        let\n            Source = Databricks.Catalogs(pDatabricksHost, pDatabricksHttpPath, [Catalog = pDatabricksCatalog, Database = pDatabricksSchema]),\n            Table = Source{[Item = NavItem, Schema = pDatabricksSchema, Kind = \"Table\"]}[Data]\n        in\n            Table,\n    FromCsv = () =>\n        let\n            Source = Csv.Document(File.Contents(CsvPath), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n            PromotedHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n            ChangedType = Table.TransformColumnTypes(PromotedHeaders, {{\"PracticeKey\", Int64.Type}, {\"PracticeName\", type text}, {\"PracticeGroup\", type text}})\n        in\n            ChangedType,\n    Result = if pDataSource = \"Databricks\" then FromDatabricks() else FromCsv()\nin\n    Result"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Practice",
+            "levels": [
+              {
+                "name": "Practice Group",
+                "ordinal": 0,
+                "column": "PracticeGroup"
+              },
+              {
+                "name": "Practice",
+                "ordinal": 1,
+                "column": "PracticeName"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "dim_client",
+        "columns": [
+          {
+            "name": "ClientKey",
+            "dataType": "int64",
+            "sourceColumn": "ClientKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ClientName",
+            "dataType": "string",
+            "sourceColumn": "ClientName"
+          },
+          {
+            "name": "Industry",
+            "dataType": "string",
+            "sourceColumn": "Industry"
+          },
+          {
+            "name": "ClientTier",
+            "dataType": "string",
+            "sourceColumn": "ClientTier"
+          },
+          {
+            "name": "RiskLevel",
+            "dataType": "string",
+            "sourceColumn": "RiskLevel"
+          },
+          {
+            "name": "ClientStatus",
+            "dataType": "string",
+            "sourceColumn": "ClientStatus"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_client",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    CsvPath = \"\\\\\\\\MRCFS1\\\\Shared\\\\MOPR\\\\IT\\\\sid\\\\sidley_pbip_spinup_package\\\\output_test\\\\Sidley_BI_Modernization_Demo\\\\data\\\\dim_client.csv\",\n    NavItem = Text.Combine({\"dim\", \"client\"}, \"_\"),\n    FromDatabricks = () =>\n        let\n            Source = Databricks.Catalogs(pDatabricksHost, pDatabricksHttpPath, [Catalog = pDatabricksCatalog, Database = pDatabricksSchema]),\n            Table = Source{[Item = NavItem, Schema = pDatabricksSchema, Kind = \"Table\"]}[Data]\n        in\n            Table,\n    FromCsv = () =>\n        let\n            Source = Csv.Document(File.Contents(CsvPath), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n            PromotedHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n            ChangedType = Table.TransformColumnTypes(PromotedHeaders, {{\"ClientKey\", Int64.Type}, {\"ClientName\", type text}, {\"Industry\", type text}, {\"ClientTier\", type text}, {\"RiskLevel\", type text}, {\"ClientStatus\", type text}})\n        in\n            ChangedType,\n    Result = if pDataSource = \"Databricks\" then FromDatabricks() else FromCsv()\nin\n    Result"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "dim_attorney",
+        "columns": [
+          {
+            "name": "AttorneyKey",
+            "dataType": "int64",
+            "sourceColumn": "AttorneyKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AttorneyName",
+            "dataType": "string",
+            "sourceColumn": "AttorneyName"
+          },
+          {
+            "name": "AttorneyLevel",
+            "dataType": "string",
+            "sourceColumn": "AttorneyLevel"
+          },
+          {
+            "name": "OfficeKey",
+            "dataType": "int64",
+            "sourceColumn": "OfficeKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PracticeKey",
+            "dataType": "int64",
+            "sourceColumn": "PracticeKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StandardRate",
+            "dataType": "int64",
+            "sourceColumn": "StandardRate"
+          },
+          {
+            "name": "IsActive",
+            "dataType": "int64",
+            "sourceColumn": "IsActive",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_attorney",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    CsvPath = \"\\\\\\\\MRCFS1\\\\Shared\\\\MOPR\\\\IT\\\\sid\\\\sidley_pbip_spinup_package\\\\output_test\\\\Sidley_BI_Modernization_Demo\\\\data\\\\dim_attorney.csv\",\n    NavItem = Text.Combine({\"dim\", \"attorney\"}, \"_\"),\n    FromDatabricks = () =>\n        let\n            Source = Databricks.Catalogs(pDatabricksHost, pDatabricksHttpPath, [Catalog = pDatabricksCatalog, Database = pDatabricksSchema]),\n            Table = Source{[Item = NavItem, Schema = pDatabricksSchema, Kind = \"Table\"]}[Data]\n        in\n            Table,\n    FromCsv = () =>\n        let\n            Source = Csv.Document(File.Contents(CsvPath), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n            PromotedHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n            ChangedType = Table.TransformColumnTypes(PromotedHeaders, {{\"AttorneyKey\", Int64.Type}, {\"AttorneyName\", type text}, {\"AttorneyLevel\", type text}, {\"OfficeKey\", Int64.Type}, {\"PracticeKey\", Int64.Type}, {\"StandardRate\", Int64.Type}, {\"IsActive\", Int64.Type}})\n        in\n            ChangedType,\n    Result = if pDataSource = \"Databricks\" then FromDatabricks() else FromCsv()\nin\n    Result"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "dim_matter",
+        "columns": [
+          {
+            "name": "MatterKey",
+            "dataType": "int64",
+            "sourceColumn": "MatterKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MatterNumber",
+            "dataType": "string",
+            "sourceColumn": "MatterNumber"
+          },
+          {
+            "name": "MatterName",
+            "dataType": "string",
+            "sourceColumn": "MatterName"
+          },
+          {
+            "name": "ClientKey",
+            "dataType": "int64",
+            "sourceColumn": "ClientKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OfficeKey",
+            "dataType": "int64",
+            "sourceColumn": "OfficeKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PracticeKey",
+            "dataType": "int64",
+            "sourceColumn": "PracticeKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MatterType",
+            "dataType": "string",
+            "sourceColumn": "MatterType"
+          },
+          {
+            "name": "MatterStatus",
+            "dataType": "string",
+            "sourceColumn": "MatterStatus"
+          },
+          {
+            "name": "OpenDate",
+            "dataType": "dateTime",
+            "sourceColumn": "OpenDate"
+          },
+          {
+            "name": "CloseDate",
+            "dataType": "string",
+            "sourceColumn": "CloseDate"
+          },
+          {
+            "name": "LeadPartnerAttorneyKey",
+            "dataType": "int64",
+            "sourceColumn": "LeadPartnerAttorneyKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OfficeName",
+            "dataType": "string",
+            "sourceColumn": "OfficeName"
+          },
+          {
+            "name": "ClientName",
+            "dataType": "string",
+            "sourceColumn": "ClientName"
+          },
+          {
+            "name": "ClientIndustry",
+            "dataType": "string",
+            "sourceColumn": "ClientIndustry"
+          },
+          {
+            "name": "LeadAttorneyName",
+            "dataType": "string",
+            "sourceColumn": "LeadAttorneyName"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_matter",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    CsvPath = \"\\\\\\\\MRCFS1\\\\Shared\\\\MOPR\\\\IT\\\\sid\\\\sidley_pbip_spinup_package\\\\output_test\\\\Sidley_BI_Modernization_Demo\\\\data\\\\dim_matter.csv\",\n    NavItem = Text.Combine({\"dim\", \"matter\"}, \"_\"),\n    FromDatabricks = () =>\n        let\n            Source = Databricks.Catalogs(pDatabricksHost, pDatabricksHttpPath, [Catalog = pDatabricksCatalog, Database = pDatabricksSchema]),\n            Table = Source{[Item = NavItem, Schema = pDatabricksSchema, Kind = \"Table\"]}[Data]\n        in\n            Table,\n    FromCsv = () =>\n        let\n            Source = Csv.Document(File.Contents(CsvPath), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n            PromotedHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n            ChangedType = Table.TransformColumnTypes(PromotedHeaders, {{\"MatterKey\", Int64.Type}, {\"MatterNumber\", type text}, {\"MatterName\", type text}, {\"ClientKey\", Int64.Type}, {\"OfficeKey\", Int64.Type}, {\"PracticeKey\", Int64.Type}, {\"MatterType\", type text}, {\"MatterStatus\", type text}, {\"OpenDate\", type date}, {\"CloseDate\", type text}, {\"LeadPartnerAttorneyKey\", Int64.Type}, {\"OfficeName\", type text}, {\"ClientName\", type text}, {\"ClientIndustry\", type text}, {\"LeadAttorneyName\", type text}})\n        in\n            ChangedType,\n    Result = if pDataSource = \"Databricks\" then FromDatabricks() else FromCsv()\nin\n    Result"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "fact_billings",
+        "columns": [
+          {
+            "name": "BillingEventKey",
+            "dataType": "int64",
+            "sourceColumn": "BillingEventKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DateKey",
+            "dataType": "int64",
+            "sourceColumn": "DateKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MatterKey",
+            "dataType": "int64",
+            "sourceColumn": "MatterKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ClientKey",
+            "dataType": "int64",
+            "sourceColumn": "ClientKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OfficeKey",
+            "dataType": "int64",
+            "sourceColumn": "OfficeKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PracticeKey",
+            "dataType": "int64",
+            "sourceColumn": "PracticeKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "BilledHours",
+            "dataType": "double",
+            "sourceColumn": "BilledHours"
+          },
+          {
+            "name": "FeeAmount",
+            "dataType": "double",
+            "sourceColumn": "FeeAmount"
+          },
+          {
+            "name": "CostAmount",
+            "dataType": "double",
+            "sourceColumn": "CostAmount"
+          },
+          {
+            "name": "BillingAmount",
+            "dataType": "double",
+            "sourceColumn": "BillingAmount"
+          },
+          {
+            "name": "CashCollected",
+            "dataType": "double",
+            "sourceColumn": "CashCollected"
+          },
+          {
+            "name": "AROutstanding",
+            "dataType": "double",
+            "sourceColumn": "AROutstanding"
+          },
+          {
+            "name": "WIPAmount",
+            "dataType": "double",
+            "sourceColumn": "WIPAmount"
+          },
+          {
+            "name": "DiscountAmount",
+            "dataType": "double",
+            "sourceColumn": "DiscountAmount"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_billings",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    CsvPath = \"\\\\\\\\MRCFS1\\\\Shared\\\\MOPR\\\\IT\\\\sid\\\\sidley_pbip_spinup_package\\\\output_test\\\\Sidley_BI_Modernization_Demo\\\\data\\\\fact_billings.csv\",\n    NavItem = Text.Combine({\"fact\", \"billings\"}, \"_\"),\n    FromDatabricks = () =>\n        let\n            Source = Databricks.Catalogs(pDatabricksHost, pDatabricksHttpPath, [Catalog = pDatabricksCatalog, Database = pDatabricksSchema]),\n            Table = Source{[Item = NavItem, Schema = pDatabricksSchema, Kind = \"Table\"]}[Data]\n        in\n            Table,\n    FromCsv = () =>\n        let\n            Source = Csv.Document(File.Contents(CsvPath), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n            PromotedHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n            ChangedType = Table.TransformColumnTypes(PromotedHeaders, {{\"BillingEventKey\", Int64.Type}, {\"DateKey\", Int64.Type}, {\"MatterKey\", Int64.Type}, {\"ClientKey\", Int64.Type}, {\"OfficeKey\", Int64.Type}, {\"PracticeKey\", Int64.Type}, {\"BilledHours\", type number}, {\"FeeAmount\", type number}, {\"CostAmount\", type number}, {\"BillingAmount\", type number}, {\"CashCollected\", type number}, {\"AROutstanding\", type number}, {\"WIPAmount\", type number}, {\"DiscountAmount\", type number}})\n        in\n            ChangedType,\n    Result = if pDataSource = \"Databricks\" then FromDatabricks() else FromCsv()\nin\n    Result"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "fact_time_entries",
+        "columns": [
+          {
+            "name": "TimeEntryKey",
+            "dataType": "int64",
+            "sourceColumn": "TimeEntryKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DateKey",
+            "dataType": "int64",
+            "sourceColumn": "DateKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AttorneyKey",
+            "dataType": "int64",
+            "sourceColumn": "AttorneyKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MatterKey",
+            "dataType": "int64",
+            "sourceColumn": "MatterKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OfficeKey",
+            "dataType": "int64",
+            "sourceColumn": "OfficeKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PracticeKey",
+            "dataType": "int64",
+            "sourceColumn": "PracticeKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "WorkType",
+            "dataType": "string",
+            "sourceColumn": "WorkType"
+          },
+          {
+            "name": "Hours",
+            "dataType": "double",
+            "sourceColumn": "Hours"
+          },
+          {
+            "name": "StandardRate",
+            "dataType": "int64",
+            "sourceColumn": "StandardRate"
+          },
+          {
+            "name": "NarrativeQualityScore",
+            "dataType": "int64",
+            "sourceColumn": "NarrativeQualityScore",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_time_entries",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    CsvPath = \"\\\\\\\\MRCFS1\\\\Shared\\\\MOPR\\\\IT\\\\sid\\\\sidley_pbip_spinup_package\\\\output_test\\\\Sidley_BI_Modernization_Demo\\\\data\\\\fact_time_entries.csv\",\n    NavItem = Text.Combine({\"fact\", \"time\", \"entries\"}, \"_\"),\n    FromDatabricks = () =>\n        let\n            Source = Databricks.Catalogs(pDatabricksHost, pDatabricksHttpPath, [Catalog = pDatabricksCatalog, Database = pDatabricksSchema]),\n            Table = Source{[Item = NavItem, Schema = pDatabricksSchema, Kind = \"Table\"]}[Data]\n        in\n            Table,\n    FromCsv = () =>\n        let\n            Source = Csv.Document(File.Contents(CsvPath), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n            PromotedHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n            ChangedType = Table.TransformColumnTypes(PromotedHeaders, {{\"TimeEntryKey\", Int64.Type}, {\"DateKey\", Int64.Type}, {\"AttorneyKey\", Int64.Type}, {\"MatterKey\", Int64.Type}, {\"OfficeKey\", Int64.Type}, {\"PracticeKey\", Int64.Type}, {\"WorkType\", type text}, {\"Hours\", type number}, {\"StandardRate\", Int64.Type}, {\"NarrativeQualityScore\", Int64.Type}})\n        in\n            ChangedType,\n    Result = if pDataSource = \"Databricks\" then FromDatabricks() else FromCsv()\nin\n    Result"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "fact_legacy_report_inventory",
+        "columns": [
+          {
+            "name": "LegacyReportKey",
+            "dataType": "int64",
+            "sourceColumn": "LegacyReportKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "LegacyReportName",
+            "dataType": "string",
+            "sourceColumn": "LegacyReportName"
+          },
+          {
+            "name": "LegacyPlatform",
+            "dataType": "string",
+            "sourceColumn": "LegacyPlatform"
+          },
+          {
+            "name": "OwningStakeholderGroup",
+            "dataType": "string",
+            "sourceColumn": "OwningStakeholderGroup"
+          },
+          {
+            "name": "OwningOfficeKey",
+            "dataType": "int64",
+            "sourceColumn": "OwningOfficeKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OwningPracticeKey",
+            "dataType": "int64",
+            "sourceColumn": "OwningPracticeKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Complexity",
+            "dataType": "string",
+            "sourceColumn": "Complexity"
+          },
+          {
+            "name": "MigrationStatus",
+            "dataType": "string",
+            "sourceColumn": "MigrationStatus"
+          },
+          {
+            "name": "ValidationStatus",
+            "dataType": "string",
+            "sourceColumn": "ValidationStatus"
+          },
+          {
+            "name": "EstimatedHoursRemaining",
+            "dataType": "int64",
+            "sourceColumn": "EstimatedHoursRemaining"
+          },
+          {
+            "name": "UsageScore",
+            "dataType": "int64",
+            "sourceColumn": "UsageScore"
+          },
+          {
+            "name": "TargetWorkspace",
+            "dataType": "string",
+            "sourceColumn": "TargetWorkspace"
+          },
+          {
+            "name": "ReplacementReportName",
+            "dataType": "string",
+            "sourceColumn": "ReplacementReportName"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_legacy_report_inventory",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    CsvPath = \"\\\\\\\\MRCFS1\\\\Shared\\\\MOPR\\\\IT\\\\sid\\\\sidley_pbip_spinup_package\\\\output_test\\\\Sidley_BI_Modernization_Demo\\\\data\\\\fact_legacy_report_inventory.csv\",\n    NavItem = Text.Combine({\"fact\", \"legacy\", \"report\", \"inventory\"}, \"_\"),\n    FromDatabricks = () =>\n        let\n            Source = Databricks.Catalogs(pDatabricksHost, pDatabricksHttpPath, [Catalog = pDatabricksCatalog, Database = pDatabricksSchema]),\n            Table = Source{[Item = NavItem, Schema = pDatabricksSchema, Kind = \"Table\"]}[Data]\n        in\n            Table,\n    FromCsv = () =>\n        let\n            Source = Csv.Document(File.Contents(CsvPath), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n            PromotedHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n            ChangedType = Table.TransformColumnTypes(PromotedHeaders, {{\"LegacyReportKey\", Int64.Type}, {\"LegacyReportName\", type text}, {\"LegacyPlatform\", type text}, {\"OwningStakeholderGroup\", type text}, {\"OwningOfficeKey\", Int64.Type}, {\"OwningPracticeKey\", Int64.Type}, {\"Complexity\", type text}, {\"MigrationStatus\", type text}, {\"ValidationStatus\", type text}, {\"EstimatedHoursRemaining\", Int64.Type}, {\"UsageScore\", Int64.Type}, {\"TargetWorkspace\", type text}, {\"ReplacementReportName\", type text}})\n        in\n            ChangedType,\n    Result = if pDataSource = \"Databricks\" then FromDatabricks() else FromCsv()\nin\n    Result"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "fact_requirements_backlog",
+        "columns": [
+          {
+            "name": "RequirementKey",
+            "dataType": "int64",
+            "sourceColumn": "RequirementKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "RequestTitle",
+            "dataType": "string",
+            "sourceColumn": "RequestTitle"
+          },
+          {
+            "name": "ProductManager",
+            "dataType": "string",
+            "sourceColumn": "ProductManager"
+          },
+          {
+            "name": "EpicId",
+            "dataType": "string",
+            "sourceColumn": "EpicId"
+          },
+          {
+            "name": "StakeholderGroup",
+            "dataType": "string",
+            "sourceColumn": "StakeholderGroup"
+          },
+          {
+            "name": "OfficeKey",
+            "dataType": "int64",
+            "sourceColumn": "OfficeKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PracticeKey",
+            "dataType": "int64",
+            "sourceColumn": "PracticeKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "KPIArea",
+            "dataType": "string",
+            "sourceColumn": "KPIArea"
+          },
+          {
+            "name": "Priority",
+            "dataType": "string",
+            "sourceColumn": "Priority"
+          },
+          {
+            "name": "RequestStatus",
+            "dataType": "string",
+            "sourceColumn": "RequestStatus"
+          },
+          {
+            "name": "CreatedDate",
+            "dataType": "dateTime",
+            "sourceColumn": "CreatedDate"
+          },
+          {
+            "name": "TargetDate",
+            "dataType": "dateTime",
+            "sourceColumn": "TargetDate"
+          },
+          {
+            "name": "SLABreachFlag",
+            "dataType": "int64",
+            "sourceColumn": "SLABreachFlag",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AcceptanceCriteria",
+            "dataType": "string",
+            "sourceColumn": "AcceptanceCriteria"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_requirements_backlog",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    CsvPath = \"\\\\\\\\MRCFS1\\\\Shared\\\\MOPR\\\\IT\\\\sid\\\\sidley_pbip_spinup_package\\\\output_test\\\\Sidley_BI_Modernization_Demo\\\\data\\\\fact_requirements_backlog.csv\",\n    NavItem = Text.Combine({\"fact\", \"requirements\", \"backlog\"}, \"_\"),\n    FromDatabricks = () =>\n        let\n            Source = Databricks.Catalogs(pDatabricksHost, pDatabricksHttpPath, [Catalog = pDatabricksCatalog, Database = pDatabricksSchema]),\n            Table = Source{[Item = NavItem, Schema = pDatabricksSchema, Kind = \"Table\"]}[Data]\n        in\n            Table,\n    FromCsv = () =>\n        let\n            Source = Csv.Document(File.Contents(CsvPath), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n            PromotedHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n            ChangedType = Table.TransformColumnTypes(PromotedHeaders, {{\"RequirementKey\", Int64.Type}, {\"RequestTitle\", type text}, {\"ProductManager\", type text}, {\"EpicId\", type text}, {\"StakeholderGroup\", type text}, {\"OfficeKey\", Int64.Type}, {\"PracticeKey\", Int64.Type}, {\"KPIArea\", type text}, {\"Priority\", type text}, {\"RequestStatus\", type text}, {\"CreatedDate\", type date}, {\"TargetDate\", type date}, {\"SLABreachFlag\", Int64.Type}, {\"AcceptanceCriteria\", type text}})\n        in\n            ChangedType,\n    Result = if pDataSource = \"Databricks\" then FromDatabricks() else FromCsv()\nin\n    Result"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "fact_refresh_log",
+        "columns": [
+          {
+            "name": "RefreshLogKey",
+            "dataType": "int64",
+            "sourceColumn": "RefreshLogKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DateKey",
+            "dataType": "int64",
+            "sourceColumn": "DateKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DatasetName",
+            "dataType": "string",
+            "sourceColumn": "DatasetName"
+          },
+          {
+            "name": "RefreshStatus",
+            "dataType": "string",
+            "sourceColumn": "RefreshStatus"
+          },
+          {
+            "name": "DurationMinutes",
+            "dataType": "double",
+            "sourceColumn": "DurationMinutes"
+          },
+          {
+            "name": "RowsProcessed",
+            "dataType": "int64",
+            "sourceColumn": "RowsProcessed"
+          },
+          {
+            "name": "FailureCategory",
+            "dataType": "string",
+            "sourceColumn": "FailureCategory"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_refresh_log",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    CsvPath = \"\\\\\\\\MRCFS1\\\\Shared\\\\MOPR\\\\IT\\\\sid\\\\sidley_pbip_spinup_package\\\\output_test\\\\Sidley_BI_Modernization_Demo\\\\data\\\\fact_refresh_log.csv\",\n    NavItem = Text.Combine({\"fact\", \"refresh\", \"log\"}, \"_\"),\n    FromDatabricks = () =>\n        let\n            Source = Databricks.Catalogs(pDatabricksHost, pDatabricksHttpPath, [Catalog = pDatabricksCatalog, Database = pDatabricksSchema]),\n            Table = Source{[Item = NavItem, Schema = pDatabricksSchema, Kind = \"Table\"]}[Data]\n        in\n            Table,\n    FromCsv = () =>\n        let\n            Source = Csv.Document(File.Contents(CsvPath), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n            PromotedHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n            ChangedType = Table.TransformColumnTypes(PromotedHeaders, {{\"RefreshLogKey\", Int64.Type}, {\"DateKey\", Int64.Type}, {\"DatasetName\", type text}, {\"RefreshStatus\", type text}, {\"DurationMinutes\", type number}, {\"RowsProcessed\", Int64.Type}, {\"FailureCategory\", type text}})\n        in\n            ChangedType,\n    Result = if pDataSource = \"Databricks\" then FromDatabricks() else FromCsv()\nin\n    Result"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "_Measures",
+        "description": "Centralized measure host. All firmwide KPIs live here; tables remain hidden.",
+        "isHidden": false,
+        "columns": [
+          {
+            "name": "_",
+            "dataType": "string",
+            "isHidden": true,
+            "summarizeBy": "none",
+            "sourceColumn": "_"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "_Measures",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": "ROW(\"_\", BLANK())"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Total Billings",
+            "expression": "SUM ( fact_billings[BillingAmount] )",
+            "displayFolder": "Financial",
+            "description": "Billings invoiced to clients.",
+            "formatString": "\"$\"#,0;-\"$\"#,0;\"$\"#,0"
+          },
+          {
+            "name": "Total Fees",
+            "expression": "SUM ( fact_billings[FeeAmount] )",
+            "displayFolder": "Financial",
+            "description": "Professional fees recognized.",
+            "formatString": "\"$\"#,0;-\"$\"#,0;\"$\"#,0"
+          },
+          {
+            "name": "Total Costs",
+            "expression": "SUM ( fact_billings[CostAmount] )",
+            "displayFolder": "Financial",
+            "description": "Direct cost of delivering matters.",
+            "formatString": "\"$\"#,0;-\"$\"#,0;\"$\"#,0"
+          },
+          {
+            "name": "Gross Margin",
+            "expression": "[Total Fees] - [Total Costs]",
+            "displayFolder": "Financial",
+            "description": "Fees minus direct costs.",
+            "formatString": "\"$\"#,0;-\"$\"#,0;\"$\"#,0"
+          },
+          {
+            "name": "Gross Margin %",
+            "expression": "DIVIDE ( [Gross Margin], [Total Fees] )",
+            "displayFolder": "Financial",
+            "description": "Gross Margin / Total Fees.",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "dataType": "double"
+          },
+          {
+            "name": "Cash Collected",
+            "expression": "SUM ( fact_billings[CashCollected] )",
+            "displayFolder": "Financial",
+            "description": "Cash receipts against billed amounts.",
+            "formatString": "\"$\"#,0;-\"$\"#,0;\"$\"#,0"
+          },
+          {
+            "name": "Collection Rate",
+            "expression": "DIVIDE ( [Cash Collected], [Total Billings] )",
+            "displayFolder": "Financial",
+            "description": "Cash Collected / Total Billings.",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "dataType": "double"
+          },
+          {
+            "name": "AR Outstanding",
+            "expression": "SUM ( fact_billings[AROutstanding] )",
+            "displayFolder": "Financial",
+            "description": "Accounts receivable balance.",
+            "formatString": "\"$\"#,0;-\"$\"#,0;\"$\"#,0"
+          },
+          {
+            "name": "WIP Amount",
+            "expression": "SUM ( fact_billings[WIPAmount] )",
+            "displayFolder": "Financial",
+            "description": "Work in process not yet billed.",
+            "formatString": "\"$\"#,0;-\"$\"#,0;\"$\"#,0"
+          },
+          {
+            "name": "Billed Hours",
+            "expression": "SUM ( fact_billings[BilledHours] )",
+            "displayFolder": "Productivity",
+            "description": "Hours billed to clients.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Total Hours",
+            "expression": "SUM ( fact_time_entries[Hours] )",
+            "displayFolder": "Productivity",
+            "description": "All recorded hours regardless of work type.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Billable Hours",
+            "expression": "CALCULATE ( SUM ( fact_time_entries[Hours] ), fact_time_entries[WorkType] = \"Billable\" )",
+            "displayFolder": "Productivity",
+            "description": "Recorded hours flagged Billable.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Nonbillable Hours",
+            "expression": "CALCULATE ( SUM ( fact_time_entries[Hours] ), fact_time_entries[WorkType] <> \"Billable\" )",
+            "displayFolder": "Productivity",
+            "description": "Recorded hours other than Billable.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Billable %",
+            "expression": "DIVIDE ( [Billable Hours], [Total Hours] )",
+            "displayFolder": "Productivity",
+            "description": "Billable / Total recorded hours.",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "dataType": "double"
+          },
+          {
+            "name": "Realization Rate",
+            "expression": "DIVIDE ( [Billed Hours], [Billable Hours] )",
+            "displayFolder": "Productivity",
+            "description": "Billed Hours / Billable Hours - rate at which billable work converts to billed.",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "dataType": "double"
+          },
+          {
+            "name": "Average Bill Rate",
+            "expression": "DIVIDE ( [Total Fees], [Billed Hours] )",
+            "displayFolder": "Productivity",
+            "description": "Effective hourly rate.",
+            "formatString": "\"$\"#,0;-\"$\"#,0;\"$\"#,0"
+          },
+          {
+            "name": "Active Matters",
+            "expression": "DISTINCTCOUNT ( dim_matter[MatterKey] )",
+            "displayFolder": "Productivity",
+            "description": "Distinct matters in current filter.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Open Matters",
+            "expression": "CALCULATE ( DISTINCTCOUNT ( dim_matter[MatterKey] ), dim_matter[MatterStatus] <> \"Closed\" )",
+            "displayFolder": "Productivity",
+            "description": "Distinct matters that are Open or On Hold (non-closed pipeline).",
+            "formatString": "#,0"
+          },
+          {
+            "name": "On Hold Matters",
+            "expression": "CALCULATE ( DISTINCTCOUNT ( dim_matter[MatterKey] ), dim_matter[MatterStatus] = \"On Hold\" )",
+            "displayFolder": "Productivity",
+            "description": "Matters explicitly flagged On Hold.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Active Clients",
+            "expression": "DISTINCTCOUNT ( dim_client[ClientKey] )",
+            "displayFolder": "Productivity",
+            "description": "Distinct clients in current filter.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Legacy Reports",
+            "expression": "COUNTROWS ( fact_legacy_report_inventory )",
+            "displayFolder": "Migration",
+            "description": "Total legacy reports tracked.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Reports Migrated",
+            "expression": "CALCULATE ( COUNTROWS ( fact_legacy_report_inventory ), fact_legacy_report_inventory[MigrationStatus] = \"Migrated\" )",
+            "displayFolder": "Migration",
+            "description": "Legacy reports moved to Power BI.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Reports Validated",
+            "expression": "CALCULATE ( COUNTROWS ( fact_legacy_report_inventory ), fact_legacy_report_inventory[ValidationStatus] = \"Validated\" )",
+            "displayFolder": "Migration",
+            "description": "Legacy reports parallel-validated.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Migration % Complete",
+            "expression": "DIVIDE ( [Reports Migrated], [Legacy Reports] )",
+            "displayFolder": "Migration",
+            "description": "Reports Migrated / Legacy Reports.",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "dataType": "double"
+          },
+          {
+            "name": "Validation % Complete",
+            "expression": "DIVIDE ( [Reports Validated], [Legacy Reports] )",
+            "displayFolder": "Migration",
+            "description": "Reports Validated / Legacy Reports.",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "dataType": "double"
+          },
+          {
+            "name": "High Complexity Legacy Reports",
+            "expression": "CALCULATE ( COUNTROWS ( fact_legacy_report_inventory ), fact_legacy_report_inventory[Complexity] = \"High\" )",
+            "displayFolder": "Migration",
+            "description": "Remaining high-complexity migration items.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Open Stakeholder Requests",
+            "expression": "CALCULATE ( COUNTROWS ( fact_requirements_backlog ), fact_requirements_backlog[RequestStatus] IN { \"New\", \"In Discovery\", \"In Build\", \"Blocked\" } )",
+            "displayFolder": "Operations",
+            "description": "Active KPI / dashboard requests in flight.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Completed Stakeholder Requests",
+            "expression": "CALCULATE ( COUNTROWS ( fact_requirements_backlog ), fact_requirements_backlog[RequestStatus] = \"Complete\" )",
+            "displayFolder": "Operations",
+            "description": "Closed / delivered requests.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "SLA Breach Count",
+            "expression": "CALCULATE ( COUNTROWS ( fact_requirements_backlog ), fact_requirements_backlog[SLABreachFlag] = 1 )",
+            "displayFolder": "Operations",
+            "description": "Open requests past target date.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Refresh Events",
+            "expression": "COUNTROWS ( fact_refresh_log )",
+            "displayFolder": "Quality",
+            "description": "Total refresh attempts logged.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Successful Refreshes",
+            "expression": "CALCULATE ( COUNTROWS ( fact_refresh_log ), fact_refresh_log[RefreshStatus] = \"Success\" )",
+            "displayFolder": "Quality",
+            "description": "Refreshes completed successfully.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Failed Refreshes",
+            "expression": "CALCULATE ( COUNTROWS ( fact_refresh_log ), fact_refresh_log[RefreshStatus] = \"Failed\" )",
+            "displayFolder": "Quality",
+            "description": "Refreshes that failed.",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Refresh Success Rate",
+            "expression": "DIVIDE ( [Successful Refreshes], [Refresh Events] )",
+            "displayFolder": "Quality",
+            "description": "Successful / Total refreshes.",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "dataType": "double"
+          },
+          {
+            "name": "Avg Refresh Duration Minutes",
+            "expression": "AVERAGE ( fact_refresh_log[DurationMinutes] )",
+            "displayFolder": "Quality",
+            "description": "Average refresh duration in minutes.",
+            "formatString": "0.0"
+          },
+          {
+            "name": "As of date",
+            "expression": "VAR lk = CALCULATE ( MAX ( fact_refresh_log[DateKey] ), REMOVEFILTERS () )\nRETURN IF (\n    ISBLANK ( lk ),\n    BLANK (),\n    LOOKUPVALUE ( dim_date[Date], dim_date[DateKey], lk )\n)",
+            "displayFolder": "Quality",
+            "description": "Latest refresh log calendar date (max DateKey \u2192 dim_date) for page chrome; use Card visual (text strings error on Card).",
+            "formatString": "yyyy-MM-dd",
+            "dataType": "dateTime"
+          },
+          {
+            "name": "Modernization Health Score",
+            "expression": "VAR MigrationScore = [Migration % Complete] * 40\nVAR ValidationScore = [Validation % Complete] * 30\nVAR RefreshScore = [Refresh Success Rate] * 30\nRETURN MigrationScore + ValidationScore + RefreshScore",
+            "displayFolder": "Composite KPI",
+            "description": "0-100 blended health score: 40% migration progress, 30% validation, 30% refresh reliability.",
+            "formatString": "0.0"
+          }
+        ]
+      },
+      {
+        "name": "Time Intelligence",
+        "description": "Calculation group for reusable time-intelligence variants on every measure.",
+        "calculationGroup": {
+          "precedence": 100,
+          "calculationItems": [
+            {
+              "name": "Current",
+              "ordinal": 0,
+              "expression": "SELECTEDMEASURE()",
+              "description": "Current period value (no time shift)."
+            },
+            {
+              "name": "MTD",
+              "ordinal": 1,
+              "expression": "TOTALMTD ( SELECTEDMEASURE(), dim_date[Date] )",
+              "description": "Month-to-date."
+            },
+            {
+              "name": "QTD",
+              "ordinal": 2,
+              "expression": "TOTALQTD ( SELECTEDMEASURE(), dim_date[Date] )",
+              "description": "Quarter-to-date."
+            },
+            {
+              "name": "YTD",
+              "ordinal": 3,
+              "expression": "TOTALYTD ( SELECTEDMEASURE(), dim_date[Date] )",
+              "description": "Year-to-date."
+            },
+            {
+              "name": "PY",
+              "ordinal": 4,
+              "expression": "CALCULATE ( SELECTEDMEASURE(), SAMEPERIODLASTYEAR ( dim_date[Date] ) )",
+              "description": "Prior year same period."
+            },
+            {
+              "name": "PYTD",
+              "ordinal": 5,
+              "expression": "CALCULATE ( TOTALYTD ( SELECTEDMEASURE(), dim_date[Date] ), SAMEPERIODLASTYEAR ( dim_date[Date] ) )",
+              "description": "Prior-year YTD."
+            },
+            {
+              "name": "YoY",
+              "ordinal": 6,
+              "expression": "VAR Curr = SELECTEDMEASURE()\nVAR Prev = CALCULATE ( SELECTEDMEASURE(), SAMEPERIODLASTYEAR ( dim_date[Date] ) )\nRETURN Curr - Prev",
+              "description": "Year-over-year change (current minus prior year)."
+            },
+            {
+              "name": "YoY %",
+              "ordinal": 7,
+              "expression": "VAR Curr = SELECTEDMEASURE()\nVAR Prev = CALCULATE ( SELECTEDMEASURE(), SAMEPERIODLASTYEAR ( dim_date[Date] ) )\nRETURN DIVIDE ( Curr - Prev, Prev )",
+              "description": "Year-over-year change as a percentage."
+            }
+          ]
+        },
+        "columns": [
+          {
+            "name": "Time Calculation",
+            "dataType": "string",
+            "sourceColumn": "Name",
+            "summarizeBy": "none",
+            "sortByColumn": "Ordinal"
+          },
+          {
+            "name": "Ordinal",
+            "dataType": "int64",
+            "sourceColumn": "Ordinal",
+            "summarizeBy": "none",
+            "isHidden": true
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Time Intelligence",
+            "mode": "import",
+            "source": {
+              "type": "calculationGroup"
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "r_bill_date",
+        "fromTable": "fact_billings",
+        "fromColumn": "DateKey",
+        "toTable": "dim_date",
+        "toColumn": "DateKey",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "r_bill_matter",
+        "fromTable": "fact_billings",
+        "fromColumn": "MatterKey",
+        "toTable": "dim_matter",
+        "toColumn": "MatterKey",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "r_bill_client",
+        "fromTable": "fact_billings",
+        "fromColumn": "ClientKey",
+        "toTable": "dim_client",
+        "toColumn": "ClientKey",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "r_bill_office",
+        "fromTable": "fact_billings",
+        "fromColumn": "OfficeKey",
+        "toTable": "dim_office",
+        "toColumn": "OfficeKey",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "r_bill_practice",
+        "fromTable": "fact_billings",
+        "fromColumn": "PracticeKey",
+        "toTable": "dim_practice",
+        "toColumn": "PracticeKey",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "r_time_date",
+        "fromTable": "fact_time_entries",
+        "fromColumn": "DateKey",
+        "toTable": "dim_date",
+        "toColumn": "DateKey",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "r_time_matter",
+        "fromTable": "fact_time_entries",
+        "fromColumn": "MatterKey",
+        "toTable": "dim_matter",
+        "toColumn": "MatterKey",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "r_time_attorney",
+        "fromTable": "fact_time_entries",
+        "fromColumn": "AttorneyKey",
+        "toTable": "dim_attorney",
+        "toColumn": "AttorneyKey",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "r_time_office",
+        "fromTable": "fact_time_entries",
+        "fromColumn": "OfficeKey",
+        "toTable": "dim_office",
+        "toColumn": "OfficeKey",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "r_time_practice",
+        "fromTable": "fact_time_entries",
+        "fromColumn": "PracticeKey",
+        "toTable": "dim_practice",
+        "toColumn": "PracticeKey",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "r_legacy_office",
+        "fromTable": "fact_legacy_report_inventory",
+        "fromColumn": "OwningOfficeKey",
+        "toTable": "dim_office",
+        "toColumn": "OfficeKey",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "r_legacy_practice",
+        "fromTable": "fact_legacy_report_inventory",
+        "fromColumn": "OwningPracticeKey",
+        "toTable": "dim_practice",
+        "toColumn": "PracticeKey",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "r_req_office",
+        "fromTable": "fact_requirements_backlog",
+        "fromColumn": "OfficeKey",
+        "toTable": "dim_office",
+        "toColumn": "OfficeKey",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "r_req_practice",
+        "fromTable": "fact_requirements_backlog",
+        "fromColumn": "PracticeKey",
+        "toTable": "dim_practice",
+        "toColumn": "PracticeKey",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "r_refresh_date",
+        "fromTable": "fact_refresh_log",
+        "fromColumn": "DateKey",
+        "toTable": "dim_date",
+        "toColumn": "DateKey",
+        "crossFilteringBehavior": "oneDirection"
+      }
+    ],
+    "roles": [
+      {
+        "name": "Chicago Office Demo",
+        "description": "RLS Demo page: View as \u2192 restricts dim_office to Chicago (OfficeKey 1).",
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "dim_office",
+            "filterExpression": "[OfficeName] = \"Chicago\""
+          }
+        ]
+      },
+      {
+        "name": "OfficeKey One (DAX sample)",
+        "description": "Same Chicago slice using OfficeKey (OfficeKey = 1). Compare with Chicago Office Demo.",
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "dim_office",
+            "filterExpression": "[OfficeKey] = 1"
+          }
+        ]
+      },
+      {
+        "name": "Finance Stakeholder",
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "fact_requirements_backlog",
+            "filterExpression": "[StakeholderGroup] = \"Finance\""
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "Generated scaffold"
+      },
+      {
+        "name": "DemoContext",
+        "value": "Sidley Austin Senior BI Engineer interview"
+      },
+      {
+        "name": "ModelGeneratedAt",
+        "value": "2026-05-01T21:51:13Z"
+      }
+    ]
+  }
+}

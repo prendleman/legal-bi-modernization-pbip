@@ -1,0 +1,67 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "acc6c88c23a6bafc76f1",
+  "position": {
+    "x": 296,
+    "y": 206,
+    "z": 0,
+    "height": 510,
+    "width": 972,
+    "tabOrder": 30
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_office"
+                    }
+                  },
+                  "Property": "OfficeName"
+                }
+              },
+              "queryRef": "dim_office.OfficeName",
+              "nativeQueryRef": "OfficeName"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_office"
+                    }
+                  },
+                  "Property": "Region"
+                }
+              },
+              "queryRef": "dim_office.Region",
+              "nativeQueryRef": "Region"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_office"
+                    }
+                  },
+                  "Property": "Country"
+                }
+              },
+              "queryRef": "dim_office.Country",
+              "nativeQueryRef": "Country"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

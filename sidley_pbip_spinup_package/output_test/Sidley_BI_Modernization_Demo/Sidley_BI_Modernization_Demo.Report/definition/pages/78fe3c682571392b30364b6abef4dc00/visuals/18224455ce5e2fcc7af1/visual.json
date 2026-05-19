@@ -1,0 +1,123 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "18224455ce5e2fcc7af1",
+  "position": {
+    "x": 296,
+    "y": 409,
+    "z": 0,
+    "height": 307,
+    "width": 972,
+    "tabOrder": 31
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_matter"
+                    }
+                  },
+                  "Property": "MatterNumber"
+                }
+              },
+              "queryRef": "dim_matter.MatterNumber",
+              "nativeQueryRef": "MatterNumber"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_matter"
+                    }
+                  },
+                  "Property": "MatterName"
+                }
+              },
+              "queryRef": "dim_matter.MatterName",
+              "nativeQueryRef": "MatterName"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_matter"
+                    }
+                  },
+                  "Property": "OfficeName"
+                }
+              },
+              "queryRef": "dim_matter.OfficeName",
+              "nativeQueryRef": "OfficeName"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_matter"
+                    }
+                  },
+                  "Property": "ClientIndustry"
+                }
+              },
+              "queryRef": "dim_matter.ClientIndustry",
+              "nativeQueryRef": "ClientIndustry"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_matter"
+                    }
+                  },
+                  "Property": "ClientName"
+                }
+              },
+              "queryRef": "dim_matter.ClientName",
+              "nativeQueryRef": "ClientName"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_matter"
+                    }
+                  },
+                  "Property": "LeadAttorneyName"
+                }
+              },
+              "queryRef": "dim_matter.LeadAttorneyName",
+              "nativeQueryRef": "LeadAttorneyName"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_matter"
+                    }
+                  },
+                  "Property": "MatterStatus"
+                }
+              },
+              "queryRef": "dim_matter.MatterStatus",
+              "nativeQueryRef": "MatterStatus"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

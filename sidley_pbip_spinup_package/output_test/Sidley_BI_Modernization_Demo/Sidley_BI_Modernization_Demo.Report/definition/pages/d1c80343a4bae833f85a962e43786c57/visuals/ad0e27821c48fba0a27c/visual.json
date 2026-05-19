@@ -1,0 +1,95 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "ad0e27821c48fba0a27c",
+  "position": {
+    "x": 608,
+    "y": 206,
+    "z": 0,
+    "height": 510,
+    "width": 660,
+    "tabOrder": 31
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_legacy_report_inventory"
+                    }
+                  },
+                  "Property": "LegacyReportName"
+                }
+              },
+              "queryRef": "fact_legacy_report_inventory.LegacyReportName",
+              "nativeQueryRef": "LegacyReportName"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_legacy_report_inventory"
+                    }
+                  },
+                  "Property": "LegacyPlatform"
+                }
+              },
+              "queryRef": "fact_legacy_report_inventory.LegacyPlatform",
+              "nativeQueryRef": "LegacyPlatform"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_legacy_report_inventory"
+                    }
+                  },
+                  "Property": "MigrationStatus"
+                }
+              },
+              "queryRef": "fact_legacy_report_inventory.MigrationStatus",
+              "nativeQueryRef": "MigrationStatus"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_legacy_report_inventory"
+                    }
+                  },
+                  "Property": "ValidationStatus"
+                }
+              },
+              "queryRef": "fact_legacy_report_inventory.ValidationStatus",
+              "nativeQueryRef": "ValidationStatus"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_legacy_report_inventory"
+                    }
+                  },
+                  "Property": "OwningStakeholderGroup"
+                }
+              },
+              "queryRef": "fact_legacy_report_inventory.OwningStakeholderGroup",
+              "nativeQueryRef": "OwningStakeholderGroup"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

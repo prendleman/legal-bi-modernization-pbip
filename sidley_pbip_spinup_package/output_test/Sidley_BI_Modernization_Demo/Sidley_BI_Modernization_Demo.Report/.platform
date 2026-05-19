@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Sidley_BI_Modernization_Demo"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a47a229e-4ed0-5132-ad51-60eb9344652a"
+  }
+}

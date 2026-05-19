@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.4.0/schema.json",
+  "name": "3d9ad4e0ca1cef36d4263240638f7c66",
+  "displayName": "Data Quality & Refresh Monitor",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}

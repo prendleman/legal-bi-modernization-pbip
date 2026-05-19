@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "275e059bec15a2272216",
+  "position": {
+    "x": 16,
+    "y": 56,
+    "z": 50,
+    "height": 40,
+    "width": 956,
+    "tabOrder": 1
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "verticalAlignment": "top",
+                "horizontalTextAlignment": "left",
+                "textRuns": [
+                  {
+                    "value": "Waterfall: office \u2192 client industry (use drill/expand on the chart for industry within office). Click bars to filter the table. Slicers: matter-level office, industry, and status (list, multi-select).",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#3D5166"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": false
+  }
+}

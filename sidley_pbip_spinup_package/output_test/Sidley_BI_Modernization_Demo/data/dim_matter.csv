@@ -1,0 +1,451 @@
+MatterKey,MatterNumber,MatterName,ClientKey,OfficeKey,PracticeKey,MatterType,MatterStatus,OpenDate,CloseDate,LeadPartnerAttorneyKey,OfficeName,ClientName,ClientIndustry,LeadAttorneyName
+1,M-2021-00001,Regulatory Matter 001,25,7,6,Regulatory Review,Open,2023-05-14,,82,London,Client 025,Healthcare,Chris E. Abbinante (demo roster 082)
+2,M-2022-00002,Litigation Matter 002,172,4,2,M&A,Closed,2023-12-29,2025-03-17,64,Los Angeles,Client 172,Financial Services,Heidi L. Levine (demo roster 064)
+3,M-2023-00003,Tax Matter 003,74,3,5,IP Portfolio,Open,2023-04-17,,32,Washington DC,Client 074,Real Estate,Byron F. Taylor
+4,M-2024-00004,Private Equity Matter 004,169,2,8,Regulatory Review,Open,2025-05-17,,77,New York,Client 169,Technology,Sharon R. Flanagan (demo roster 077)
+5,M-2025-00005,Tax Matter 005,30,5,5,M&A,Closed,2023-08-20,2024-12-24,77,Dallas,Client 030,Real Estate,Sharon R. Flanagan (demo roster 077)
+6,M-2020-00006,Tax Matter 006,156,1,5,Tax Advisory,Open,2023-07-04,,109,Chicago,Client 156,Technology,Yvette Ostolaza (demo roster 109)
+7,M-2021-00007,Regulatory Matter 007,87,1,6,Employment Counsel,Closed,2023-07-05,2024-06-18,94,Chicago,Client 087,Financial Services,Teresa Wilton Harmon (demo roster 094)
+8,M-2022-00008,Intellectual Property Matter 008,18,6,3,Real Estate Deal,On Hold,2024-10-10,2025-01-24,107,Miami,Client 018,Manufacturing,Martin A. Wellington (demo roster 107)
+9,M-2023-00009,Labor & Employment Matter 009,97,4,7,Regulatory Review,Open,2023-12-16,,44,Los Angeles,Client 097,Energy,Perry J. Shwachman (demo roster 044)
+10,M-2024-00010,Litigation Matter 010,146,1,2,M&A,Open,2023-06-09,,85,Chicago,Client 146,Energy,Dan Clivner (demo roster 085)
+11,M-2025-00011,Litigation Matter 011,173,3,2,Fund Formation,Open,2024-03-29,,74,Washington DC,Client 173,Manufacturing,Constance Choy (demo roster 074)
+12,M-2020-00012,Tax Matter 012,107,2,5,Employment Counsel,Open,2025-02-12,,46,New York,Client 107,Manufacturing,Chris E. Abbinante (demo roster 046)
+13,M-2021-00013,Tax Matter 013,29,6,5,Tax Advisory,Open,2024-11-25,,75,Miami,Client 029,Healthcare,Nancy Chung (demo roster 075)
+14,M-2022-00014,Real Estate Matter 014,12,4,4,Tax Advisory,Open,2024-09-05,,32,Los Angeles,Client 012,Manufacturing,Byron F. Taylor
+15,M-2023-00015,Intellectual Property Matter 015,55,7,3,M&A,Open,2023-09-19,,21,London,Client 055,Healthcare,Michael A. Gordon
+16,M-2024-00016,Labor & Employment Matter 016,128,2,7,Real Estate Deal,Open,2023-05-13,,100,New York,Client 128,Healthcare,Heidi L. Levine (demo roster 100)
+17,M-2025-00017,Regulatory Matter 017,129,1,6,M&A,Closed,2024-02-11,2024-05-02,64,Chicago,Client 129,Financial Services,Heidi L. Levine (demo roster 064)
+18,M-2020-00018,Litigation Matter 018,118,7,2,Employment Counsel,Open,2023-11-17,,82,London,Client 118,Real Estate,Chris E. Abbinante (demo roster 082)
+19,M-2021-00019,Labor & Employment Matter 019,164,3,7,IP Portfolio,Open,2023-04-28,,45,Washington DC,Client 164,Healthcare,Thomas M. Thesing (demo roster 045)
+20,M-2022-00020,Private Equity Matter 020,159,7,8,Commercial Litigation,Closed,2024-12-07,2025-03-22,64,London,Client 159,Manufacturing,Heidi L. Levine (demo roster 064)
+21,M-2023-00021,Labor & Employment Matter 021,63,5,7,Tax Advisory,Open,2024-02-15,,60,Dallas,Client 063,Energy,Jonathan J. Kelly (demo roster 060)
+22,M-2024-00022,Real Estate Matter 022,87,3,4,Commercial Litigation,Open,2025-03-08,,75,Washington DC,Client 087,Financial Services,Nancy Chung (demo roster 075)
+23,M-2025-00023,Real Estate Matter 023,136,7,4,IP Portfolio,Open,2023-12-24,,90,London,Client 136,Financial Services,Elizabeth Shea Fries (demo roster 090)
+24,M-2020-00024,Litigation Matter 024,61,2,2,IP Portfolio,Open,2023-09-20,,85,New York,Client 061,Technology,Dan Clivner (demo roster 085)
+25,M-2021-00025,Litigation Matter 025,168,2,2,Fund Formation,Open,2025-03-02,,73,New York,Client 168,Financial Services,Yvette Ostolaza (demo roster 073)
+26,M-2022-00026,Regulatory Matter 026,175,7,6,Commercial Litigation,Open,2024-10-04,,73,London,Client 175,Private Equity,Yvette Ostolaza (demo roster 073)
+27,M-2023-00027,Private Equity Matter 027,121,6,8,Regulatory Review,Closed,2023-11-07,2024-11-03,10,Miami,Client 121,Retail,Chris E. Abbinante
+28,M-2024-00028,Litigation Matter 028,130,3,2,Regulatory Review,Open,2024-04-17,,10,Washington DC,Client 130,Technology,Chris E. Abbinante
+29,M-2025-00029,Litigation Matter 029,74,6,2,Employment Counsel,On Hold,2025-06-03,2025-09-17,85,Miami,Client 074,Real Estate,Dan Clivner (demo roster 085)
+30,M-2020-00030,Corporate Matter 030,119,4,1,Regulatory Review,Closed,2025-07-19,2026-08-16,32,Los Angeles,Client 119,Energy,Byron F. Taylor
+31,M-2021-00031,Private Equity Matter 031,155,5,8,Regulatory Review,On Hold,2023-06-04,2024-03-20,21,Dallas,Client 155,Private Equity,Michael A. Gordon
+32,M-2022-00032,Intellectual Property Matter 032,22,1,3,IP Portfolio,Closed,2023-09-11,2024-06-21,75,Chicago,Client 022,Real Estate,Nancy Chung (demo roster 075)
+33,M-2023-00033,Regulatory Matter 033,94,3,6,M&A,Open,2024-02-01,,45,Washington DC,Client 094,Energy,Thomas M. Thesing (demo roster 045)
+34,M-2024-00034,Regulatory Matter 034,162,1,6,Employment Counsel,Open,2023-12-04,,94,Chicago,Client 162,Energy,Teresa Wilton Harmon (demo roster 094)
+35,M-2025-00035,Tax Matter 035,73,6,5,IP Portfolio,Open,2025-05-22,,85,Miami,Client 073,Manufacturing,Dan Clivner (demo roster 085)
+36,M-2020-00036,Litigation Matter 036,86,5,2,Tax Advisory,Open,2024-11-10,,46,Dallas,Client 086,Manufacturing,Chris E. Abbinante (demo roster 046)
+37,M-2021-00037,Labor & Employment Matter 037,168,2,7,Employment Counsel,Closed,2024-09-01,2024-12-13,44,New York,Client 168,Financial Services,Perry J. Shwachman (demo roster 044)
+38,M-2022-00038,Regulatory Matter 038,165,7,6,Commercial Litigation,Open,2023-05-11,,107,London,Client 165,Financial Services,Martin A. Wellington (demo roster 107)
+39,M-2023-00039,Labor & Employment Matter 039,166,5,7,IP Portfolio,Open,2024-01-06,,44,Dallas,Client 166,Healthcare,Perry J. Shwachman (demo roster 044)
+40,M-2024-00040,Regulatory Matter 040,55,7,6,IP Portfolio,Open,2024-05-12,,28,London,Client 055,Healthcare,Heidi L. Levine
+41,M-2025-00041,Tax Matter 041,20,7,5,M&A,Open,2025-03-18,,109,London,Client 020,Energy,Yvette Ostolaza (demo roster 109)
+42,M-2020-00042,Regulatory Matter 042,170,7,6,IP Portfolio,Open,2024-09-24,,60,London,Client 170,Manufacturing,Jonathan J. Kelly (demo roster 060)
+43,M-2021-00043,Intellectual Property Matter 043,42,7,3,Fund Formation,Closed,2024-12-10,2026-03-29,29,London,Client 042,Manufacturing,Leonard Ng
+44,M-2022-00044,Labor & Employment Matter 044,12,3,7,Tax Advisory,Closed,2024-11-23,2025-09-06,85,Washington DC,Client 012,Manufacturing,Dan Clivner (demo roster 085)
+45,M-2023-00045,Real Estate Matter 045,115,5,4,Fund Formation,Open,2023-09-02,,117,Dallas,Client 115,Retail,Thomas M. Thesing (demo roster 117)
+46,M-2024-00046,Regulatory Matter 046,50,6,6,Tax Advisory,On Hold,2024-08-07,2025-05-30,109,Miami,Client 050,Retail,Yvette Ostolaza (demo roster 109)
+47,M-2025-00047,Labor & Employment Matter 047,98,2,7,IP Portfolio,Open,2025-04-16,,85,New York,Client 098,Real Estate,Dan Clivner (demo roster 085)
+48,M-2020-00048,Corporate Matter 048,65,6,1,Commercial Litigation,Closed,2024-05-07,2025-04-15,21,Miami,Client 065,Private Equity,Michael A. Gordon
+49,M-2021-00049,Litigation Matter 049,73,7,2,IP Portfolio,Open,2023-06-14,,75,London,Client 073,Manufacturing,Nancy Chung (demo roster 075)
+50,M-2022-00050,Litigation Matter 050,112,2,2,M&A,Open,2025-04-16,,46,New York,Client 112,Private Equity,Chris E. Abbinante (demo roster 046)
+51,M-2023-00051,Corporate Matter 051,107,4,1,Commercial Litigation,Open,2024-05-29,,60,Los Angeles,Client 107,Manufacturing,Jonathan J. Kelly (demo roster 060)
+52,M-2024-00052,Real Estate Matter 052,96,1,4,Regulatory Review,Closed,2023-11-23,2025-03-26,100,Chicago,Client 096,Manufacturing,Heidi L. Levine (demo roster 100)
+53,M-2025-00053,Intellectual Property Matter 053,38,1,3,IP Portfolio,Closed,2023-10-21,2024-08-17,100,Chicago,Client 038,Real Estate,Heidi L. Levine (demo roster 100)
+54,M-2020-00054,Private Equity Matter 054,121,5,8,Real Estate Deal,Closed,2023-01-06,2023-03-16,40,Dallas,Client 121,Retail,Brian J. Fahrney (demo roster 040)
+55,M-2021-00055,Labor & Employment Matter 055,39,1,7,Commercial Litigation,Open,2025-03-05,,44,Chicago,Client 039,Manufacturing,Perry J. Shwachman (demo roster 044)
+56,M-2022-00056,Real Estate Matter 056,13,4,4,Commercial Litigation,Closed,2024-10-16,2025-08-06,20,Los Angeles,Client 013,Technology,David A. Gordon
+57,M-2023-00057,Corporate Matter 057,128,6,1,IP Portfolio,Open,2024-06-11,,100,Miami,Client 128,Healthcare,Heidi L. Levine (demo roster 100)
+58,M-2024-00058,Labor & Employment Matter 058,75,1,7,Employment Counsel,Open,2024-09-21,,82,Chicago,Client 075,Financial Services,Chris E. Abbinante (demo roster 082)
+59,M-2025-00059,Litigation Matter 059,48,5,2,M&A,Open,2024-01-05,,75,Dallas,Client 048,Technology,Nancy Chung (demo roster 075)
+60,M-2020-00060,Private Equity Matter 060,100,1,8,Tax Advisory,Open,2024-10-12,,46,Chicago,Client 100,Retail,Chris E. Abbinante (demo roster 046)
+61,M-2021-00061,Regulatory Matter 061,5,7,6,Commercial Litigation,Open,2023-03-11,,107,London,Client 005,Retail,Martin A. Wellington (demo roster 107)
+62,M-2022-00062,Regulatory Matter 062,149,2,6,IP Portfolio,Open,2023-02-15,,45,New York,Client 149,Energy,Thomas M. Thesing (demo roster 045)
+63,M-2023-00063,Private Equity Matter 063,176,6,8,IP Portfolio,Open,2024-05-05,,117,Miami,Client 176,Real Estate,Thomas M. Thesing (demo roster 117)
+64,M-2024-00064,Private Equity Matter 064,17,1,8,Real Estate Deal,Open,2023-10-28,,117,Chicago,Client 017,Manufacturing,Thomas M. Thesing (demo roster 117)
+65,M-2025-00065,Regulatory Matter 065,11,3,6,Fund Formation,Open,2024-06-11,,77,Washington DC,Client 011,Energy,Sharon R. Flanagan (demo roster 077)
+66,M-2020-00066,Corporate Matter 066,65,7,1,M&A,Open,2024-10-24,,46,London,Client 065,Private Equity,Chris E. Abbinante (demo roster 046)
+67,M-2021-00067,Regulatory Matter 067,168,3,6,Fund Formation,Closed,2023-05-08,2024-02-15,60,Washington DC,Client 168,Financial Services,Jonathan J. Kelly (demo roster 060)
+68,M-2022-00068,Regulatory Matter 068,99,2,6,Tax Advisory,Closed,2024-05-23,2025-01-26,117,New York,Client 099,Real Estate,Thomas M. Thesing (demo roster 117)
+69,M-2023-00069,Labor & Employment Matter 069,22,1,7,Tax Advisory,Open,2024-03-16,,29,Chicago,Client 022,Real Estate,Leonard Ng
+70,M-2024-00070,Litigation Matter 070,83,1,2,Fund Formation,Open,2023-12-02,,44,Chicago,Client 083,Healthcare,Perry J. Shwachman (demo roster 044)
+71,M-2025-00071,Labor & Employment Matter 071,155,2,7,M&A,Open,2024-12-07,,73,New York,Client 155,Private Equity,Yvette Ostolaza (demo roster 073)
+72,M-2020-00072,Labor & Employment Matter 072,91,3,7,Employment Counsel,On Hold,2024-10-16,2025-01-13,20,Washington DC,Client 091,Retail,David A. Gordon
+73,M-2021-00073,Intellectual Property Matter 073,94,1,3,Fund Formation,Closed,2023-05-27,2024-07-07,117,Chicago,Client 094,Energy,Thomas M. Thesing (demo roster 117)
+74,M-2022-00074,Intellectual Property Matter 074,9,1,3,Employment Counsel,Closed,2023-08-30,2024-05-03,46,Chicago,Client 009,Real Estate,Chris E. Abbinante (demo roster 046)
+75,M-2023-00075,Corporate Matter 075,146,5,1,Regulatory Review,Open,2023-06-07,,46,Dallas,Client 146,Energy,Chris E. Abbinante (demo roster 046)
+76,M-2024-00076,Litigation Matter 076,114,5,2,Regulatory Review,Open,2023-05-21,,60,Dallas,Client 114,Energy,Jonathan J. Kelly (demo roster 060)
+77,M-2025-00077,Tax Matter 077,167,2,5,Fund Formation,Open,2023-04-27,,29,New York,Client 167,Technology,Leonard Ng
+78,M-2020-00078,Labor & Employment Matter 078,133,5,7,Fund Formation,Open,2023-05-01,,40,Dallas,Client 133,Retail,Brian J. Fahrney (demo roster 040)
+79,M-2021-00079,Tax Matter 079,55,6,5,IP Portfolio,On Hold,2025-07-27,2026-01-05,21,Miami,Client 055,Healthcare,Michael A. Gordon
+80,M-2022-00080,Private Equity Matter 080,19,2,8,Regulatory Review,Closed,2025-07-09,2025-10-21,117,New York,Client 019,Technology,Thomas M. Thesing (demo roster 117)
+81,M-2023-00081,Regulatory Matter 081,171,6,6,Tax Advisory,Open,2023-03-08,,44,Miami,Client 171,Real Estate,Perry J. Shwachman (demo roster 044)
+82,M-2024-00082,Intellectual Property Matter 082,41,7,3,Real Estate Deal,Open,2024-01-06,,21,London,Client 041,Manufacturing,Michael A. Gordon
+83,M-2025-00083,Real Estate Matter 083,36,7,4,Regulatory Review,Open,2024-05-20,,77,London,Client 036,Private Equity,Sharon R. Flanagan (demo roster 077)
+84,M-2020-00084,Intellectual Property Matter 084,120,5,3,Employment Counsel,Open,2025-06-24,,44,Dallas,Client 120,Manufacturing,Perry J. Shwachman (demo roster 044)
+85,M-2021-00085,Labor & Employment Matter 085,123,7,7,Regulatory Review,Closed,2024-02-24,2024-05-31,28,London,Client 123,Financial Services,Heidi L. Levine
+86,M-2022-00086,Litigation Matter 086,165,4,2,IP Portfolio,Closed,2024-04-22,2024-12-14,28,Los Angeles,Client 165,Financial Services,Heidi L. Levine
+87,M-2023-00087,Labor & Employment Matter 087,34,5,7,IP Portfolio,Closed,2025-07-21,2026-11-18,21,Dallas,Client 034,Energy,Michael A. Gordon
+88,M-2024-00088,Intellectual Property Matter 088,78,2,3,Tax Advisory,Closed,2023-11-27,2024-05-20,46,New York,Client 078,Financial Services,Chris E. Abbinante (demo roster 046)
+89,M-2025-00089,Tax Matter 089,21,2,5,Tax Advisory,On Hold,2024-10-12,2025-04-30,28,New York,Client 021,Private Equity,Heidi L. Levine
+90,M-2020-00090,Litigation Matter 090,158,5,2,IP Portfolio,Open,2024-10-18,,82,Dallas,Client 158,Energy,Chris E. Abbinante (demo roster 082)
+91,M-2021-00091,Regulatory Matter 091,44,7,6,Commercial Litigation,Open,2025-08-04,,6,London,Client 044,Manufacturing,Kristin Graham Koehler
+92,M-2022-00092,Tax Matter 092,12,6,5,M&A,Closed,2023-08-04,2024-05-03,85,Miami,Client 012,Manufacturing,Dan Clivner (demo roster 085)
+93,M-2023-00093,Tax Matter 093,128,6,5,Employment Counsel,Open,2023-11-06,,117,Miami,Client 128,Healthcare,Thomas M. Thesing (demo roster 117)
+94,M-2024-00094,Private Equity Matter 094,77,1,8,Employment Counsel,Open,2024-12-06,,73,Chicago,Client 077,Healthcare,Yvette Ostolaza (demo roster 073)
+95,M-2025-00095,Private Equity Matter 095,124,2,8,Regulatory Review,Open,2023-12-15,,45,New York,Client 124,Financial Services,Thomas M. Thesing (demo roster 045)
+96,M-2020-00096,Labor & Employment Matter 096,89,2,7,Commercial Litigation,Open,2025-02-17,,77,New York,Client 089,Manufacturing,Sharon R. Flanagan (demo roster 077)
+97,M-2021-00097,Real Estate Matter 097,82,4,4,IP Portfolio,Open,2023-05-06,,35,Los Angeles,Client 082,Technology,Martin A. Wellington
+98,M-2022-00098,Corporate Matter 098,25,3,1,IP Portfolio,Closed,2024-01-29,2024-10-29,35,Washington DC,Client 025,Healthcare,Martin A. Wellington
+99,M-2023-00099,Regulatory Matter 099,84,2,6,Fund Formation,Open,2025-02-20,,75,New York,Client 084,Healthcare,Nancy Chung (demo roster 075)
+100,M-2024-00100,Tax Matter 100,128,4,5,Fund Formation,Open,2023-01-24,,60,Los Angeles,Client 128,Healthcare,Jonathan J. Kelly (demo roster 060)
+101,M-2025-00101,Real Estate Matter 101,62,5,4,Fund Formation,Open,2023-12-28,,44,Dallas,Client 062,Financial Services,Perry J. Shwachman (demo roster 044)
+102,M-2020-00102,Private Equity Matter 102,153,3,8,Employment Counsel,Open,2024-07-03,,21,Washington DC,Client 153,Real Estate,Michael A. Gordon
+103,M-2021-00103,Tax Matter 103,35,6,5,Employment Counsel,Closed,2024-01-10,2024-09-13,10,Miami,Client 035,Financial Services,Chris E. Abbinante
+104,M-2022-00104,Real Estate Matter 104,14,3,4,Fund Formation,Open,2024-07-20,,60,Washington DC,Client 014,Healthcare,Jonathan J. Kelly (demo roster 060)
+105,M-2023-00105,Tax Matter 105,141,7,5,Commercial Litigation,Closed,2024-09-30,2025-01-28,28,London,Client 141,Retail,Heidi L. Levine
+106,M-2024-00106,Regulatory Matter 106,101,7,6,IP Portfolio,Open,2023-12-14,,46,London,Client 101,Real Estate,Chris E. Abbinante (demo roster 046)
+107,M-2025-00107,Labor & Employment Matter 107,51,5,7,Regulatory Review,Open,2023-02-11,,28,Dallas,Client 051,Technology,Heidi L. Levine
+108,M-2020-00108,Private Equity Matter 108,122,2,8,Regulatory Review,Closed,2024-09-12,2025-01-21,45,New York,Client 122,Manufacturing,Thomas M. Thesing (demo roster 045)
+109,M-2021-00109,Labor & Employment Matter 109,42,5,7,Fund Formation,Closed,2025-01-27,2026-01-25,45,Dallas,Client 042,Manufacturing,Thomas M. Thesing (demo roster 045)
+110,M-2022-00110,Tax Matter 110,145,4,5,Commercial Litigation,Open,2025-04-15,,45,Los Angeles,Client 145,Financial Services,Thomas M. Thesing (demo roster 045)
+111,M-2023-00111,Tax Matter 111,107,7,5,M&A,Closed,2025-07-09,2026-08-25,90,London,Client 107,Manufacturing,Elizabeth Shea Fries (demo roster 090)
+112,M-2024-00112,Private Equity Matter 112,153,3,8,Real Estate Deal,Closed,2024-11-02,2026-02-02,82,Washington DC,Client 153,Real Estate,Chris E. Abbinante (demo roster 082)
+113,M-2025-00113,Private Equity Matter 113,14,2,8,Employment Counsel,Open,2024-06-20,,85,New York,Client 014,Healthcare,Dan Clivner (demo roster 085)
+114,M-2020-00114,Real Estate Matter 114,38,1,4,M&A,Closed,2024-08-09,2024-12-03,32,Chicago,Client 038,Real Estate,Byron F. Taylor
+115,M-2021-00115,Regulatory Matter 115,113,4,6,Employment Counsel,Open,2023-06-05,,32,Los Angeles,Client 113,Private Equity,Byron F. Taylor
+116,M-2022-00116,Private Equity Matter 116,129,7,8,IP Portfolio,Closed,2025-05-18,2025-08-17,100,London,Client 129,Financial Services,Heidi L. Levine (demo roster 100)
+117,M-2023-00117,Real Estate Matter 117,133,5,4,Employment Counsel,On Hold,2023-11-29,2024-09-28,75,Dallas,Client 133,Retail,Nancy Chung (demo roster 075)
+118,M-2024-00118,Intellectual Property Matter 118,81,4,3,Regulatory Review,Open,2025-07-23,,77,Los Angeles,Client 081,Financial Services,Sharon R. Flanagan (demo roster 077)
+119,M-2025-00119,Tax Matter 119,174,5,5,Tax Advisory,Open,2024-05-10,,35,Dallas,Client 174,Manufacturing,Martin A. Wellington
+120,M-2020-00120,Tax Matter 120,143,2,5,Fund Formation,Closed,2023-11-01,2024-12-25,32,New York,Client 143,Technology,Byron F. Taylor
+121,M-2021-00121,Private Equity Matter 121,82,3,8,Tax Advisory,Closed,2024-07-27,2025-11-06,107,Washington DC,Client 082,Technology,Martin A. Wellington (demo roster 107)
+122,M-2022-00122,Litigation Matter 122,74,5,2,Regulatory Review,Open,2024-11-23,,60,Dallas,Client 074,Real Estate,Jonathan J. Kelly (demo roster 060)
+123,M-2023-00123,Tax Matter 123,38,1,5,Fund Formation,On Hold,2023-10-22,2024-01-30,46,Chicago,Client 038,Real Estate,Chris E. Abbinante (demo roster 046)
+124,M-2024-00124,Tax Matter 124,168,6,5,Tax Advisory,Open,2024-05-05,,77,Miami,Client 168,Financial Services,Sharon R. Flanagan (demo roster 077)
+125,M-2025-00125,Tax Matter 125,144,2,5,Real Estate Deal,Open,2023-04-22,,82,New York,Client 144,Retail,Chris E. Abbinante (demo roster 082)
+126,M-2020-00126,Corporate Matter 126,63,6,1,Real Estate Deal,Open,2025-07-15,,90,Miami,Client 063,Energy,Elizabeth Shea Fries (demo roster 090)
+127,M-2021-00127,Litigation Matter 127,14,4,2,IP Portfolio,Closed,2023-12-05,2024-03-25,94,Los Angeles,Client 014,Healthcare,Teresa Wilton Harmon (demo roster 094)
+128,M-2022-00128,Intellectual Property Matter 128,2,4,3,Fund Formation,Closed,2024-10-30,2026-03-23,74,Los Angeles,Client 002,Technology,Constance Choy (demo roster 074)
+129,M-2023-00129,Real Estate Matter 129,167,7,4,M&A,Open,2023-10-22,,90,London,Client 167,Technology,Elizabeth Shea Fries (demo roster 090)
+130,M-2024-00130,Real Estate Matter 130,23,5,4,IP Portfolio,Closed,2025-01-26,2026-07-19,10,Dallas,Client 023,Energy,Chris E. Abbinante
+131,M-2025-00131,Intellectual Property Matter 131,107,1,3,IP Portfolio,Open,2025-05-06,,74,Chicago,Client 107,Manufacturing,Constance Choy (demo roster 074)
+132,M-2020-00132,Corporate Matter 132,75,1,1,Regulatory Review,Open,2023-11-02,,21,Chicago,Client 075,Financial Services,Michael A. Gordon
+133,M-2021-00133,Private Equity Matter 133,73,6,8,Fund Formation,Open,2024-07-10,,28,Miami,Client 073,Manufacturing,Heidi L. Levine
+134,M-2022-00134,Real Estate Matter 134,70,7,4,Fund Formation,Open,2023-04-26,,107,London,Client 070,Financial Services,Martin A. Wellington (demo roster 107)
+135,M-2023-00135,Tax Matter 135,166,6,5,Tax Advisory,Open,2023-07-10,,45,Miami,Client 166,Healthcare,Thomas M. Thesing (demo roster 045)
+136,M-2024-00136,Real Estate Matter 136,146,2,4,Employment Counsel,Closed,2024-09-17,2026-02-18,60,New York,Client 146,Energy,Jonathan J. Kelly (demo roster 060)
+137,M-2025-00137,Regulatory Matter 137,132,1,6,IP Portfolio,Open,2024-02-15,,29,Chicago,Client 132,Energy,Leonard Ng
+138,M-2020-00138,Regulatory Matter 138,123,2,6,Fund Formation,Open,2023-01-07,,35,New York,Client 123,Financial Services,Martin A. Wellington
+139,M-2021-00139,Regulatory Matter 139,69,3,6,Regulatory Review,Closed,2024-08-19,2024-10-23,40,Washington DC,Client 069,Real Estate,Brian J. Fahrney (demo roster 040)
+140,M-2022-00140,Real Estate Matter 140,178,1,4,IP Portfolio,Open,2024-11-14,,44,Chicago,Client 178,Manufacturing,Perry J. Shwachman (demo roster 044)
+141,M-2023-00141,Tax Matter 141,104,6,5,Regulatory Review,Open,2023-05-01,,44,Miami,Client 104,Healthcare,Perry J. Shwachman (demo roster 044)
+142,M-2024-00142,Real Estate Matter 142,158,2,4,Regulatory Review,Open,2023-05-17,,73,New York,Client 158,Energy,Yvette Ostolaza (demo roster 073)
+143,M-2025-00143,Private Equity Matter 143,107,7,8,Real Estate Deal,Closed,2024-07-04,2025-10-29,32,London,Client 107,Manufacturing,Byron F. Taylor
+144,M-2020-00144,Litigation Matter 144,175,5,2,Commercial Litigation,Open,2024-04-02,,46,Dallas,Client 175,Private Equity,Chris E. Abbinante (demo roster 046)
+145,M-2021-00145,Litigation Matter 145,145,1,2,Real Estate Deal,Open,2025-04-28,,75,Chicago,Client 145,Financial Services,Nancy Chung (demo roster 075)
+146,M-2022-00146,Intellectual Property Matter 146,147,2,3,Real Estate Deal,Closed,2023-12-02,2024-09-13,21,New York,Client 147,Retail,Michael A. Gordon
+147,M-2023-00147,Private Equity Matter 147,150,1,8,M&A,Open,2025-07-09,,117,Chicago,Client 150,Private Equity,Thomas M. Thesing (demo roster 117)
+148,M-2024-00148,Intellectual Property Matter 148,117,5,3,Fund Formation,Open,2024-03-01,,10,Dallas,Client 117,Real Estate,Chris E. Abbinante
+149,M-2025-00149,Tax Matter 149,173,6,5,Real Estate Deal,Open,2023-01-23,,6,Miami,Client 173,Manufacturing,Kristin Graham Koehler
+150,M-2020-00150,Litigation Matter 150,149,1,2,M&A,Open,2024-03-09,,20,Chicago,Client 149,Energy,David A. Gordon
+151,M-2021-00151,Private Equity Matter 151,18,1,8,IP Portfolio,Open,2023-10-21,,109,Chicago,Client 018,Manufacturing,Yvette Ostolaza (demo roster 109)
+152,M-2022-00152,Labor & Employment Matter 152,165,3,7,Employment Counsel,Open,2025-07-01,,60,Washington DC,Client 165,Financial Services,Jonathan J. Kelly (demo roster 060)
+153,M-2023-00153,Intellectual Property Matter 153,21,6,3,Employment Counsel,Open,2025-05-30,,29,Miami,Client 021,Private Equity,Leonard Ng
+154,M-2024-00154,Intellectual Property Matter 154,136,6,3,Tax Advisory,Closed,2023-08-17,2024-11-06,6,Miami,Client 136,Financial Services,Kristin Graham Koehler
+155,M-2025-00155,Labor & Employment Matter 155,119,5,7,Regulatory Review,Closed,2024-01-24,2024-07-28,73,Dallas,Client 119,Energy,Yvette Ostolaza (demo roster 073)
+156,M-2020-00156,Tax Matter 156,40,2,5,Employment Counsel,Closed,2025-06-15,2025-10-10,10,New York,Client 040,Energy,Chris E. Abbinante
+157,M-2021-00157,Corporate Matter 157,158,2,1,M&A,Open,2023-07-31,,85,New York,Client 158,Energy,Dan Clivner (demo roster 085)
+158,M-2022-00158,Corporate Matter 158,115,2,1,Real Estate Deal,Open,2025-01-28,,73,New York,Client 115,Retail,Yvette Ostolaza (demo roster 073)
+159,M-2023-00159,Real Estate Matter 159,139,7,4,Tax Advisory,Closed,2025-06-03,2025-10-12,75,London,Client 139,Technology,Nancy Chung (demo roster 075)
+160,M-2024-00160,Regulatory Matter 160,60,5,6,Real Estate Deal,Closed,2024-09-04,2025-12-27,45,Dallas,Client 060,Technology,Thomas M. Thesing (demo roster 045)
+161,M-2025-00161,Intellectual Property Matter 161,78,6,3,Tax Advisory,Open,2024-06-17,,44,Miami,Client 078,Financial Services,Perry J. Shwachman (demo roster 044)
+162,M-2020-00162,Intellectual Property Matter 162,16,6,3,M&A,Open,2024-11-26,,74,Miami,Client 016,Healthcare,Constance Choy (demo roster 074)
+163,M-2021-00163,Labor & Employment Matter 163,89,7,7,Employment Counsel,Open,2024-06-21,,64,London,Client 089,Manufacturing,Heidi L. Levine (demo roster 064)
+164,M-2022-00164,Tax Matter 164,39,4,5,Real Estate Deal,Closed,2023-07-08,2024-05-05,35,Los Angeles,Client 039,Manufacturing,Martin A. Wellington
+165,M-2023-00165,Intellectual Property Matter 165,77,7,3,Employment Counsel,Closed,2024-04-19,2025-04-01,64,London,Client 077,Healthcare,Heidi L. Levine (demo roster 064)
+166,M-2024-00166,Intellectual Property Matter 166,143,4,3,Commercial Litigation,Open,2023-09-06,,45,Los Angeles,Client 143,Technology,Thomas M. Thesing (demo roster 045)
+167,M-2025-00167,Regulatory Matter 167,116,1,6,Tax Advisory,Closed,2024-07-02,2024-12-06,10,Chicago,Client 116,Private Equity,Chris E. Abbinante
+168,M-2020-00168,Corporate Matter 168,97,7,1,Real Estate Deal,Open,2023-03-16,,109,London,Client 097,Energy,Yvette Ostolaza (demo roster 109)
+169,M-2021-00169,Real Estate Matter 169,123,7,4,Real Estate Deal,Open,2025-07-17,,6,London,Client 123,Financial Services,Kristin Graham Koehler
+170,M-2022-00170,Litigation Matter 170,49,6,2,Real Estate Deal,Open,2025-02-11,,35,Miami,Client 049,Technology,Martin A. Wellington
+171,M-2023-00171,Real Estate Matter 171,102,5,4,Regulatory Review,Closed,2023-11-26,2024-08-06,73,Dallas,Client 102,Manufacturing,Yvette Ostolaza (demo roster 073)
+172,M-2024-00172,Tax Matter 172,79,3,5,Fund Formation,Closed,2024-06-09,2025-04-03,21,Washington DC,Client 079,Healthcare,Michael A. Gordon
+173,M-2025-00173,Real Estate Matter 173,82,3,4,Real Estate Deal,Open,2023-11-17,,82,Washington DC,Client 082,Technology,Chris E. Abbinante (demo roster 082)
+174,M-2020-00174,Corporate Matter 174,38,3,1,Employment Counsel,Closed,2024-07-20,2025-07-11,107,Washington DC,Client 038,Real Estate,Martin A. Wellington (demo roster 107)
+175,M-2021-00175,Intellectual Property Matter 175,76,2,3,Real Estate Deal,Open,2023-12-04,,82,New York,Client 076,Financial Services,Chris E. Abbinante (demo roster 082)
+176,M-2022-00176,Regulatory Matter 176,128,3,6,Fund Formation,Closed,2025-02-20,2026-04-26,90,Washington DC,Client 128,Healthcare,Elizabeth Shea Fries (demo roster 090)
+177,M-2023-00177,Intellectual Property Matter 177,118,6,3,Fund Formation,Open,2025-03-25,,28,Miami,Client 118,Real Estate,Heidi L. Levine
+178,M-2024-00178,Corporate Matter 178,48,5,1,M&A,Closed,2023-02-04,2023-05-13,94,Dallas,Client 048,Technology,Teresa Wilton Harmon (demo roster 094)
+179,M-2025-00179,Labor & Employment Matter 179,2,2,7,IP Portfolio,Open,2025-05-12,,20,New York,Client 002,Technology,David A. Gordon
+180,M-2020-00180,Real Estate Matter 180,3,5,4,Fund Formation,Open,2024-04-11,,85,Dallas,Client 003,Retail,Dan Clivner (demo roster 085)
+181,M-2021-00181,Private Equity Matter 181,169,1,8,M&A,Open,2023-01-07,,64,Chicago,Client 169,Technology,Heidi L. Levine (demo roster 064)
+182,M-2022-00182,Tax Matter 182,5,5,5,Employment Counsel,Open,2023-10-21,,100,Dallas,Client 005,Retail,Heidi L. Levine (demo roster 100)
+183,M-2023-00183,Litigation Matter 183,46,1,2,Tax Advisory,Open,2024-06-20,,32,Chicago,Client 046,Technology,Byron F. Taylor
+184,M-2024-00184,Tax Matter 184,91,7,5,Fund Formation,Open,2024-02-11,,60,London,Client 091,Retail,Jonathan J. Kelly (demo roster 060)
+185,M-2025-00185,Real Estate Matter 185,145,6,4,M&A,Open,2023-08-20,,20,Miami,Client 145,Financial Services,David A. Gordon
+186,M-2020-00186,Labor & Employment Matter 186,24,4,7,M&A,Open,2024-01-22,,10,Los Angeles,Client 024,Technology,Chris E. Abbinante
+187,M-2021-00187,Intellectual Property Matter 187,180,1,3,Regulatory Review,Closed,2024-05-26,2025-06-20,117,Chicago,Client 180,Real Estate,Thomas M. Thesing (demo roster 117)
+188,M-2022-00188,Litigation Matter 188,145,5,2,Fund Formation,Open,2025-07-30,,32,Dallas,Client 145,Financial Services,Byron F. Taylor
+189,M-2023-00189,Corporate Matter 189,70,1,1,M&A,Closed,2024-12-01,2026-05-05,77,Chicago,Client 070,Financial Services,Sharon R. Flanagan (demo roster 077)
+190,M-2024-00190,Regulatory Matter 190,46,1,6,Employment Counsel,Open,2023-08-01,,109,Chicago,Client 046,Technology,Yvette Ostolaza (demo roster 109)
+191,M-2025-00191,Tax Matter 191,20,2,5,Regulatory Review,Open,2024-07-31,,60,New York,Client 020,Energy,Jonathan J. Kelly (demo roster 060)
+192,M-2020-00192,Intellectual Property Matter 192,99,7,3,Regulatory Review,Closed,2024-12-06,2025-10-18,107,London,Client 099,Real Estate,Martin A. Wellington (demo roster 107)
+193,M-2021-00193,Litigation Matter 193,14,4,2,Employment Counsel,Closed,2023-08-26,2024-04-16,85,Los Angeles,Client 014,Healthcare,Dan Clivner (demo roster 085)
+194,M-2022-00194,Corporate Matter 194,84,6,1,Real Estate Deal,Closed,2023-10-07,2024-07-23,74,Miami,Client 084,Healthcare,Constance Choy (demo roster 074)
+195,M-2023-00195,Labor & Employment Matter 195,92,4,7,Employment Counsel,Open,2023-07-10,,94,Los Angeles,Client 092,Financial Services,Teresa Wilton Harmon (demo roster 094)
+196,M-2024-00196,Tax Matter 196,22,7,5,IP Portfolio,Closed,2023-09-10,2023-12-21,40,London,Client 022,Real Estate,Brian J. Fahrney (demo roster 040)
+197,M-2025-00197,Intellectual Property Matter 197,98,6,3,Commercial Litigation,Open,2024-02-03,,21,Miami,Client 098,Real Estate,Michael A. Gordon
+198,M-2020-00198,Tax Matter 198,2,4,5,Commercial Litigation,Closed,2024-01-04,2024-04-25,28,Los Angeles,Client 002,Technology,Heidi L. Levine
+199,M-2021-00199,Labor & Employment Matter 199,48,4,7,Commercial Litigation,Open,2024-07-24,,64,Los Angeles,Client 048,Technology,Heidi L. Levine (demo roster 064)
+200,M-2022-00200,Litigation Matter 200,7,3,2,Regulatory Review,Open,2024-07-21,,85,Washington DC,Client 007,Real Estate,Dan Clivner (demo roster 085)
+201,M-2023-00201,Corporate Matter 201,99,3,1,Real Estate Deal,Open,2024-02-28,,20,Washington DC,Client 099,Real Estate,David A. Gordon
+202,M-2024-00202,Intellectual Property Matter 202,147,6,3,Tax Advisory,Open,2024-01-25,,40,Miami,Client 147,Retail,Brian J. Fahrney (demo roster 040)
+203,M-2025-00203,Private Equity Matter 203,69,2,8,Employment Counsel,Open,2023-03-06,,40,New York,Client 069,Real Estate,Brian J. Fahrney (demo roster 040)
+204,M-2020-00204,Private Equity Matter 204,77,7,8,Fund Formation,Open,2023-03-20,,35,London,Client 077,Healthcare,Martin A. Wellington
+205,M-2021-00205,Real Estate Matter 205,153,4,4,Employment Counsel,Open,2023-04-20,,6,Los Angeles,Client 153,Real Estate,Kristin Graham Koehler
+206,M-2022-00206,Labor & Employment Matter 206,86,7,7,Employment Counsel,Open,2025-06-01,,45,London,Client 086,Manufacturing,Thomas M. Thesing (demo roster 045)
+207,M-2023-00207,Intellectual Property Matter 207,167,3,3,Real Estate Deal,Open,2023-11-25,,100,Washington DC,Client 167,Technology,Heidi L. Levine (demo roster 100)
+208,M-2024-00208,Regulatory Matter 208,123,2,6,Fund Formation,On Hold,2024-02-12,2024-09-08,107,New York,Client 123,Financial Services,Martin A. Wellington (demo roster 107)
+209,M-2025-00209,Real Estate Matter 209,148,3,4,Employment Counsel,Open,2024-01-21,,117,Washington DC,Client 148,Private Equity,Thomas M. Thesing (demo roster 117)
+210,M-2020-00210,Litigation Matter 210,94,5,2,IP Portfolio,Open,2023-07-24,,77,Dallas,Client 094,Energy,Sharon R. Flanagan (demo roster 077)
+211,M-2021-00211,Corporate Matter 211,175,6,1,Tax Advisory,Closed,2024-04-17,2024-10-01,73,Miami,Client 175,Private Equity,Yvette Ostolaza (demo roster 073)
+212,M-2022-00212,Litigation Matter 212,178,7,2,Fund Formation,Closed,2025-05-18,2026-02-11,94,London,Client 178,Manufacturing,Teresa Wilton Harmon (demo roster 094)
+213,M-2023-00213,Tax Matter 213,36,2,5,Employment Counsel,Open,2023-09-16,,100,New York,Client 036,Private Equity,Heidi L. Levine (demo roster 100)
+214,M-2024-00214,Litigation Matter 214,97,4,2,Employment Counsel,Open,2024-09-04,,60,Los Angeles,Client 097,Energy,Jonathan J. Kelly (demo roster 060)
+215,M-2025-00215,Corporate Matter 215,140,7,1,Commercial Litigation,Closed,2024-01-04,2025-04-23,77,London,Client 140,Financial Services,Sharon R. Flanagan (demo roster 077)
+216,M-2020-00216,Real Estate Matter 216,28,6,4,M&A,Open,2024-11-11,,90,Miami,Client 028,Real Estate,Elizabeth Shea Fries (demo roster 090)
+217,M-2021-00217,Labor & Employment Matter 217,145,7,7,M&A,On Hold,2023-12-06,2024-09-11,21,London,Client 145,Financial Services,Michael A. Gordon
+218,M-2022-00218,Tax Matter 218,26,2,5,Real Estate Deal,Closed,2024-06-06,2025-05-17,82,New York,Client 026,Retail,Chris E. Abbinante (demo roster 082)
+219,M-2023-00219,Regulatory Matter 219,115,4,6,IP Portfolio,Closed,2024-04-19,2025-04-15,100,Los Angeles,Client 115,Retail,Heidi L. Levine (demo roster 100)
+220,M-2024-00220,Corporate Matter 220,89,4,1,Commercial Litigation,Open,2023-04-18,,20,Los Angeles,Client 089,Manufacturing,David A. Gordon
+221,M-2025-00221,Regulatory Matter 221,37,3,6,Fund Formation,Open,2023-12-18,,32,Washington DC,Client 037,Healthcare,Byron F. Taylor
+222,M-2020-00222,Private Equity Matter 222,90,1,8,Commercial Litigation,Closed,2024-03-24,2025-01-09,45,Chicago,Client 090,Technology,Thomas M. Thesing (demo roster 045)
+223,M-2021-00223,Corporate Matter 223,77,7,1,Commercial Litigation,Open,2024-12-28,,45,London,Client 077,Healthcare,Thomas M. Thesing (demo roster 045)
+224,M-2022-00224,Intellectual Property Matter 224,174,6,3,IP Portfolio,Open,2023-09-07,,77,Miami,Client 174,Manufacturing,Sharon R. Flanagan (demo roster 077)
+225,M-2023-00225,Labor & Employment Matter 225,85,4,7,IP Portfolio,Closed,2023-08-26,2024-09-11,29,Los Angeles,Client 085,Energy,Leonard Ng
+226,M-2024-00226,Labor & Employment Matter 226,164,4,7,Fund Formation,Closed,2023-01-30,2024-06-25,32,Los Angeles,Client 164,Healthcare,Byron F. Taylor
+227,M-2025-00227,Labor & Employment Matter 227,152,4,7,Commercial Litigation,Closed,2023-01-05,2023-06-19,40,Los Angeles,Client 152,Private Equity,Brian J. Fahrney (demo roster 040)
+228,M-2020-00228,Litigation Matter 228,148,7,2,Regulatory Review,Open,2025-06-11,,46,London,Client 148,Private Equity,Chris E. Abbinante (demo roster 046)
+229,M-2021-00229,Private Equity Matter 229,51,1,8,Regulatory Review,Open,2023-09-26,,74,Chicago,Client 051,Technology,Constance Choy (demo roster 074)
+230,M-2022-00230,Labor & Employment Matter 230,153,5,7,Regulatory Review,Open,2024-02-06,,46,Dallas,Client 153,Real Estate,Chris E. Abbinante (demo roster 046)
+231,M-2023-00231,Intellectual Property Matter 231,118,7,3,Commercial Litigation,Closed,2024-11-20,2025-06-20,85,London,Client 118,Real Estate,Dan Clivner (demo roster 085)
+232,M-2024-00232,Intellectual Property Matter 232,173,3,3,IP Portfolio,Open,2023-05-01,,21,Washington DC,Client 173,Manufacturing,Michael A. Gordon
+233,M-2025-00233,Intellectual Property Matter 233,96,5,3,Employment Counsel,Open,2024-02-02,,28,Dallas,Client 096,Manufacturing,Heidi L. Levine
+234,M-2020-00234,Intellectual Property Matter 234,109,4,3,IP Portfolio,Open,2024-10-12,,90,Los Angeles,Client 109,Retail,Elizabeth Shea Fries (demo roster 090)
+235,M-2021-00235,Intellectual Property Matter 235,143,4,3,Fund Formation,Open,2023-10-23,,45,Los Angeles,Client 143,Technology,Thomas M. Thesing (demo roster 045)
+236,M-2022-00236,Corporate Matter 236,159,7,1,Real Estate Deal,On Hold,2024-01-03,2024-11-06,28,London,Client 159,Manufacturing,Heidi L. Levine
+237,M-2023-00237,Private Equity Matter 237,99,4,8,Fund Formation,Open,2024-12-02,,100,Los Angeles,Client 099,Real Estate,Heidi L. Levine (demo roster 100)
+238,M-2024-00238,Intellectual Property Matter 238,126,1,3,Real Estate Deal,Open,2024-08-01,,109,Chicago,Client 126,Manufacturing,Yvette Ostolaza (demo roster 109)
+239,M-2025-00239,Corporate Matter 239,75,3,1,Fund Formation,Open,2023-08-19,,29,Washington DC,Client 075,Financial Services,Leonard Ng
+240,M-2020-00240,Private Equity Matter 240,145,5,8,Tax Advisory,Open,2024-06-07,,21,Dallas,Client 145,Financial Services,Michael A. Gordon
+241,M-2021-00241,Regulatory Matter 241,140,5,6,Fund Formation,Closed,2025-04-22,2026-07-15,107,Dallas,Client 140,Financial Services,Martin A. Wellington (demo roster 107)
+242,M-2022-00242,Real Estate Matter 242,140,4,4,Real Estate Deal,Closed,2023-04-15,2024-05-13,109,Los Angeles,Client 140,Financial Services,Yvette Ostolaza (demo roster 109)
+243,M-2023-00243,Corporate Matter 243,77,4,1,Fund Formation,Open,2023-09-27,,20,Los Angeles,Client 077,Healthcare,David A. Gordon
+244,M-2024-00244,Real Estate Matter 244,31,2,4,Employment Counsel,Closed,2025-04-10,2026-05-27,46,New York,Client 031,Technology,Chris E. Abbinante (demo roster 046)
+245,M-2025-00245,Intellectual Property Matter 245,43,7,3,Regulatory Review,Closed,2023-07-31,2024-11-14,10,London,Client 043,Technology,Chris E. Abbinante
+246,M-2020-00246,Tax Matter 246,137,5,5,Tax Advisory,Open,2024-07-05,,100,Dallas,Client 137,Technology,Heidi L. Levine (demo roster 100)
+247,M-2021-00247,Tax Matter 247,75,7,5,IP Portfolio,On Hold,2024-06-10,2025-07-22,21,London,Client 075,Financial Services,Michael A. Gordon
+248,M-2022-00248,Corporate Matter 248,106,3,1,IP Portfolio,Open,2025-06-06,,100,Washington DC,Client 106,Real Estate,Heidi L. Levine (demo roster 100)
+249,M-2023-00249,Intellectual Property Matter 249,64,6,3,Employment Counsel,Closed,2023-11-26,2025-02-17,94,Miami,Client 064,Manufacturing,Teresa Wilton Harmon (demo roster 094)
+250,M-2024-00250,Intellectual Property Matter 250,126,5,3,Employment Counsel,Open,2024-10-09,,64,Dallas,Client 126,Manufacturing,Heidi L. Levine (demo roster 064)
+251,M-2025-00251,Litigation Matter 251,116,6,2,Tax Advisory,Closed,2025-03-24,2025-07-09,60,Miami,Client 116,Private Equity,Jonathan J. Kelly (demo roster 060)
+252,M-2020-00252,Regulatory Matter 252,178,4,6,Commercial Litigation,Open,2024-05-14,,6,Los Angeles,Client 178,Manufacturing,Kristin Graham Koehler
+253,M-2021-00253,Regulatory Matter 253,118,7,6,Employment Counsel,Closed,2023-03-06,2023-11-24,32,London,Client 118,Real Estate,Byron F. Taylor
+254,M-2022-00254,Private Equity Matter 254,55,3,8,IP Portfolio,Closed,2023-11-27,2024-07-16,77,Washington DC,Client 055,Healthcare,Sharon R. Flanagan (demo roster 077)
+255,M-2023-00255,Private Equity Matter 255,145,7,8,M&A,Closed,2023-12-18,2025-03-12,10,London,Client 145,Financial Services,Chris E. Abbinante
+256,M-2024-00256,Private Equity Matter 256,26,1,8,Fund Formation,Closed,2023-05-08,2023-09-25,73,Chicago,Client 026,Retail,Yvette Ostolaza (demo roster 073)
+257,M-2025-00257,Labor & Employment Matter 257,1,2,7,Tax Advisory,Closed,2024-12-06,2026-05-01,90,New York,Client 001,Technology,Elizabeth Shea Fries (demo roster 090)
+258,M-2020-00258,Tax Matter 258,41,1,5,Regulatory Review,Open,2024-11-01,,20,Chicago,Client 041,Manufacturing,David A. Gordon
+259,M-2021-00259,Intellectual Property Matter 259,171,1,3,Real Estate Deal,Open,2024-02-10,,107,Chicago,Client 171,Real Estate,Martin A. Wellington (demo roster 107)
+260,M-2022-00260,Litigation Matter 260,110,6,2,Commercial Litigation,Open,2023-04-08,,74,Miami,Client 110,Financial Services,Constance Choy (demo roster 074)
+261,M-2023-00261,Real Estate Matter 261,34,5,4,Regulatory Review,Open,2024-11-27,,6,Dallas,Client 034,Energy,Kristin Graham Koehler
+262,M-2024-00262,Labor & Employment Matter 262,31,6,7,Employment Counsel,Open,2023-05-16,,35,Miami,Client 031,Technology,Martin A. Wellington
+263,M-2025-00263,Litigation Matter 263,23,1,2,IP Portfolio,Open,2023-11-17,,44,Chicago,Client 023,Energy,Perry J. Shwachman (demo roster 044)
+264,M-2020-00264,Intellectual Property Matter 264,98,6,3,M&A,Open,2024-11-24,,75,Miami,Client 098,Real Estate,Nancy Chung (demo roster 075)
+265,M-2021-00265,Intellectual Property Matter 265,157,4,3,IP Portfolio,Closed,2023-12-26,2025-01-10,107,Los Angeles,Client 157,Energy,Martin A. Wellington (demo roster 107)
+266,M-2022-00266,Private Equity Matter 266,106,7,8,IP Portfolio,Open,2023-08-11,,21,London,Client 106,Real Estate,Michael A. Gordon
+267,M-2023-00267,Labor & Employment Matter 267,32,3,7,Real Estate Deal,Open,2024-03-15,,28,Washington DC,Client 032,Manufacturing,Heidi L. Levine
+268,M-2024-00268,Litigation Matter 268,71,2,2,Tax Advisory,Open,2024-07-20,,107,New York,Client 071,Technology,Martin A. Wellington (demo roster 107)
+269,M-2025-00269,Corporate Matter 269,177,7,1,Real Estate Deal,Open,2025-05-17,,44,London,Client 177,Manufacturing,Perry J. Shwachman (demo roster 044)
+270,M-2020-00270,Real Estate Matter 270,133,6,4,Real Estate Deal,Open,2024-02-06,,10,Miami,Client 133,Retail,Chris E. Abbinante
+271,M-2021-00271,Labor & Employment Matter 271,127,1,7,Commercial Litigation,Open,2023-09-04,,85,Chicago,Client 127,Retail,Dan Clivner (demo roster 085)
+272,M-2022-00272,Corporate Matter 272,136,3,1,Employment Counsel,Open,2023-11-21,,82,Washington DC,Client 136,Financial Services,Chris E. Abbinante (demo roster 082)
+273,M-2023-00273,Intellectual Property Matter 273,94,7,3,M&A,On Hold,2024-04-27,2025-07-25,20,London,Client 094,Energy,David A. Gordon
+274,M-2024-00274,Litigation Matter 274,151,1,2,Employment Counsel,Open,2023-09-26,,10,Chicago,Client 151,Retail,Chris E. Abbinante
+275,M-2025-00275,Tax Matter 275,130,6,5,Employment Counsel,Open,2024-12-30,,64,Miami,Client 130,Technology,Heidi L. Levine (demo roster 064)
+276,M-2020-00276,Labor & Employment Matter 276,180,1,7,IP Portfolio,Open,2024-10-17,,85,Chicago,Client 180,Real Estate,Dan Clivner (demo roster 085)
+277,M-2021-00277,Litigation Matter 277,72,3,2,IP Portfolio,Open,2023-03-22,,32,Washington DC,Client 072,Technology,Byron F. Taylor
+278,M-2022-00278,Regulatory Matter 278,138,4,6,Commercial Litigation,Open,2024-08-23,,90,Los Angeles,Client 138,Energy,Elizabeth Shea Fries (demo roster 090)
+279,M-2023-00279,Labor & Employment Matter 279,80,6,7,Commercial Litigation,Open,2025-05-16,,35,Miami,Client 080,Healthcare,Martin A. Wellington
+280,M-2024-00280,Litigation Matter 280,112,4,2,IP Portfolio,Open,2024-09-18,,44,Los Angeles,Client 112,Private Equity,Perry J. Shwachman (demo roster 044)
+281,M-2025-00281,Corporate Matter 281,31,6,1,Regulatory Review,Closed,2023-05-21,2023-10-11,74,Miami,Client 031,Technology,Constance Choy (demo roster 074)
+282,M-2020-00282,Tax Matter 282,134,2,5,Tax Advisory,Open,2024-01-16,,109,New York,Client 134,Financial Services,Yvette Ostolaza (demo roster 109)
+283,M-2021-00283,Corporate Matter 283,31,3,1,Commercial Litigation,Open,2025-04-06,,75,Washington DC,Client 031,Technology,Nancy Chung (demo roster 075)
+284,M-2022-00284,Litigation Matter 284,68,4,2,Fund Formation,Open,2024-04-11,,10,Los Angeles,Client 068,Technology,Chris E. Abbinante
+285,M-2023-00285,Intellectual Property Matter 285,146,3,3,Commercial Litigation,Open,2023-06-11,,21,Washington DC,Client 146,Energy,Michael A. Gordon
+286,M-2024-00286,Corporate Matter 286,59,1,1,Fund Formation,Closed,2025-05-29,2025-11-30,10,Chicago,Client 059,Healthcare,Chris E. Abbinante
+287,M-2025-00287,Labor & Employment Matter 287,94,2,7,Employment Counsel,Closed,2023-07-03,2024-11-13,10,New York,Client 094,Energy,Chris E. Abbinante
+288,M-2020-00288,Regulatory Matter 288,58,2,6,Commercial Litigation,Closed,2024-03-02,2024-10-11,40,New York,Client 058,Financial Services,Brian J. Fahrney (demo roster 040)
+289,M-2021-00289,Regulatory Matter 289,147,1,6,IP Portfolio,Open,2024-05-29,,10,Chicago,Client 147,Retail,Chris E. Abbinante
+290,M-2022-00290,Corporate Matter 290,58,4,1,Tax Advisory,Closed,2023-03-12,2024-07-27,44,Los Angeles,Client 058,Financial Services,Perry J. Shwachman (demo roster 044)
+291,M-2023-00291,Litigation Matter 291,84,5,2,Tax Advisory,Open,2024-04-12,,32,Dallas,Client 084,Healthcare,Byron F. Taylor
+292,M-2024-00292,Tax Matter 292,145,6,5,Fund Formation,Open,2024-09-29,,46,Miami,Client 145,Financial Services,Chris E. Abbinante (demo roster 046)
+293,M-2025-00293,Real Estate Matter 293,51,2,4,Regulatory Review,Closed,2023-01-07,2023-03-20,35,New York,Client 051,Technology,Martin A. Wellington
+294,M-2020-00294,Corporate Matter 294,163,3,1,Tax Advisory,Closed,2023-01-02,2023-09-11,107,Washington DC,Client 163,Real Estate,Martin A. Wellington (demo roster 107)
+295,M-2021-00295,Real Estate Matter 295,27,5,4,IP Portfolio,Open,2023-09-01,,10,Dallas,Client 027,Financial Services,Chris E. Abbinante
+296,M-2022-00296,Litigation Matter 296,72,1,2,Employment Counsel,Open,2025-08-01,,75,Chicago,Client 072,Technology,Nancy Chung (demo roster 075)
+297,M-2023-00297,Regulatory Matter 297,180,4,6,IP Portfolio,Open,2025-02-04,,21,Los Angeles,Client 180,Real Estate,Michael A. Gordon
+298,M-2024-00298,Labor & Employment Matter 298,164,1,7,IP Portfolio,Open,2024-08-29,,64,Chicago,Client 164,Healthcare,Heidi L. Levine (demo roster 064)
+299,M-2025-00299,Tax Matter 299,61,3,5,Employment Counsel,Open,2025-05-21,,117,Washington DC,Client 061,Technology,Thomas M. Thesing (demo roster 117)
+300,M-2020-00300,Regulatory Matter 300,180,3,6,Real Estate Deal,Open,2024-04-08,,20,Washington DC,Client 180,Real Estate,David A. Gordon
+301,M-2021-00301,Litigation Matter 301,35,2,2,Regulatory Review,Open,2023-04-19,,73,New York,Client 035,Financial Services,Yvette Ostolaza (demo roster 073)
+302,M-2022-00302,Litigation Matter 302,105,5,2,Tax Advisory,On Hold,2024-01-02,2024-06-16,73,Dallas,Client 105,Energy,Yvette Ostolaza (demo roster 073)
+303,M-2023-00303,Tax Matter 303,119,7,5,Tax Advisory,Open,2023-05-03,,117,London,Client 119,Energy,Thomas M. Thesing (demo roster 117)
+304,M-2024-00304,Corporate Matter 304,179,2,1,Real Estate Deal,Closed,2025-05-05,2025-09-17,20,New York,Client 179,Real Estate,David A. Gordon
+305,M-2025-00305,Labor & Employment Matter 305,92,5,7,IP Portfolio,Open,2023-02-20,,40,Dallas,Client 092,Financial Services,Brian J. Fahrney (demo roster 040)
+306,M-2020-00306,Labor & Employment Matter 306,8,7,7,Real Estate Deal,Open,2024-04-08,,77,London,Client 008,Technology,Sharon R. Flanagan (demo roster 077)
+307,M-2021-00307,Private Equity Matter 307,25,1,8,M&A,Closed,2025-04-03,2025-08-03,6,Chicago,Client 025,Healthcare,Kristin Graham Koehler
+308,M-2022-00308,Intellectual Property Matter 308,57,2,3,Commercial Litigation,Open,2025-04-23,,94,New York,Client 057,Private Equity,Teresa Wilton Harmon (demo roster 094)
+309,M-2023-00309,Tax Matter 309,150,7,5,Real Estate Deal,Open,2023-03-18,,20,London,Client 150,Private Equity,David A. Gordon
+310,M-2024-00310,Private Equity Matter 310,166,7,8,Regulatory Review,Open,2023-05-12,,117,London,Client 166,Healthcare,Thomas M. Thesing (demo roster 117)
+311,M-2025-00311,Corporate Matter 311,32,4,1,Employment Counsel,Open,2023-02-21,,82,Los Angeles,Client 032,Manufacturing,Chris E. Abbinante (demo roster 082)
+312,M-2020-00312,Private Equity Matter 312,102,1,8,Real Estate Deal,Closed,2024-01-27,2024-06-23,46,Chicago,Client 102,Manufacturing,Chris E. Abbinante (demo roster 046)
+313,M-2021-00313,Tax Matter 313,48,3,5,Real Estate Deal,Closed,2024-04-01,2024-06-17,85,Washington DC,Client 048,Technology,Dan Clivner (demo roster 085)
+314,M-2022-00314,Tax Matter 314,166,4,5,Commercial Litigation,Closed,2024-02-26,2024-12-27,10,Los Angeles,Client 166,Healthcare,Chris E. Abbinante
+315,M-2023-00315,Labor & Employment Matter 315,72,2,7,Real Estate Deal,Open,2024-03-05,,117,New York,Client 072,Technology,Thomas M. Thesing (demo roster 117)
+316,M-2024-00316,Corporate Matter 316,162,4,1,Fund Formation,Closed,2025-03-11,2026-01-10,77,Los Angeles,Client 162,Energy,Sharon R. Flanagan (demo roster 077)
+317,M-2025-00317,Regulatory Matter 317,89,4,6,Real Estate Deal,Open,2023-10-04,,45,Los Angeles,Client 089,Manufacturing,Thomas M. Thesing (demo roster 045)
+318,M-2020-00318,Tax Matter 318,8,1,5,Real Estate Deal,On Hold,2025-04-08,2026-03-05,46,Chicago,Client 008,Technology,Chris E. Abbinante (demo roster 046)
+319,M-2021-00319,Litigation Matter 319,41,2,2,M&A,Open,2024-11-03,,77,New York,Client 041,Manufacturing,Sharon R. Flanagan (demo roster 077)
+320,M-2022-00320,Labor & Employment Matter 320,57,3,7,Real Estate Deal,On Hold,2025-05-09,2025-10-04,29,Washington DC,Client 057,Private Equity,Leonard Ng
+321,M-2023-00321,Regulatory Matter 321,152,7,6,M&A,Closed,2025-01-25,2026-07-06,82,London,Client 152,Private Equity,Chris E. Abbinante (demo roster 082)
+322,M-2024-00322,Regulatory Matter 322,180,5,6,Fund Formation,Open,2024-07-31,,32,Dallas,Client 180,Real Estate,Byron F. Taylor
+323,M-2025-00323,Tax Matter 323,139,2,5,Real Estate Deal,Open,2024-05-17,,10,New York,Client 139,Technology,Chris E. Abbinante
+324,M-2020-00324,Real Estate Matter 324,155,1,4,Real Estate Deal,Open,2024-06-23,,45,Chicago,Client 155,Private Equity,Thomas M. Thesing (demo roster 045)
+325,M-2021-00325,Regulatory Matter 325,34,6,6,M&A,Closed,2023-07-01,2024-11-04,45,Miami,Client 034,Energy,Thomas M. Thesing (demo roster 045)
+326,M-2022-00326,Intellectual Property Matter 326,6,5,3,Regulatory Review,Closed,2024-12-22,2026-03-23,21,Dallas,Client 006,Financial Services,Michael A. Gordon
+327,M-2023-00327,Regulatory Matter 327,19,6,6,Regulatory Review,Open,2024-11-09,,21,Miami,Client 019,Technology,Michael A. Gordon
+328,M-2024-00328,Regulatory Matter 328,78,2,6,Fund Formation,Closed,2023-06-11,2024-03-20,117,New York,Client 078,Financial Services,Thomas M. Thesing (demo roster 117)
+329,M-2025-00329,Regulatory Matter 329,167,2,6,Regulatory Review,On Hold,2024-12-25,2026-02-13,85,New York,Client 167,Technology,Dan Clivner (demo roster 085)
+330,M-2020-00330,Intellectual Property Matter 330,58,4,3,IP Portfolio,Closed,2023-11-11,2024-06-08,28,Los Angeles,Client 058,Financial Services,Heidi L. Levine
+331,M-2021-00331,Labor & Employment Matter 331,1,7,7,Regulatory Review,On Hold,2025-02-28,2025-05-15,29,London,Client 001,Technology,Leonard Ng
+332,M-2022-00332,Real Estate Matter 332,157,6,4,IP Portfolio,Open,2024-08-02,,74,Miami,Client 157,Energy,Constance Choy (demo roster 074)
+333,M-2023-00333,Litigation Matter 333,85,2,2,Commercial Litigation,On Hold,2023-12-22,2024-05-15,90,New York,Client 085,Energy,Elizabeth Shea Fries (demo roster 090)
+334,M-2024-00334,Regulatory Matter 334,172,4,6,Commercial Litigation,Open,2023-01-12,,35,Los Angeles,Client 172,Financial Services,Martin A. Wellington
+335,M-2025-00335,Tax Matter 335,90,7,5,Fund Formation,Closed,2023-04-21,2023-07-14,60,London,Client 090,Technology,Jonathan J. Kelly (demo roster 060)
+336,M-2020-00336,Intellectual Property Matter 336,108,4,3,Employment Counsel,Closed,2024-05-19,2025-01-13,77,Los Angeles,Client 108,Private Equity,Sharon R. Flanagan (demo roster 077)
+337,M-2021-00337,Private Equity Matter 337,26,7,8,Real Estate Deal,Open,2025-06-03,,109,London,Client 026,Retail,Yvette Ostolaza (demo roster 109)
+338,M-2022-00338,Private Equity Matter 338,42,1,8,Regulatory Review,Closed,2025-03-29,2025-10-25,6,Chicago,Client 042,Manufacturing,Kristin Graham Koehler
+339,M-2023-00339,Litigation Matter 339,67,1,2,IP Portfolio,Open,2023-12-17,,60,Chicago,Client 067,Manufacturing,Jonathan J. Kelly (demo roster 060)
+340,M-2024-00340,Litigation Matter 340,20,3,2,M&A,On Hold,2024-08-31,2026-01-30,74,Washington DC,Client 020,Energy,Constance Choy (demo roster 074)
+341,M-2025-00341,Intellectual Property Matter 341,111,5,3,Commercial Litigation,Open,2025-06-30,,10,Dallas,Client 111,Retail,Chris E. Abbinante
+342,M-2020-00342,Real Estate Matter 342,85,2,4,Tax Advisory,Closed,2024-02-24,2025-04-28,107,New York,Client 085,Energy,Martin A. Wellington (demo roster 107)
+343,M-2021-00343,Tax Matter 343,170,3,5,Fund Formation,Open,2023-09-01,,60,Washington DC,Client 170,Manufacturing,Jonathan J. Kelly (demo roster 060)
+344,M-2022-00344,Corporate Matter 344,40,3,1,Fund Formation,Open,2023-01-04,,44,Washington DC,Client 040,Energy,Perry J. Shwachman (demo roster 044)
+345,M-2023-00345,Litigation Matter 345,52,1,2,Commercial Litigation,Open,2023-07-31,,44,Chicago,Client 052,Financial Services,Perry J. Shwachman (demo roster 044)
+346,M-2024-00346,Litigation Matter 346,122,3,2,Tax Advisory,Open,2025-03-14,,74,Washington DC,Client 122,Manufacturing,Constance Choy (demo roster 074)
+347,M-2025-00347,Labor & Employment Matter 347,24,2,7,Fund Formation,Closed,2024-01-15,2024-09-20,29,New York,Client 024,Technology,Leonard Ng
+348,M-2020-00348,Tax Matter 348,12,4,5,M&A,Open,2024-04-21,,40,Los Angeles,Client 012,Manufacturing,Brian J. Fahrney (demo roster 040)
+349,M-2021-00349,Litigation Matter 349,39,1,2,Employment Counsel,Open,2024-11-15,,77,Chicago,Client 039,Manufacturing,Sharon R. Flanagan (demo roster 077)
+350,M-2022-00350,Real Estate Matter 350,151,5,4,Employment Counsel,Closed,2023-03-04,2024-06-25,75,Dallas,Client 151,Retail,Nancy Chung (demo roster 075)
+351,M-2023-00351,Private Equity Matter 351,138,5,8,Commercial Litigation,Open,2025-06-21,,44,Dallas,Client 138,Energy,Perry J. Shwachman (demo roster 044)
+352,M-2024-00352,Corporate Matter 352,102,5,1,IP Portfolio,Closed,2024-08-07,2025-11-19,82,Dallas,Client 102,Manufacturing,Chris E. Abbinante (demo roster 082)
+353,M-2025-00353,Private Equity Matter 353,31,2,8,IP Portfolio,On Hold,2023-06-21,2024-10-06,32,New York,Client 031,Technology,Byron F. Taylor
+354,M-2020-00354,Labor & Employment Matter 354,11,1,7,IP Portfolio,Open,2024-11-30,,90,Chicago,Client 011,Energy,Elizabeth Shea Fries (demo roster 090)
+355,M-2021-00355,Tax Matter 355,153,3,5,Commercial Litigation,Closed,2025-07-21,2026-11-06,20,Washington DC,Client 153,Real Estate,David A. Gordon
+356,M-2022-00356,Labor & Employment Matter 356,100,5,7,M&A,Closed,2023-11-30,2024-10-21,73,Dallas,Client 100,Retail,Yvette Ostolaza (demo roster 073)
+357,M-2023-00357,Labor & Employment Matter 357,180,1,7,Commercial Litigation,Open,2024-02-29,,82,Chicago,Client 180,Real Estate,Chris E. Abbinante (demo roster 082)
+358,M-2024-00358,Litigation Matter 358,28,7,2,Employment Counsel,Closed,2023-10-20,2025-03-13,46,London,Client 028,Real Estate,Chris E. Abbinante (demo roster 046)
+359,M-2025-00359,Labor & Employment Matter 359,68,6,7,M&A,Open,2024-05-12,,74,Miami,Client 068,Technology,Constance Choy (demo roster 074)
+360,M-2020-00360,Tax Matter 360,45,4,5,Employment Counsel,Open,2023-05-28,,94,Los Angeles,Client 045,Private Equity,Teresa Wilton Harmon (demo roster 094)
+361,M-2021-00361,Labor & Employment Matter 361,10,3,7,Fund Formation,Open,2024-12-08,,107,Washington DC,Client 010,Retail,Martin A. Wellington (demo roster 107)
+362,M-2022-00362,Regulatory Matter 362,69,1,6,Tax Advisory,Closed,2023-12-12,2024-07-14,44,Chicago,Client 069,Real Estate,Perry J. Shwachman (demo roster 044)
+363,M-2023-00363,Litigation Matter 363,126,7,2,Fund Formation,Open,2023-08-22,,107,London,Client 126,Manufacturing,Martin A. Wellington (demo roster 107)
+364,M-2024-00364,Tax Matter 364,83,6,5,Real Estate Deal,Open,2024-03-02,,20,Miami,Client 083,Healthcare,David A. Gordon
+365,M-2025-00365,Real Estate Matter 365,114,7,4,Regulatory Review,Closed,2024-02-21,2025-05-14,75,London,Client 114,Energy,Nancy Chung (demo roster 075)
+366,M-2020-00366,Intellectual Property Matter 366,15,1,3,M&A,Closed,2023-11-15,2024-08-07,28,Chicago,Client 015,Technology,Heidi L. Levine
+367,M-2021-00367,Real Estate Matter 367,45,7,4,Fund Formation,Closed,2023-07-25,2024-01-28,10,London,Client 045,Private Equity,Chris E. Abbinante
+368,M-2022-00368,Regulatory Matter 368,13,6,6,Employment Counsel,Open,2023-07-23,,73,Miami,Client 013,Technology,Yvette Ostolaza (demo roster 073)
+369,M-2023-00369,Litigation Matter 369,163,6,2,Fund Formation,Open,2023-02-01,,74,Miami,Client 163,Real Estate,Constance Choy (demo roster 074)
+370,M-2024-00370,Private Equity Matter 370,46,5,8,Tax Advisory,Open,2024-07-18,,29,Dallas,Client 046,Technology,Leonard Ng
+371,M-2025-00371,Litigation Matter 371,177,3,2,Real Estate Deal,Open,2023-01-29,,29,Washington DC,Client 177,Manufacturing,Leonard Ng
+372,M-2020-00372,Real Estate Matter 372,57,6,4,M&A,Open,2023-07-31,,64,Miami,Client 057,Private Equity,Heidi L. Levine (demo roster 064)
+373,M-2021-00373,Corporate Matter 373,175,4,1,M&A,Open,2025-07-22,,29,Los Angeles,Client 175,Private Equity,Leonard Ng
+374,M-2022-00374,Tax Matter 374,58,5,5,Tax Advisory,Closed,2025-04-04,2026-06-02,100,Dallas,Client 058,Financial Services,Heidi L. Levine (demo roster 100)
+375,M-2023-00375,Labor & Employment Matter 375,109,7,7,Fund Formation,Open,2023-12-24,,32,London,Client 109,Retail,Byron F. Taylor
+376,M-2024-00376,Labor & Employment Matter 376,78,5,7,Regulatory Review,Open,2023-04-15,,94,Dallas,Client 078,Financial Services,Teresa Wilton Harmon (demo roster 094)
+377,M-2025-00377,Tax Matter 377,144,3,5,Regulatory Review,Open,2024-12-01,,20,Washington DC,Client 144,Retail,David A. Gordon
+378,M-2020-00378,Regulatory Matter 378,71,7,6,Tax Advisory,Open,2023-10-11,,100,London,Client 071,Technology,Heidi L. Levine (demo roster 100)
+379,M-2021-00379,Intellectual Property Matter 379,49,5,3,Employment Counsel,Open,2025-02-22,,10,Dallas,Client 049,Technology,Chris E. Abbinante
+380,M-2022-00380,Regulatory Matter 380,170,6,6,Tax Advisory,Closed,2023-05-24,2024-06-22,74,Miami,Client 170,Manufacturing,Constance Choy (demo roster 074)
+381,M-2023-00381,Labor & Employment Matter 381,67,4,7,Real Estate Deal,Closed,2024-02-02,2025-01-25,100,Los Angeles,Client 067,Manufacturing,Heidi L. Levine (demo roster 100)
+382,M-2024-00382,Real Estate Matter 382,88,6,4,Regulatory Review,Open,2024-07-01,,74,Miami,Client 088,Private Equity,Constance Choy (demo roster 074)
+383,M-2025-00383,Tax Matter 383,130,7,5,IP Portfolio,Closed,2023-06-24,2024-11-13,77,London,Client 130,Technology,Sharon R. Flanagan (demo roster 077)
+384,M-2020-00384,Litigation Matter 384,76,4,2,IP Portfolio,Closed,2023-05-12,2024-07-16,117,Los Angeles,Client 076,Financial Services,Thomas M. Thesing (demo roster 117)
+385,M-2021-00385,Regulatory Matter 385,175,6,6,Tax Advisory,Open,2023-04-02,,35,Miami,Client 175,Private Equity,Martin A. Wellington
+386,M-2022-00386,Regulatory Matter 386,108,3,6,Commercial Litigation,Open,2023-09-24,,73,Washington DC,Client 108,Private Equity,Yvette Ostolaza (demo roster 073)
+387,M-2023-00387,Corporate Matter 387,121,7,1,Commercial Litigation,Open,2024-10-11,,85,London,Client 121,Retail,Dan Clivner (demo roster 085)
+388,M-2024-00388,Real Estate Matter 388,121,5,4,Tax Advisory,Closed,2023-05-03,2024-01-13,75,Dallas,Client 121,Retail,Nancy Chung (demo roster 075)
+389,M-2025-00389,Corporate Matter 389,106,7,1,Regulatory Review,Open,2025-05-24,,32,London,Client 106,Real Estate,Byron F. Taylor
+390,M-2020-00390,Private Equity Matter 390,105,2,8,Commercial Litigation,Closed,2023-11-20,2024-04-20,109,New York,Client 105,Energy,Yvette Ostolaza (demo roster 109)
+391,M-2021-00391,Regulatory Matter 391,125,6,6,M&A,Open,2023-07-01,,10,Miami,Client 125,Retail,Chris E. Abbinante
+392,M-2022-00392,Tax Matter 392,116,2,5,IP Portfolio,Closed,2025-02-18,2026-02-08,109,New York,Client 116,Private Equity,Yvette Ostolaza (demo roster 109)
+393,M-2023-00393,Litigation Matter 393,126,2,2,Employment Counsel,Open,2024-09-21,,64,New York,Client 126,Manufacturing,Heidi L. Levine (demo roster 064)
+394,M-2024-00394,Private Equity Matter 394,110,4,8,Regulatory Review,Open,2023-01-05,,32,Los Angeles,Client 110,Financial Services,Byron F. Taylor
+395,M-2025-00395,Regulatory Matter 395,4,7,6,M&A,Open,2025-05-03,,6,London,Client 004,Financial Services,Kristin Graham Koehler
+396,M-2020-00396,Real Estate Matter 396,161,2,4,Commercial Litigation,Closed,2024-12-11,2025-07-18,28,New York,Client 161,Real Estate,Heidi L. Levine
+397,M-2021-00397,Tax Matter 397,99,2,5,Fund Formation,Closed,2023-03-08,2023-10-06,44,New York,Client 099,Real Estate,Perry J. Shwachman (demo roster 044)
+398,M-2022-00398,Regulatory Matter 398,134,4,6,Fund Formation,Closed,2025-06-28,2025-11-03,45,Los Angeles,Client 134,Financial Services,Thomas M. Thesing (demo roster 045)
+399,M-2023-00399,Real Estate Matter 399,92,2,4,Real Estate Deal,Closed,2025-07-17,2026-04-09,6,New York,Client 092,Financial Services,Kristin Graham Koehler
+400,M-2024-00400,Intellectual Property Matter 400,58,2,3,IP Portfolio,Open,2025-01-21,,75,New York,Client 058,Financial Services,Nancy Chung (demo roster 075)
+401,M-2025-00401,Regulatory Matter 401,32,6,6,Tax Advisory,Closed,2024-10-28,2025-07-07,90,Miami,Client 032,Manufacturing,Elizabeth Shea Fries (demo roster 090)
+402,M-2020-00402,Corporate Matter 402,137,5,1,M&A,Open,2023-02-19,,90,Dallas,Client 137,Technology,Elizabeth Shea Fries (demo roster 090)
+403,M-2021-00403,Litigation Matter 403,13,4,2,Tax Advisory,Open,2024-03-30,,77,Los Angeles,Client 013,Technology,Sharon R. Flanagan (demo roster 077)
+404,M-2022-00404,Intellectual Property Matter 404,122,2,3,Employment Counsel,Closed,2024-12-12,2025-02-14,44,New York,Client 122,Manufacturing,Perry J. Shwachman (demo roster 044)
+405,M-2023-00405,Litigation Matter 405,170,6,2,IP Portfolio,Open,2024-06-16,,85,Miami,Client 170,Manufacturing,Dan Clivner (demo roster 085)
+406,M-2024-00406,Litigation Matter 406,108,5,2,Commercial Litigation,Open,2025-01-06,,44,Dallas,Client 108,Private Equity,Perry J. Shwachman (demo roster 044)
+407,M-2025-00407,Private Equity Matter 407,28,2,8,Real Estate Deal,Open,2024-09-15,,40,New York,Client 028,Real Estate,Brian J. Fahrney (demo roster 040)
+408,M-2020-00408,Labor & Employment Matter 408,92,3,7,Real Estate Deal,Open,2023-06-14,,74,Washington DC,Client 092,Financial Services,Constance Choy (demo roster 074)
+409,M-2021-00409,Private Equity Matter 409,177,3,8,Commercial Litigation,Open,2023-08-29,,94,Washington DC,Client 177,Manufacturing,Teresa Wilton Harmon (demo roster 094)
+410,M-2022-00410,Private Equity Matter 410,29,2,8,Commercial Litigation,Closed,2023-04-03,2023-07-10,107,New York,Client 029,Healthcare,Martin A. Wellington (demo roster 107)
+411,M-2023-00411,Real Estate Matter 411,66,4,4,Commercial Litigation,Open,2023-10-31,,10,Los Angeles,Client 066,Private Equity,Chris E. Abbinante
+412,M-2024-00412,Corporate Matter 412,45,7,1,Regulatory Review,Open,2023-10-25,,94,London,Client 045,Private Equity,Teresa Wilton Harmon (demo roster 094)
+413,M-2025-00413,Litigation Matter 413,110,1,2,IP Portfolio,Closed,2025-05-21,2025-08-12,6,Chicago,Client 110,Financial Services,Kristin Graham Koehler
+414,M-2020-00414,Intellectual Property Matter 414,170,3,3,Commercial Litigation,Closed,2024-01-02,2025-01-14,40,Washington DC,Client 170,Manufacturing,Brian J. Fahrney (demo roster 040)
+415,M-2021-00415,Regulatory Matter 415,96,2,6,Tax Advisory,Open,2023-04-27,,73,New York,Client 096,Manufacturing,Yvette Ostolaza (demo roster 073)
+416,M-2022-00416,Private Equity Matter 416,99,7,8,IP Portfolio,Open,2024-03-07,,117,London,Client 099,Real Estate,Thomas M. Thesing (demo roster 117)
+417,M-2023-00417,Intellectual Property Matter 417,29,6,3,Commercial Litigation,Open,2025-01-13,,29,Miami,Client 029,Healthcare,Leonard Ng
+418,M-2024-00418,Private Equity Matter 418,107,7,8,Employment Counsel,Open,2024-08-05,,29,London,Client 107,Manufacturing,Leonard Ng
+419,M-2025-00419,Corporate Matter 419,92,7,1,Fund Formation,Closed,2024-12-01,2026-02-06,28,London,Client 092,Financial Services,Heidi L. Levine
+420,M-2020-00420,Litigation Matter 420,125,4,2,Regulatory Review,Open,2024-03-27,,40,Los Angeles,Client 125,Retail,Brian J. Fahrney (demo roster 040)
+421,M-2021-00421,Real Estate Matter 421,4,6,4,Commercial Litigation,Open,2025-06-13,,75,Miami,Client 004,Financial Services,Nancy Chung (demo roster 075)
+422,M-2022-00422,Real Estate Matter 422,111,4,4,Employment Counsel,Open,2023-12-21,,90,Los Angeles,Client 111,Retail,Elizabeth Shea Fries (demo roster 090)
+423,M-2023-00423,Corporate Matter 423,39,1,1,Fund Formation,Closed,2024-10-20,2025-09-03,74,Chicago,Client 039,Manufacturing,Constance Choy (demo roster 074)
+424,M-2024-00424,Litigation Matter 424,43,7,2,Tax Advisory,Open,2024-05-18,,45,London,Client 043,Technology,Thomas M. Thesing (demo roster 045)
+425,M-2025-00425,Real Estate Matter 425,13,5,4,Commercial Litigation,Open,2024-10-20,,35,Dallas,Client 013,Technology,Martin A. Wellington
+426,M-2020-00426,Private Equity Matter 426,118,7,8,Fund Formation,Open,2024-08-09,,74,London,Client 118,Real Estate,Constance Choy (demo roster 074)
+427,M-2021-00427,Litigation Matter 427,81,4,2,Employment Counsel,Open,2025-02-02,,21,Los Angeles,Client 081,Financial Services,Michael A. Gordon
+428,M-2022-00428,Corporate Matter 428,106,5,1,Tax Advisory,Open,2024-07-16,,20,Dallas,Client 106,Real Estate,David A. Gordon
+429,M-2023-00429,Real Estate Matter 429,131,6,4,Regulatory Review,Open,2024-11-18,,45,Miami,Client 131,Financial Services,Thomas M. Thesing (demo roster 045)
+430,M-2024-00430,Real Estate Matter 430,14,7,4,Fund Formation,Open,2024-04-10,,109,London,Client 014,Healthcare,Yvette Ostolaza (demo roster 109)
+431,M-2025-00431,Regulatory Matter 431,169,6,6,Real Estate Deal,Open,2024-04-08,,109,Miami,Client 169,Technology,Yvette Ostolaza (demo roster 109)
+432,M-2020-00432,Regulatory Matter 432,1,3,6,Tax Advisory,Open,2025-04-29,,117,Washington DC,Client 001,Technology,Thomas M. Thesing (demo roster 117)
+433,M-2021-00433,Regulatory Matter 433,141,6,6,Fund Formation,Open,2023-04-19,,29,Miami,Client 141,Retail,Leonard Ng
+434,M-2022-00434,Labor & Employment Matter 434,36,1,7,Commercial Litigation,Open,2023-09-18,,32,Chicago,Client 036,Private Equity,Byron F. Taylor
+435,M-2023-00435,Real Estate Matter 435,101,4,4,Commercial Litigation,Closed,2025-04-24,2026-06-24,45,Los Angeles,Client 101,Real Estate,Thomas M. Thesing (demo roster 045)
+436,M-2024-00436,Corporate Matter 436,107,6,1,Fund Formation,Open,2025-05-07,,21,Miami,Client 107,Manufacturing,Michael A. Gordon
+437,M-2025-00437,Intellectual Property Matter 437,118,4,3,Employment Counsel,Open,2023-01-05,,10,Los Angeles,Client 118,Real Estate,Chris E. Abbinante
+438,M-2020-00438,Private Equity Matter 438,150,5,8,IP Portfolio,Closed,2025-03-10,2025-08-07,100,Dallas,Client 150,Private Equity,Heidi L. Levine (demo roster 100)
+439,M-2021-00439,Litigation Matter 439,33,4,2,Employment Counsel,Open,2024-11-04,,45,Los Angeles,Client 033,Financial Services,Thomas M. Thesing (demo roster 045)
+440,M-2022-00440,Real Estate Matter 440,108,3,4,IP Portfolio,On Hold,2024-02-12,2024-09-09,73,Washington DC,Client 108,Private Equity,Yvette Ostolaza (demo roster 073)
+441,M-2023-00441,Labor & Employment Matter 441,36,5,7,Regulatory Review,Closed,2024-12-17,2025-11-04,44,Dallas,Client 036,Private Equity,Perry J. Shwachman (demo roster 044)
+442,M-2024-00442,Real Estate Matter 442,142,2,4,Regulatory Review,Open,2023-08-03,,44,New York,Client 142,Manufacturing,Perry J. Shwachman (demo roster 044)
+443,M-2025-00443,Intellectual Property Matter 443,173,6,3,Regulatory Review,On Hold,2024-10-27,2025-03-27,75,Miami,Client 173,Manufacturing,Nancy Chung (demo roster 075)
+444,M-2020-00444,Regulatory Matter 444,30,5,6,Employment Counsel,Open,2024-05-06,,94,Dallas,Client 030,Real Estate,Teresa Wilton Harmon (demo roster 094)
+445,M-2021-00445,Tax Matter 445,173,7,5,M&A,Closed,2024-03-08,2025-01-29,21,London,Client 173,Manufacturing,Michael A. Gordon
+446,M-2022-00446,Intellectual Property Matter 446,98,1,3,IP Portfolio,Open,2024-11-17,,40,Chicago,Client 098,Real Estate,Brian J. Fahrney (demo roster 040)
+447,M-2023-00447,Tax Matter 447,74,2,5,Tax Advisory,Open,2025-05-09,,117,New York,Client 074,Real Estate,Thomas M. Thesing (demo roster 117)
+448,M-2024-00448,Corporate Matter 448,53,3,1,Real Estate Deal,Open,2025-04-13,,85,Washington DC,Client 053,Technology,Dan Clivner (demo roster 085)
+449,M-2025-00449,Labor & Employment Matter 449,166,2,7,Tax Advisory,Closed,2024-06-07,2025-09-18,100,New York,Client 166,Healthcare,Heidi L. Levine (demo roster 100)
+450,M-2020-00450,Corporate Matter 450,178,4,1,Regulatory Review,Open,2024-02-01,,117,Los Angeles,Client 178,Manufacturing,Thomas M. Thesing (demo roster 117)

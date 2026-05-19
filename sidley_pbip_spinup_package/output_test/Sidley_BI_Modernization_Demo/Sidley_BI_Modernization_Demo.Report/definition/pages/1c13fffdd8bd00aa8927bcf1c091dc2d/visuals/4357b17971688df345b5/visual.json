@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "4357b17971688df345b5",
+  "position": {
+    "x": 20,
+    "y": 110,
+    "z": 0,
+    "height": 88,
+    "width": 280,
+    "tabOrder": 20
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Open Stakeholder Requests"
+                }
+              },
+              "queryRef": "_Measures.Open Stakeholder Requests",
+              "nativeQueryRef": "Open Stakeholder Requests"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

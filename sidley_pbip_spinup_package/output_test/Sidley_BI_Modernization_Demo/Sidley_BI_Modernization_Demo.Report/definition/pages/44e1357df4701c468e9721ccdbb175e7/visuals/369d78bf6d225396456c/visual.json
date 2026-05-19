@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "369d78bf6d225396456c",
+  "position": {
+    "x": 20,
+    "y": 110,
+    "z": 0,
+    "height": 88,
+    "width": 198,
+    "tabOrder": 20
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Total Billings"
+                }
+              },
+              "queryRef": "_Measures.Total Billings",
+              "nativeQueryRef": "Total Billings"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

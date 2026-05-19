@@ -1,0 +1,9 @@
+{
+  "host": "https://adb-0000000000000000.0.azuredatabricks.net",
+  "token": "REPLACE_WITH_PERSONAL_ACCESS_TOKEN",
+  "warehouse_id": "REPLACE_WITH_WAREHOUSE_ID",
+  "http_path": "/sql/1.0/warehouses/REPLACE_WITH_WAREHOUSE_ID",
+  "catalog": "sidley_demo",
+  "schema": "gold",
+  "volume": "landing"
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "c9c86946a09b1bad4e91",
+  "position": {
+    "x": 652,
+    "y": 110,
+    "z": 0,
+    "height": 88,
+    "width": 300,
+    "tabOrder": 22
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Avg Refresh Duration Minutes"
+                }
+              },
+              "queryRef": "_Measures.Avg Refresh Duration Minutes",
+              "nativeQueryRef": "Avg Refresh Duration Minutes"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

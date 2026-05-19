@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.4.0/schema.json",
+  "name": "1c13fffdd8bd00aa8927bcf1c091dc2d",
+  "displayName": "Stakeholder Requirements / KPI Catalog",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}

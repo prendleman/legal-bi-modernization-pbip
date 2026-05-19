@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "bddd597036f4dd116686",
+  "position": {
+    "x": 296,
+    "y": 206,
+    "z": 0,
+    "height": 193,
+    "width": 972,
+    "tabOrder": 30
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "waterfallChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_matter"
+                    }
+                  },
+                  "Property": "OfficeName"
+                }
+              },
+              "queryRef": "dim_matter.OfficeName",
+              "nativeQueryRef": "OfficeName",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_matter"
+                    }
+                  },
+                  "Property": "ClientIndustry"
+                }
+              },
+              "queryRef": "dim_matter.ClientIndustry",
+              "nativeQueryRef": "ClientIndustry"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Open Matters"
+                }
+              },
+              "queryRef": "_Measures.Open Matters",
+              "nativeQueryRef": "Open Matters"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

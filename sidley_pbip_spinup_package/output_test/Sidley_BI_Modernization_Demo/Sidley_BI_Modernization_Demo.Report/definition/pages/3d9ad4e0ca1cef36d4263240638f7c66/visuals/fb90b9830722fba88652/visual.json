@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "fb90b9830722fba88652",
+  "position": {
+    "x": 16,
+    "y": 8,
+    "z": 50,
+    "height": 44,
+    "width": 956,
+    "tabOrder": 0
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "verticalAlignment": "top",
+                "horizontalTextAlignment": "left",
+                "textRuns": [
+                  {
+                    "value": "Data quality & refresh monitor",
+                    "textStyle": {
+                      "fontSize": "20pt",
+                      "color": "#005E85",
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": false
+  }
+}

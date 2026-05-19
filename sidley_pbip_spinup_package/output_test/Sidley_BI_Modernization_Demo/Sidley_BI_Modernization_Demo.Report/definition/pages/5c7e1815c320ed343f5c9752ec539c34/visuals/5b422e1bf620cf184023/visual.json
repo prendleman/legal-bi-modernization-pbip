@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "5b422e1bf620cf184023",
+  "position": {
+    "x": 788,
+    "y": 656,
+    "z": 0,
+    "height": 60,
+    "width": 480,
+    "tabOrder": 34
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "verticalAlignment": "top",
+                "horizontalTextAlignment": "left",
+                "textRuns": [
+                  {
+                    "value": "Motion in Power BI: use View \u2192 Bookmarks (data + display) and page buttons; enable page transitions under View \u2192 Page transitions. Custom visuals: insert from AppSource in Desktop, then Save PBIP and merge the exported visual.json \u2014 see docs/CUSTOM_VISUALS_AND_ANIMATION.md.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#3D5166"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": false
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "9daa2f10d8fa249e8e4f",
+  "position": {
+    "x": 16,
+    "y": 56,
+    "z": 50,
+    "height": 40,
+    "width": 956,
+    "tabOrder": 1
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "verticalAlignment": "top",
+                "horizontalTextAlignment": "left",
+                "textRuns": [
+                  {
+                    "value": "Use View as in Modeling for Chicago roles; slicer syncs with Executive & Matter pages.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#3D5166"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": false
+  }
+}

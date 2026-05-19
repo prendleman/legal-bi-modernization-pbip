@@ -1,0 +1,151 @@
+LegacyReportKey,LegacyReportName,LegacyPlatform,OwningStakeholderGroup,OwningOfficeKey,OwningPracticeKey,Complexity,MigrationStatus,ValidationStatus,EstimatedHoursRemaining,UsageScore,TargetWorkspace,ReplacementReportName
+1,Cognos Report 001,Cognos,Marketing / BD,3,8,Low,Migrated,Validated,0,4,Finance Analytics,Power BI Replacement 001
+2,Cognos Report 002,Cognos,Practice Leadership,5,3,Medium,In Build,Validated,78,27,Finance Analytics,Power BI Replacement 002
+3,Access Report 003,Access,Practice Leadership,3,4,Low,Not Started,Not Started,61,94,Firm Leadership,Power BI Replacement 003
+4,Tableau Report 004,Tableau,Marketing / BD,3,1,Medium,In Build,In Progress,62,93,Practice Analytics,Power BI Replacement 004
+5,Excel Report 005,Excel,Finance,2,3,Medium,Not Started,Exception,69,73,Practice Analytics,Power BI Replacement 005
+6,Access Report 006,Access,Operations,4,5,Low,Not Started,Validated,40,55,Marketing Analytics,Power BI Replacement 006
+7,Cognos Report 007,Cognos,Finance,4,7,Medium,Retired,Validated,0,52,Firm Leadership,Power BI Replacement 007
+8,Cognos Report 008,Cognos,Finance,3,7,High,In Discovery,In Progress,46,17,Firm Leadership,Power BI Replacement 008
+9,Excel Report 009,Excel,Practice Leadership,2,1,Medium,Parallel Validation,In Progress,95,87,Firm Leadership,Power BI Replacement 009
+10,SSRS Report 010,SSRS,Marketing / BD,5,8,Medium,In Discovery,Exception,77,66,Finance Analytics,Power BI Replacement 010
+11,SSRS Report 011,SSRS,Practice Leadership,7,5,Medium,Not Started,Exception,106,3,Practice Analytics,Power BI Replacement 011
+12,SSRS Report 012,SSRS,Finance,2,6,Medium,In Discovery,Not Started,41,51,Marketing Analytics,Power BI Replacement 012
+13,Cognos Report 013,Cognos,Marketing / BD,5,7,High,Not Started,In Progress,6,33,Finance Analytics,Power BI Replacement 013
+14,SSRS Report 014,SSRS,Operations,4,1,Medium,Parallel Validation,Exception,45,86,Practice Analytics,Power BI Replacement 014
+15,Cognos Report 015,Cognos,Marketing / BD,6,5,Medium,Parallel Validation,Validated,19,84,Firm Leadership,Power BI Replacement 015
+16,Excel Report 016,Excel,Practice Leadership,1,2,Medium,Retired,Exception,0,29,Practice Analytics,Power BI Replacement 016
+17,Excel Report 017,Excel,HR,7,3,Low,Parallel Validation,Exception,80,12,Practice Analytics,Power BI Replacement 017
+18,SSRS Report 018,SSRS,HR,6,8,High,In Build,In Progress,107,24,Marketing Analytics,Power BI Replacement 018
+19,Tableau Report 019,Tableau,Operations,5,4,Low,Migrated,Validated,0,75,Marketing Analytics,Power BI Replacement 019
+20,Cognos Report 020,Cognos,Marketing / BD,4,2,High,Retired,Validated,0,82,Practice Analytics,Power BI Replacement 020
+21,Excel Report 021,Excel,Finance,3,6,Medium,In Build,Exception,75,43,Firm Leadership,Power BI Replacement 021
+22,Cognos Report 022,Cognos,Firm Leadership,4,6,Medium,Migrated,Validated,0,15,Marketing Analytics,Power BI Replacement 022
+23,SSRS Report 023,SSRS,Finance,1,8,Medium,Retired,Validated,0,82,Marketing Analytics,Power BI Replacement 023
+24,Excel Report 024,Excel,Marketing / BD,7,8,High,Retired,Validated,0,87,Marketing Analytics,Power BI Replacement 024
+25,Tableau Report 025,Tableau,Marketing / BD,6,2,Medium,Parallel Validation,Not Started,18,17,Finance Analytics,Power BI Replacement 025
+26,Tableau Report 026,Tableau,Firm Leadership,5,3,Medium,Retired,Validated,0,36,Firm Leadership,Power BI Replacement 026
+27,Excel Report 027,Excel,Marketing / BD,6,2,High,Migrated,Exception,0,83,Firm Leadership,Power BI Replacement 027
+28,Tableau Report 028,Tableau,Practice Leadership,3,3,Medium,In Discovery,Exception,116,47,Firm Leadership,Power BI Replacement 028
+29,Cognos Report 029,Cognos,HR,5,3,Low,In Discovery,In Progress,78,41,Finance Analytics,Power BI Replacement 029
+30,SSRS Report 030,SSRS,Practice Leadership,5,1,High,In Build,Not Started,56,64,Firm Leadership,Power BI Replacement 030
+31,SSRS Report 031,SSRS,HR,3,5,Medium,Parallel Validation,Not Started,17,59,Firm Leadership,Power BI Replacement 031
+32,SSRS Report 032,SSRS,Practice Leadership,3,2,High,In Build,Exception,49,44,Marketing Analytics,Power BI Replacement 032
+33,Tableau Report 033,Tableau,Marketing / BD,4,4,High,Migrated,Validated,0,72,Marketing Analytics,Power BI Replacement 033
+34,SSRS Report 034,SSRS,Firm Leadership,7,4,Low,Parallel Validation,In Progress,67,65,Firm Leadership,Power BI Replacement 034
+35,SSRS Report 035,SSRS,Practice Leadership,5,4,High,Parallel Validation,Not Started,67,50,Marketing Analytics,Power BI Replacement 035
+36,Cognos Report 036,Cognos,Marketing / BD,6,1,High,Parallel Validation,Validated,57,21,Practice Analytics,Power BI Replacement 036
+37,SSRS Report 037,SSRS,Finance,6,3,Low,Not Started,Exception,50,24,Marketing Analytics,Power BI Replacement 037
+38,Cognos Report 038,Cognos,Firm Leadership,1,3,Medium,In Discovery,Exception,62,10,Finance Analytics,Power BI Replacement 038
+39,Excel Report 039,Excel,Operations,1,6,Medium,Retired,Validated,0,83,Marketing Analytics,Power BI Replacement 039
+40,Excel Report 040,Excel,Marketing / BD,5,5,Medium,Migrated,Validated,0,94,Finance Analytics,Power BI Replacement 040
+41,Cognos Report 041,Cognos,Practice Leadership,3,3,Low,Migrated,Validated,0,27,Marketing Analytics,Power BI Replacement 041
+42,Cognos Report 042,Cognos,Operations,4,4,Medium,In Build,Validated,10,99,Marketing Analytics,Power BI Replacement 042
+43,SSRS Report 043,SSRS,Finance,3,5,Medium,Not Started,Exception,114,30,Firm Leadership,Power BI Replacement 043
+44,Tableau Report 044,Tableau,Firm Leadership,6,8,Low,In Build,Exception,38,94,Firm Leadership,Power BI Replacement 044
+45,Cognos Report 045,Cognos,Operations,1,5,Low,Migrated,Validated,0,75,Practice Analytics,Power BI Replacement 045
+46,SSRS Report 046,SSRS,HR,6,7,Medium,Migrated,Validated,0,20,Marketing Analytics,Power BI Replacement 046
+47,Cognos Report 047,Cognos,Firm Leadership,6,1,High,In Build,Not Started,111,12,Practice Analytics,Power BI Replacement 047
+48,Cognos Report 048,Cognos,Finance,2,8,High,Not Started,Not Started,1,52,Finance Analytics,Power BI Replacement 048
+49,SSRS Report 049,SSRS,HR,7,2,Medium,In Discovery,Not Started,19,11,Finance Analytics,Power BI Replacement 049
+50,Tableau Report 050,Tableau,Practice Leadership,6,2,Medium,Not Started,Exception,90,89,Practice Analytics,Power BI Replacement 050
+51,SSRS Report 051,SSRS,HR,7,1,Low,In Build,Validated,101,53,Practice Analytics,Power BI Replacement 051
+52,SSRS Report 052,SSRS,Operations,5,3,Medium,Retired,Exception,0,24,Finance Analytics,Power BI Replacement 052
+53,Cognos Report 053,Cognos,Finance,6,6,Low,Migrated,In Progress,0,24,Practice Analytics,Power BI Replacement 053
+54,Access Report 054,Access,Practice Leadership,4,2,Low,In Discovery,Exception,6,82,Marketing Analytics,Power BI Replacement 054
+55,SSRS Report 055,SSRS,Marketing / BD,7,3,High,In Build,Not Started,98,57,Practice Analytics,Power BI Replacement 055
+56,SSRS Report 056,SSRS,Firm Leadership,3,5,High,Not Started,Exception,96,63,Finance Analytics,Power BI Replacement 056
+57,Tableau Report 057,Tableau,Operations,6,1,Medium,In Build,In Progress,38,49,Practice Analytics,Power BI Replacement 057
+58,SSRS Report 058,SSRS,Firm Leadership,1,5,Low,Migrated,Validated,0,41,Firm Leadership,Power BI Replacement 058
+59,SSRS Report 059,SSRS,Firm Leadership,1,6,High,In Build,Exception,20,86,Practice Analytics,Power BI Replacement 059
+60,Cognos Report 060,Cognos,Operations,1,5,Low,Parallel Validation,Exception,78,70,Finance Analytics,Power BI Replacement 060
+61,SSRS Report 061,SSRS,Firm Leadership,1,2,Medium,Parallel Validation,Exception,63,32,Finance Analytics,Power BI Replacement 061
+62,SSRS Report 062,SSRS,Practice Leadership,5,4,Medium,In Discovery,Validated,9,24,Firm Leadership,Power BI Replacement 062
+63,Excel Report 063,Excel,Finance,4,4,Low,Parallel Validation,In Progress,14,67,Firm Leadership,Power BI Replacement 063
+64,Cognos Report 064,Cognos,Finance,5,1,Medium,In Discovery,In Progress,97,30,Marketing Analytics,Power BI Replacement 064
+65,Tableau Report 065,Tableau,Finance,1,7,Medium,Migrated,Validated,0,7,Practice Analytics,Power BI Replacement 065
+66,SSRS Report 066,SSRS,Firm Leadership,4,7,Medium,Parallel Validation,Exception,117,66,Finance Analytics,Power BI Replacement 066
+67,Cognos Report 067,Cognos,Marketing / BD,6,6,High,Migrated,Validated,0,75,Finance Analytics,Power BI Replacement 067
+68,SSRS Report 068,SSRS,Practice Leadership,7,5,Low,Parallel Validation,Exception,86,45,Practice Analytics,Power BI Replacement 068
+69,Cognos Report 069,Cognos,Practice Leadership,3,3,High,Migrated,Validated,0,31,Firm Leadership,Power BI Replacement 069
+70,Tableau Report 070,Tableau,Operations,2,5,Medium,Migrated,In Progress,0,76,Firm Leadership,Power BI Replacement 070
+71,SSRS Report 071,SSRS,Operations,4,7,Low,In Build,In Progress,109,40,Practice Analytics,Power BI Replacement 071
+72,SSRS Report 072,SSRS,Operations,6,1,Medium,In Discovery,Not Started,105,64,Finance Analytics,Power BI Replacement 072
+73,Cognos Report 073,Cognos,Firm Leadership,7,5,Medium,Migrated,Validated,0,7,Practice Analytics,Power BI Replacement 073
+74,Cognos Report 074,Cognos,Marketing / BD,1,7,Low,Not Started,Not Started,46,79,Marketing Analytics,Power BI Replacement 074
+75,Cognos Report 075,Cognos,Marketing / BD,5,4,Medium,In Discovery,Exception,38,88,Finance Analytics,Power BI Replacement 075
+76,Excel Report 076,Excel,Marketing / BD,2,2,Low,Migrated,Validated,0,71,Marketing Analytics,Power BI Replacement 076
+77,Cognos Report 077,Cognos,Firm Leadership,4,7,Low,In Discovery,In Progress,88,32,Marketing Analytics,Power BI Replacement 077
+78,Tableau Report 078,Tableau,Marketing / BD,5,2,Low,In Build,In Progress,19,98,Practice Analytics,Power BI Replacement 078
+79,SSRS Report 079,SSRS,Firm Leadership,3,8,Low,Parallel Validation,Not Started,47,19,Finance Analytics,Power BI Replacement 079
+80,SSRS Report 080,SSRS,Marketing / BD,3,5,Low,Retired,Exception,0,30,Firm Leadership,Power BI Replacement 080
+81,SSRS Report 081,SSRS,HR,2,8,High,Migrated,Validated,0,24,Firm Leadership,Power BI Replacement 081
+82,Cognos Report 082,Cognos,Finance,6,3,Low,Not Started,Validated,103,54,Marketing Analytics,Power BI Replacement 082
+83,Tableau Report 083,Tableau,Firm Leadership,1,8,Medium,Parallel Validation,Validated,86,37,Marketing Analytics,Power BI Replacement 083
+84,Tableau Report 084,Tableau,Marketing / BD,7,1,Low,In Build,Validated,20,1,Practice Analytics,Power BI Replacement 084
+85,Cognos Report 085,Cognos,Marketing / BD,6,1,Medium,Migrated,Validated,0,91,Practice Analytics,Power BI Replacement 085
+86,Access Report 086,Access,Practice Leadership,6,5,Medium,In Build,Exception,73,70,Firm Leadership,Power BI Replacement 086
+87,Access Report 087,Access,Practice Leadership,2,5,Low,Parallel Validation,In Progress,16,3,Marketing Analytics,Power BI Replacement 087
+88,Cognos Report 088,Cognos,Firm Leadership,4,7,High,Parallel Validation,Not Started,40,85,Practice Analytics,Power BI Replacement 088
+89,Cognos Report 089,Cognos,HR,7,8,Medium,Migrated,Exception,0,22,Finance Analytics,Power BI Replacement 089
+90,Excel Report 090,Excel,Operations,7,3,Medium,Migrated,Validated,0,73,Practice Analytics,Power BI Replacement 090
+91,Cognos Report 091,Cognos,Operations,1,2,Medium,Migrated,Validated,0,92,Marketing Analytics,Power BI Replacement 091
+92,Cognos Report 092,Cognos,Firm Leadership,4,7,Low,Retired,Validated,0,7,Marketing Analytics,Power BI Replacement 092
+93,SSRS Report 093,SSRS,Firm Leadership,4,5,High,Not Started,Validated,83,64,Practice Analytics,Power BI Replacement 093
+94,SSRS Report 094,SSRS,Practice Leadership,2,4,Low,Parallel Validation,Exception,25,75,Practice Analytics,Power BI Replacement 094
+95,Excel Report 095,Excel,Marketing / BD,2,8,Medium,Not Started,Exception,9,23,Practice Analytics,Power BI Replacement 095
+96,Access Report 096,Access,Firm Leadership,7,3,Medium,In Build,Validated,60,58,Firm Leadership,Power BI Replacement 096
+97,Tableau Report 097,Tableau,HR,6,5,High,Migrated,Validated,0,19,Firm Leadership,Power BI Replacement 097
+98,Tableau Report 098,Tableau,Firm Leadership,6,8,High,Not Started,Not Started,40,94,Practice Analytics,Power BI Replacement 098
+99,Cognos Report 099,Cognos,Operations,6,3,Medium,In Build,Exception,39,66,Practice Analytics,Power BI Replacement 099
+100,Cognos Report 100,Cognos,Marketing / BD,1,5,Low,Retired,Validated,0,96,Firm Leadership,Power BI Replacement 100
+101,Cognos Report 101,Cognos,Operations,3,8,Low,Not Started,Not Started,34,35,Practice Analytics,Power BI Replacement 101
+102,Access Report 102,Access,Finance,4,8,High,Parallel Validation,In Progress,27,77,Practice Analytics,Power BI Replacement 102
+103,Cognos Report 103,Cognos,Marketing / BD,6,5,Medium,Migrated,Validated,0,21,Marketing Analytics,Power BI Replacement 103
+104,SSRS Report 104,SSRS,Practice Leadership,4,2,Low,Not Started,In Progress,7,47,Finance Analytics,Power BI Replacement 104
+105,Excel Report 105,Excel,Practice Leadership,2,6,Low,In Build,Validated,21,92,Marketing Analytics,Power BI Replacement 105
+106,SSRS Report 106,SSRS,HR,5,4,Medium,Parallel Validation,Validated,66,6,Practice Analytics,Power BI Replacement 106
+107,Excel Report 107,Excel,Firm Leadership,7,7,Low,Retired,Validated,0,12,Finance Analytics,Power BI Replacement 107
+108,Cognos Report 108,Cognos,Practice Leadership,5,7,High,Parallel Validation,In Progress,66,95,Practice Analytics,Power BI Replacement 108
+109,Cognos Report 109,Cognos,Finance,2,6,Low,Not Started,Not Started,18,91,Practice Analytics,Power BI Replacement 109
+110,SSRS Report 110,SSRS,Marketing / BD,1,5,High,In Build,Not Started,32,80,Practice Analytics,Power BI Replacement 110
+111,Cognos Report 111,Cognos,Firm Leadership,3,6,Medium,Migrated,Validated,0,26,Firm Leadership,Power BI Replacement 111
+112,Cognos Report 112,Cognos,Finance,1,1,Medium,Parallel Validation,In Progress,73,90,Finance Analytics,Power BI Replacement 112
+113,Cognos Report 113,Cognos,Finance,5,8,High,In Build,In Progress,42,14,Firm Leadership,Power BI Replacement 113
+114,Excel Report 114,Excel,Firm Leadership,6,3,Low,Not Started,In Progress,12,97,Marketing Analytics,Power BI Replacement 114
+115,SSRS Report 115,SSRS,Operations,6,2,Medium,In Discovery,Not Started,118,24,Finance Analytics,Power BI Replacement 115
+116,Cognos Report 116,Cognos,Finance,6,6,Medium,Retired,Validated,0,43,Marketing Analytics,Power BI Replacement 116
+117,Cognos Report 117,Cognos,Practice Leadership,7,5,Low,Parallel Validation,In Progress,17,85,Practice Analytics,Power BI Replacement 117
+118,Tableau Report 118,Tableau,Operations,3,4,Low,Parallel Validation,Exception,49,75,Practice Analytics,Power BI Replacement 118
+119,Cognos Report 119,Cognos,Practice Leadership,3,5,Low,Migrated,Validated,0,48,Practice Analytics,Power BI Replacement 119
+120,Cognos Report 120,Cognos,Marketing / BD,6,7,Medium,Parallel Validation,Validated,8,60,Practice Analytics,Power BI Replacement 120
+121,Tableau Report 121,Tableau,Marketing / BD,1,4,Medium,Not Started,Validated,94,12,Firm Leadership,Power BI Replacement 121
+122,SSRS Report 122,SSRS,Practice Leadership,4,6,High,Retired,Exception,0,80,Firm Leadership,Power BI Replacement 122
+123,Cognos Report 123,Cognos,Operations,4,2,Medium,In Discovery,Exception,108,97,Practice Analytics,Power BI Replacement 123
+124,SSRS Report 124,SSRS,Practice Leadership,1,7,High,Not Started,Exception,88,37,Finance Analytics,Power BI Replacement 124
+125,Cognos Report 125,Cognos,Finance,2,1,Medium,Not Started,Validated,120,16,Practice Analytics,Power BI Replacement 125
+126,Cognos Report 126,Cognos,Marketing / BD,5,8,Medium,Migrated,Validated,0,50,Marketing Analytics,Power BI Replacement 126
+127,Cognos Report 127,Cognos,HR,4,8,Low,In Build,In Progress,21,81,Practice Analytics,Power BI Replacement 127
+128,SSRS Report 128,SSRS,Firm Leadership,7,4,High,Retired,Exception,0,10,Finance Analytics,Power BI Replacement 128
+129,Cognos Report 129,Cognos,Marketing / BD,5,4,Medium,Migrated,Validated,0,82,Finance Analytics,Power BI Replacement 129
+130,Cognos Report 130,Cognos,Operations,3,6,Low,In Discovery,Not Started,85,100,Firm Leadership,Power BI Replacement 130
+131,SSRS Report 131,SSRS,Practice Leadership,1,2,Low,Parallel Validation,In Progress,119,88,Marketing Analytics,Power BI Replacement 131
+132,SSRS Report 132,SSRS,Finance,2,3,Medium,Not Started,Exception,57,68,Marketing Analytics,Power BI Replacement 132
+133,Cognos Report 133,Cognos,Operations,2,2,High,Migrated,Validated,0,7,Practice Analytics,Power BI Replacement 133
+134,Cognos Report 134,Cognos,Practice Leadership,7,2,Low,In Build,Exception,24,4,Practice Analytics,Power BI Replacement 134
+135,Cognos Report 135,Cognos,Marketing / BD,4,8,Low,In Build,In Progress,69,94,Practice Analytics,Power BI Replacement 135
+136,Excel Report 136,Excel,Firm Leadership,5,6,Low,In Build,In Progress,62,54,Practice Analytics,Power BI Replacement 136
+137,SSRS Report 137,SSRS,Practice Leadership,5,2,Medium,Migrated,Validated,0,86,Practice Analytics,Power BI Replacement 137
+138,Access Report 138,Access,Finance,2,8,Low,Parallel Validation,In Progress,7,66,Marketing Analytics,Power BI Replacement 138
+139,SSRS Report 139,SSRS,Operations,2,7,Medium,Retired,Validated,0,11,Practice Analytics,Power BI Replacement 139
+140,Cognos Report 140,Cognos,Firm Leadership,1,1,Low,Retired,Validated,0,97,Firm Leadership,Power BI Replacement 140
+141,Tableau Report 141,Tableau,Firm Leadership,3,4,Medium,In Build,Not Started,10,79,Marketing Analytics,Power BI Replacement 141
+142,Tableau Report 142,Tableau,Finance,7,6,Medium,Not Started,In Progress,37,35,Marketing Analytics,Power BI Replacement 142
+143,Excel Report 143,Excel,HR,3,4,Low,In Build,Exception,93,34,Marketing Analytics,Power BI Replacement 143
+144,SSRS Report 144,SSRS,Marketing / BD,5,2,Low,In Build,Validated,53,82,Practice Analytics,Power BI Replacement 144
+145,Cognos Report 145,Cognos,Practice Leadership,3,2,High,In Discovery,Exception,54,77,Marketing Analytics,Power BI Replacement 145
+146,Excel Report 146,Excel,Firm Leadership,1,4,Medium,Retired,Exception,0,42,Firm Leadership,Power BI Replacement 146
+147,Tableau Report 147,Tableau,Finance,3,2,Low,Not Started,Exception,32,11,Firm Leadership,Power BI Replacement 147
+148,SSRS Report 148,SSRS,Finance,6,5,Low,In Discovery,Validated,93,55,Firm Leadership,Power BI Replacement 148
+149,SSRS Report 149,SSRS,Firm Leadership,2,1,Medium,In Discovery,Exception,26,80,Marketing Analytics,Power BI Replacement 149
+150,Cognos Report 150,Cognos,HR,3,7,Medium,Migrated,Validated,0,28,Firm Leadership,Power BI Replacement 150

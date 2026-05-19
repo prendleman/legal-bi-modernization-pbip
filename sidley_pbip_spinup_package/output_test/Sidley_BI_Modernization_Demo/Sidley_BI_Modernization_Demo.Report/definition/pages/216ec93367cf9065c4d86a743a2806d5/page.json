@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.4.0/schema.json",
+  "name": "216ec93367cf9065c4d86a743a2806d5",
+  "displayName": "RLS / Office Security Demo",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}

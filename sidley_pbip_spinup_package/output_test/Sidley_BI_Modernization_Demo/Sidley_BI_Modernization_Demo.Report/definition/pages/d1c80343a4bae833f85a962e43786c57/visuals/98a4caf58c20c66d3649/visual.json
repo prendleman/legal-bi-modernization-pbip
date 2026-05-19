@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "98a4caf58c20c66d3649",
+  "position": {
+    "x": 652,
+    "y": 110,
+    "z": 0,
+    "height": 88,
+    "width": 300,
+    "tabOrder": 22
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Modernization Health Score"
+                }
+              },
+              "queryRef": "_Measures.Modernization Health Score",
+              "nativeQueryRef": "Modernization Health Score"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

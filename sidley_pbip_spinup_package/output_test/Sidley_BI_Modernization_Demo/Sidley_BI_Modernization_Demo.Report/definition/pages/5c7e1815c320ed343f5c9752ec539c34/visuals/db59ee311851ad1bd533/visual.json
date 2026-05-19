@@ -1,0 +1,58 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "db59ee311851ad1bd533",
+  "position": {
+    "x": 296,
+    "y": 206,
+    "z": 0,
+    "height": 198,
+    "width": 480,
+    "tabOrder": 30
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "treemap",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_practice"
+                    }
+                  },
+                  "Property": "PracticeName"
+                }
+              },
+              "queryRef": "dim_practice.PracticeName",
+              "nativeQueryRef": "PracticeName",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Total Billings"
+                }
+              },
+              "queryRef": "_Measures.Total Billings",
+              "nativeQueryRef": "Total Billings"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

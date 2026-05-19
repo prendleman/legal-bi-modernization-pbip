@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Sidley_BI_Modernization_Demo"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9c98d161-6a74-5c31-a44c-909aaf2969bc"
+  }
+}

@@ -1,0 +1,121 @@
+AttorneyKey,AttorneyName,AttorneyLevel,OfficeKey,PracticeKey,StandardRate,IsActive
+1,Yvette Ostolaza,Associate,6,5,469,1
+2,Constance Choy,Senior Associate,5,8,619,1
+3,Nancy Chung,Associate,1,7,503,1
+4,Brian J. Fahrney,Counsel,3,1,859,1
+5,Sharon R. Flanagan,Associate,7,1,522,1
+6,Kristin Graham Koehler,Partner,7,5,1147,1
+7,Michael J. Schmidtberger,Senior Associate,7,3,745,1
+8,Perry J. Shwachman,Senior Associate,4,5,716,1
+9,Thomas M. Thesing,Associate,4,8,499,1
+10,Chris E. Abbinante,Partner,3,7,1095,1
+11,Bruce R. Braun,Associate,1,3,521,1
+12,Paul L. Choi,Associate,4,5,527,1
+13,Dan Clivner,Senior Associate,7,1,652,1
+14,Stephen L. Cohen,Senior Associate,3,6,630,1
+15,Meenakshi Datta,Associate,4,1,547,1
+16,Joel D. Feinberg,Senior Associate,4,7,688,1
+17,Todd J. Friedbacher,Associate,3,8,482,1
+18,Elizabeth Shea Fries,Senior Associate,1,4,744,1
+19,Samir A. Gandhi,Associate,3,8,383,1
+20,David A. Gordon,Partner,1,1,1099,1
+21,Michael A. Gordon,Partner,7,4,1130,1
+22,Teresa Wilton Harmon,Counsel,5,1,784,1
+23,Stephen E. Hessler,Senior Associate,2,2,573,1
+24,Jonathan J. Kelly,Senior Associate,6,3,580,1
+25,Mehdi Khodadad,Senior Associate,3,5,733,1
+26,Volker Kullmann,Associate,4,4,473,1
+27,Sherlyn Lau,Senior Associate,4,4,587,1
+28,Heidi L. Levine,Partner,6,3,1105,1
+29,Leonard Ng,Partner,7,7,1045,1
+30,Edward F. Petrosky,Associate,3,1,479,1
+31,Kristen R. Seeger,Associate,7,8,426,1
+32,Byron F. Taylor,Partner,5,8,1089,1
+33,Effie Vasilopoulos,Associate,7,7,491,1
+34,Cliff W. Vrielink,Senior Associate,7,4,632,1
+35,Martin A. Wellington,Partner,5,7,1036,1
+36,Angela C. Zambrano,Associate,4,1,548,1
+37,Yvette Ostolaza (demo roster 037),Associate,6,7,471,1
+38,Constance Choy (demo roster 038),Associate,7,3,519,1
+39,Nancy Chung (demo roster 039),Senior Associate,2,6,559,1
+40,Brian J. Fahrney (demo roster 040),Partner,1,8,1087,1
+41,Sharon R. Flanagan (demo roster 041),Associate,4,3,386,1
+42,Kristin Graham Koehler (demo roster 042),Associate,3,6,550,1
+43,Michael J. Schmidtberger (demo roster 043),Senior Associate,6,2,651,1
+44,Perry J. Shwachman (demo roster 044),Partner,7,7,1147,1
+45,Thomas M. Thesing (demo roster 045),Partner,6,8,1135,1
+46,Chris E. Abbinante (demo roster 046),Partner,5,2,984,1
+47,Bruce R. Braun (demo roster 047),Associate,3,4,525,1
+48,Paul L. Choi (demo roster 048),Counsel,1,2,816,1
+49,Dan Clivner (demo roster 049),Associate,3,1,527,1
+50,Stephen L. Cohen (demo roster 050),Associate,3,6,364,1
+51,Meenakshi Datta (demo roster 051),Associate,2,7,387,1
+52,Joel D. Feinberg (demo roster 052),Senior Associate,2,3,596,1
+53,Todd J. Friedbacher (demo roster 053),Associate,5,4,447,1
+54,Elizabeth Shea Fries (demo roster 054),Senior Associate,2,4,699,1
+55,Samir A. Gandhi (demo roster 055),Senior Associate,4,5,615,1
+56,David A. Gordon (demo roster 056),Senior Associate,3,3,669,1
+57,Michael A. Gordon (demo roster 057),Associate,5,5,438,1
+58,Teresa Wilton Harmon (demo roster 058),Senior Associate,6,5,658,1
+59,Stephen E. Hessler (demo roster 059),Senior Associate,2,7,627,1
+60,Jonathan J. Kelly (demo roster 060),Partner,2,7,1002,1
+61,Mehdi Khodadad (demo roster 061),Senior Associate,3,5,697,1
+62,Volker Kullmann (demo roster 062),Associate,4,5,518,1
+63,Sherlyn Lau (demo roster 063),Associate,7,1,525,1
+64,Heidi L. Levine (demo roster 064),Partner,4,5,1165,1
+65,Leonard Ng (demo roster 065),Counsel,5,6,763,1
+66,Edward F. Petrosky (demo roster 066),Associate,5,5,398,1
+67,Kristen R. Seeger (demo roster 067),Senior Associate,7,3,734,1
+68,Byron F. Taylor (demo roster 068),Senior Associate,6,1,710,1
+69,Effie Vasilopoulos (demo roster 069),Associate,1,6,462,1
+70,Cliff W. Vrielink (demo roster 070),Counsel,3,6,728,1
+71,Martin A. Wellington (demo roster 071),Counsel,2,3,749,1
+72,Angela C. Zambrano (demo roster 072),Counsel,5,5,798,1
+73,Yvette Ostolaza (demo roster 073),Partner,7,8,1040,1
+74,Constance Choy (demo roster 074),Partner,6,6,1050,1
+75,Nancy Chung (demo roster 075),Partner,1,3,1094,1
+76,Brian J. Fahrney (demo roster 076),Counsel,7,7,762,1
+77,Sharon R. Flanagan (demo roster 077),Partner,3,2,1117,1
+78,Kristin Graham Koehler (demo roster 078),Counsel,3,2,708,1
+79,Michael J. Schmidtberger (demo roster 079),Senior Associate,6,5,722,1
+80,Perry J. Shwachman (demo roster 080),Senior Associate,3,2,713,1
+81,Thomas M. Thesing (demo roster 081),Senior Associate,1,6,670,1
+82,Chris E. Abbinante (demo roster 082),Partner,6,2,1031,1
+83,Bruce R. Braun (demo roster 083),Senior Associate,6,5,668,1
+84,Paul L. Choi (demo roster 084),Senior Associate,2,1,579,1
+85,Dan Clivner (demo roster 085),Partner,4,2,1052,1
+86,Stephen L. Cohen (demo roster 086),Associate,2,7,487,1
+87,Meenakshi Datta (demo roster 087),Senior Associate,6,7,721,1
+88,Joel D. Feinberg (demo roster 088),Senior Associate,2,7,736,1
+89,Todd J. Friedbacher (demo roster 089),Senior Associate,5,7,675,1
+90,Elizabeth Shea Fries (demo roster 090),Partner,1,6,1046,1
+91,Samir A. Gandhi (demo roster 091),Associate,2,6,463,1
+92,David A. Gordon (demo roster 092),Associate,3,6,525,1
+93,Michael A. Gordon (demo roster 093),Associate,2,2,420,1
+94,Teresa Wilton Harmon (demo roster 094),Partner,1,4,1091,1
+95,Stephen E. Hessler (demo roster 095),Senior Associate,1,1,702,1
+96,Jonathan J. Kelly (demo roster 096),Counsel,2,4,767,1
+97,Mehdi Khodadad (demo roster 097),Associate,5,4,545,1
+98,Volker Kullmann (demo roster 098),Senior Associate,3,3,609,1
+99,Sherlyn Lau (demo roster 099),Counsel,1,5,857,1
+100,Heidi L. Levine (demo roster 100),Partner,2,5,1012,1
+101,Leonard Ng (demo roster 101),Counsel,6,1,733,1
+102,Edward F. Petrosky (demo roster 102),Associate,7,4,441,1
+103,Kristen R. Seeger (demo roster 103),Senior Associate,2,5,554,1
+104,Byron F. Taylor (demo roster 104),Associate,4,2,539,1
+105,Effie Vasilopoulos (demo roster 105),Counsel,4,6,826,1
+106,Cliff W. Vrielink (demo roster 106),Senior Associate,4,4,577,1
+107,Martin A. Wellington (demo roster 107),Partner,6,5,986,1
+108,Angela C. Zambrano (demo roster 108),Senior Associate,1,8,557,1
+109,Yvette Ostolaza (demo roster 109),Partner,6,2,1084,1
+110,Constance Choy (demo roster 110),Senior Associate,1,2,663,1
+111,Nancy Chung (demo roster 111),Associate,1,3,387,1
+112,Brian J. Fahrney (demo roster 112),Associate,5,6,512,1
+113,Sharon R. Flanagan (demo roster 113),Associate,5,5,502,1
+114,Kristin Graham Koehler (demo roster 114),Senior Associate,4,2,704,1
+115,Michael J. Schmidtberger (demo roster 115),Counsel,7,4,734,1
+116,Perry J. Shwachman (demo roster 116),Associate,4,6,408,1
+117,Thomas M. Thesing (demo roster 117),Partner,4,2,1077,1
+118,Chris E. Abbinante (demo roster 118),Associate,6,5,430,1
+119,Bruce R. Braun (demo roster 119),Associate,6,8,389,1
+120,Paul L. Choi (demo roster 120),Associate,1,7,371,1

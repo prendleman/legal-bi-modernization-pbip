@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "b50b878aea0e103efb4a",
+  "position": {
+    "x": 316,
+    "y": 110,
+    "z": 0,
+    "height": 88,
+    "width": 280,
+    "tabOrder": 21
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "On Hold Matters"
+                }
+              },
+              "queryRef": "_Measures.On Hold Matters",
+              "nativeQueryRef": "On Hold Matters"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

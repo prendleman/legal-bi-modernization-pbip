@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "dcaf1bb0abfbfde692a1",
+  "position": {
+    "x": 296,
+    "y": 598,
+    "z": 0,
+    "height": 118,
+    "width": 972,
+    "tabOrder": 33
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_client"
+                    }
+                  },
+                  "Property": "ClientName"
+                }
+              },
+              "queryRef": "dim_client.ClientName",
+              "nativeQueryRef": "ClientName"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Total Billings"
+                }
+              },
+              "queryRef": "_Measures.Total Billings",
+              "nativeQueryRef": "Total Billings"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,8 @@
+OfficeKey,OfficeName,Region,Country,TimeZoneGroup
+1,Chicago,Midwest,US,Central
+2,New York,Northeast,US,Eastern
+3,Washington DC,Northeast,US,Eastern
+4,Los Angeles,West,US,Pacific
+5,Dallas,South,US,Central
+6,Miami,South,US,Eastern
+7,London,Europe,UK,GMT

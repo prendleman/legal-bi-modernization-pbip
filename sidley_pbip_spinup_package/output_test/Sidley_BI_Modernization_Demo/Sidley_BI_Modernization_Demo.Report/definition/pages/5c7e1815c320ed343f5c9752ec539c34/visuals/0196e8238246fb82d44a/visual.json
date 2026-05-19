@@ -1,0 +1,58 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "0196e8238246fb82d44a",
+  "position": {
+    "x": 788,
+    "y": 206,
+    "z": 0,
+    "height": 198,
+    "width": 480,
+    "tabOrder": 31
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_legacy_report_inventory"
+                    }
+                  },
+                  "Property": "MigrationStatus"
+                }
+              },
+              "queryRef": "fact_legacy_report_inventory.MigrationStatus",
+              "nativeQueryRef": "MigrationStatus",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Legacy Reports"
+                }
+              },
+              "queryRef": "_Measures.Legacy Reports",
+              "nativeQueryRef": "Legacy Reports"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

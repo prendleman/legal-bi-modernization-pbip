@@ -1,0 +1,151 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "675630b82f8f011ffd36",
+  "position": {
+    "x": 296,
+    "y": 206,
+    "z": 0,
+    "height": 510,
+    "width": 972,
+    "tabOrder": 30
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_requirements_backlog"
+                    }
+                  },
+                  "Property": "RequestTitle"
+                }
+              },
+              "queryRef": "fact_requirements_backlog.RequestTitle",
+              "nativeQueryRef": "RequestTitle"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_requirements_backlog"
+                    }
+                  },
+                  "Property": "ProductManager"
+                }
+              },
+              "queryRef": "fact_requirements_backlog.ProductManager",
+              "nativeQueryRef": "ProductManager"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_requirements_backlog"
+                    }
+                  },
+                  "Property": "EpicId"
+                }
+              },
+              "queryRef": "fact_requirements_backlog.EpicId",
+              "nativeQueryRef": "EpicId"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_requirements_backlog"
+                    }
+                  },
+                  "Property": "StakeholderGroup"
+                }
+              },
+              "queryRef": "fact_requirements_backlog.StakeholderGroup",
+              "nativeQueryRef": "StakeholderGroup"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_requirements_backlog"
+                    }
+                  },
+                  "Property": "KPIArea"
+                }
+              },
+              "queryRef": "fact_requirements_backlog.KPIArea",
+              "nativeQueryRef": "KPIArea"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_requirements_backlog"
+                    }
+                  },
+                  "Property": "Priority"
+                }
+              },
+              "queryRef": "fact_requirements_backlog.Priority",
+              "nativeQueryRef": "Priority"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_requirements_backlog"
+                    }
+                  },
+                  "Property": "RequestStatus"
+                }
+              },
+              "queryRef": "fact_requirements_backlog.RequestStatus",
+              "nativeQueryRef": "RequestStatus"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_requirements_backlog"
+                    }
+                  },
+                  "Property": "TargetDate"
+                }
+              },
+              "queryRef": "fact_requirements_backlog.TargetDate",
+              "nativeQueryRef": "TargetDate"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_requirements_backlog"
+                    }
+                  },
+                  "Property": "AcceptanceCriteria"
+                }
+              },
+              "queryRef": "fact_requirements_backlog.AcceptanceCriteria",
+              "nativeQueryRef": "AcceptanceCriteria"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

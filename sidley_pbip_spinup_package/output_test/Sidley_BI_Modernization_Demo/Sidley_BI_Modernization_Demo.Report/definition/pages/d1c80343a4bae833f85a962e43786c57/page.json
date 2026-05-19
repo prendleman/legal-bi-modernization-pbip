@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.4.0/schema.json",
+  "name": "d1c80343a4bae833f85a962e43786c57",
+  "displayName": "Legacy Report Migration Control Tower",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}

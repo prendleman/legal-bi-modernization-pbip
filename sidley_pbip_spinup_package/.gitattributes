@@ -1,0 +1,27 @@
+# Normalize line endings across Windows / macOS / Linux to keep PBIP diffs clean.
+* text=auto eol=lf
+
+# JSON / TMSL artifacts are diff-friendly; force LF.
+*.bim    text eol=lf
+*.json   text eol=lf
+*.pbip   text eol=lf
+*.pbir   text eol=lf
+*.pbism  text eol=lf
+
+# Curated extracts and DAX live in source control - normalize line endings.
+*.csv    text eol=lf
+*.dax    text eol=lf
+*.sql    text eol=lf
+
+# Markdown / Python use LF.
+*.md     text eol=lf
+*.py     text eol=lf
+
+# Windows scripts keep CRLF so they remain double-clickable.
+*.bat    text eol=crlf
+*.ps1    text eol=crlf
+
+# Binary / generated assets that should never get text-fixup.
+*.png    binary
+*.pdf    binary
+*.pbix   binary

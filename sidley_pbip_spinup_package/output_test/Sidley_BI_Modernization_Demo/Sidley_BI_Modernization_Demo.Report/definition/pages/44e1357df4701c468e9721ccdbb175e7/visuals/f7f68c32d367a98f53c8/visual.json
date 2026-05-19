@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "f7f68c32d367a98f53c8",
+  "position": {
+    "x": 644,
+    "y": 110,
+    "z": 0,
+    "height": 88,
+    "width": 198,
+    "tabOrder": 23
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Collection Rate"
+                }
+              },
+              "queryRef": "_Measures.Collection Rate",
+              "nativeQueryRef": "Collection Rate"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

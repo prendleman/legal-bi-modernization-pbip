@@ -1,0 +1,181 @@
+ClientKey,ClientName,Industry,ClientTier,RiskLevel,ClientStatus
+1,Client 001,Technology,Strategic,Low,Active
+2,Client 002,Technology,Core,Medium,Active
+3,Client 003,Retail,Strategic,Low,Active
+4,Client 004,Financial Services,Core,Medium,Active
+5,Client 005,Retail,Growth,Medium,Active
+6,Client 006,Financial Services,Core,Low,Active
+7,Client 007,Real Estate,Growth,High,Active
+8,Client 008,Technology,Core,Low,Active
+9,Client 009,Real Estate,Emerging,Medium,Active
+10,Client 010,Retail,Strategic,Low,Active
+11,Client 011,Energy,Core,Medium,Active
+12,Client 012,Manufacturing,Core,High,Watch
+13,Client 013,Technology,Core,Low,Watch
+14,Client 014,Healthcare,Core,Low,Active
+15,Client 015,Technology,Core,Low,Active
+16,Client 016,Healthcare,Core,Low,Watch
+17,Client 017,Manufacturing,Core,Medium,Active
+18,Client 018,Manufacturing,Emerging,Medium,Active
+19,Client 019,Technology,Growth,High,Watch
+20,Client 020,Energy,Growth,Low,Watch
+21,Client 021,Private Equity,Growth,Low,Active
+22,Client 022,Real Estate,Core,Low,Active
+23,Client 023,Energy,Growth,High,Active
+24,Client 024,Technology,Core,Medium,Active
+25,Client 025,Healthcare,Core,Low,Active
+26,Client 026,Retail,Core,Low,Active
+27,Client 027,Financial Services,Core,Low,Watch
+28,Client 028,Real Estate,Core,Low,Active
+29,Client 029,Healthcare,Core,High,Watch
+30,Client 030,Real Estate,Emerging,Medium,Active
+31,Client 031,Technology,Emerging,Low,Active
+32,Client 032,Manufacturing,Growth,Medium,Active
+33,Client 033,Financial Services,Core,Low,Active
+34,Client 034,Energy,Emerging,Medium,Active
+35,Client 035,Financial Services,Growth,Medium,Active
+36,Client 036,Private Equity,Emerging,High,Active
+37,Client 037,Healthcare,Growth,Low,Active
+38,Client 038,Real Estate,Core,Medium,Dormant
+39,Client 039,Manufacturing,Core,Low,Active
+40,Client 040,Energy,Core,Low,Active
+41,Client 041,Manufacturing,Strategic,Low,Active
+42,Client 042,Manufacturing,Strategic,Medium,Active
+43,Client 043,Technology,Emerging,Medium,Active
+44,Client 044,Manufacturing,Growth,Low,Active
+45,Client 045,Private Equity,Growth,Low,Active
+46,Client 046,Technology,Strategic,Low,Active
+47,Client 047,Private Equity,Emerging,Low,Active
+48,Client 048,Technology,Strategic,Medium,Active
+49,Client 049,Technology,Growth,Low,Active
+50,Client 050,Retail,Growth,Low,Watch
+51,Client 051,Technology,Core,Medium,Active
+52,Client 052,Financial Services,Core,Low,Active
+53,Client 053,Technology,Emerging,Medium,Active
+54,Client 054,Private Equity,Core,Medium,Watch
+55,Client 055,Healthcare,Core,High,Active
+56,Client 056,Private Equity,Growth,Medium,Active
+57,Client 057,Private Equity,Growth,Low,Dormant
+58,Client 058,Financial Services,Core,Low,Active
+59,Client 059,Healthcare,Strategic,Low,Watch
+60,Client 060,Technology,Core,Medium,Active
+61,Client 061,Technology,Emerging,Medium,Active
+62,Client 062,Financial Services,Core,Low,Active
+63,Client 063,Energy,Emerging,Low,Active
+64,Client 064,Manufacturing,Growth,Low,Active
+65,Client 065,Private Equity,Growth,Medium,Active
+66,Client 066,Private Equity,Core,Medium,Active
+67,Client 067,Manufacturing,Core,Low,Active
+68,Client 068,Technology,Emerging,Low,Active
+69,Client 069,Real Estate,Core,High,Active
+70,Client 070,Financial Services,Core,Medium,Watch
+71,Client 071,Technology,Emerging,Low,Active
+72,Client 072,Technology,Core,Low,Active
+73,Client 073,Manufacturing,Core,Low,Active
+74,Client 074,Real Estate,Core,Low,Watch
+75,Client 075,Financial Services,Strategic,Low,Active
+76,Client 076,Financial Services,Growth,Low,Dormant
+77,Client 077,Healthcare,Core,Medium,Active
+78,Client 078,Financial Services,Strategic,High,Active
+79,Client 079,Healthcare,Core,Medium,Active
+80,Client 080,Healthcare,Core,Low,Active
+81,Client 081,Financial Services,Emerging,Low,Active
+82,Client 082,Technology,Core,Medium,Watch
+83,Client 083,Healthcare,Emerging,Low,Active
+84,Client 084,Healthcare,Emerging,Low,Active
+85,Client 085,Energy,Core,Low,Active
+86,Client 086,Manufacturing,Growth,Medium,Active
+87,Client 087,Financial Services,Emerging,Low,Active
+88,Client 088,Private Equity,Core,Medium,Watch
+89,Client 089,Manufacturing,Strategic,Low,Active
+90,Client 090,Technology,Emerging,Low,Active
+91,Client 091,Retail,Core,Medium,Active
+92,Client 092,Financial Services,Strategic,High,Active
+93,Client 093,Real Estate,Strategic,Medium,Active
+94,Client 094,Energy,Core,High,Active
+95,Client 095,Manufacturing,Growth,Medium,Active
+96,Client 096,Manufacturing,Core,Low,Active
+97,Client 097,Energy,Core,Medium,Active
+98,Client 098,Real Estate,Core,Medium,Active
+99,Client 099,Real Estate,Core,Low,Active
+100,Client 100,Retail,Core,High,Active
+101,Client 101,Real Estate,Core,Medium,Active
+102,Client 102,Manufacturing,Core,Medium,Active
+103,Client 103,Private Equity,Core,Medium,Active
+104,Client 104,Healthcare,Core,Low,Active
+105,Client 105,Energy,Strategic,High,Active
+106,Client 106,Real Estate,Growth,Low,Active
+107,Client 107,Manufacturing,Emerging,Medium,Active
+108,Client 108,Private Equity,Core,Medium,Active
+109,Client 109,Retail,Core,Low,Active
+110,Client 110,Financial Services,Emerging,Medium,Watch
+111,Client 111,Retail,Growth,Medium,Active
+112,Client 112,Private Equity,Strategic,Low,Watch
+113,Client 113,Private Equity,Growth,Low,Active
+114,Client 114,Energy,Emerging,Medium,Active
+115,Client 115,Retail,Emerging,Low,Watch
+116,Client 116,Private Equity,Core,Medium,Watch
+117,Client 117,Real Estate,Core,Low,Active
+118,Client 118,Real Estate,Core,Medium,Active
+119,Client 119,Energy,Growth,Low,Active
+120,Client 120,Manufacturing,Core,Low,Active
+121,Client 121,Retail,Core,Low,Active
+122,Client 122,Manufacturing,Emerging,Low,Active
+123,Client 123,Financial Services,Emerging,Medium,Active
+124,Client 124,Financial Services,Emerging,Low,Active
+125,Client 125,Retail,Core,Medium,Active
+126,Client 126,Manufacturing,Core,Low,Active
+127,Client 127,Retail,Growth,Medium,Active
+128,Client 128,Healthcare,Emerging,High,Dormant
+129,Client 129,Financial Services,Emerging,Medium,Active
+130,Client 130,Technology,Core,Low,Active
+131,Client 131,Financial Services,Growth,Low,Active
+132,Client 132,Energy,Core,Low,Active
+133,Client 133,Retail,Growth,Low,Active
+134,Client 134,Financial Services,Emerging,Low,Active
+135,Client 135,Financial Services,Core,High,Active
+136,Client 136,Financial Services,Core,Low,Active
+137,Client 137,Technology,Core,Low,Active
+138,Client 138,Energy,Growth,Medium,Active
+139,Client 139,Technology,Core,Low,Active
+140,Client 140,Financial Services,Emerging,Medium,Watch
+141,Client 141,Retail,Core,Medium,Active
+142,Client 142,Manufacturing,Strategic,Medium,Watch
+143,Client 143,Technology,Core,Medium,Active
+144,Client 144,Retail,Core,Low,Active
+145,Client 145,Financial Services,Emerging,Medium,Active
+146,Client 146,Energy,Core,Medium,Active
+147,Client 147,Retail,Growth,Low,Active
+148,Client 148,Private Equity,Core,Medium,Active
+149,Client 149,Energy,Emerging,Medium,Active
+150,Client 150,Private Equity,Growth,Low,Active
+151,Client 151,Retail,Growth,Low,Active
+152,Client 152,Private Equity,Growth,Medium,Active
+153,Client 153,Real Estate,Core,Low,Active
+154,Client 154,Manufacturing,Core,Low,Active
+155,Client 155,Private Equity,Core,Low,Active
+156,Client 156,Technology,Growth,Low,Active
+157,Client 157,Energy,Core,Low,Active
+158,Client 158,Energy,Core,Low,Active
+159,Client 159,Manufacturing,Growth,Low,Active
+160,Client 160,Healthcare,Growth,Medium,Active
+161,Client 161,Real Estate,Emerging,Medium,Active
+162,Client 162,Energy,Growth,Low,Active
+163,Client 163,Real Estate,Strategic,Low,Active
+164,Client 164,Healthcare,Core,Medium,Active
+165,Client 165,Financial Services,Core,Low,Active
+166,Client 166,Healthcare,Emerging,Low,Watch
+167,Client 167,Technology,Emerging,Low,Active
+168,Client 168,Financial Services,Growth,Medium,Dormant
+169,Client 169,Technology,Emerging,Low,Active
+170,Client 170,Manufacturing,Core,Low,Watch
+171,Client 171,Real Estate,Emerging,High,Active
+172,Client 172,Financial Services,Core,Medium,Dormant
+173,Client 173,Manufacturing,Core,Low,Active
+174,Client 174,Manufacturing,Growth,Low,Active
+175,Client 175,Private Equity,Core,Low,Active
+176,Client 176,Real Estate,Core,Medium,Active
+177,Client 177,Manufacturing,Emerging,Medium,Active
+178,Client 178,Manufacturing,Core,Low,Active
+179,Client 179,Real Estate,Emerging,Low,Active
+180,Client 180,Real Estate,Core,Medium,Watch

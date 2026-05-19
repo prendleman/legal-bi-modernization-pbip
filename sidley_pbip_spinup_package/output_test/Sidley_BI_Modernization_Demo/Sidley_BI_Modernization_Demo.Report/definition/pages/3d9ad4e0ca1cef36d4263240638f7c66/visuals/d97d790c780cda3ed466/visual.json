@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "d97d790c780cda3ed466",
+  "position": {
+    "x": 16,
+    "y": 56,
+    "z": 50,
+    "height": 40,
+    "width": 956,
+    "tabOrder": 1
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "verticalAlignment": "top",
+                "horizontalTextAlignment": "left",
+                "textRuns": [
+                  {
+                    "value": "Pipeline success vs calendar \u2014 synced office and client industry where facts join client/office paths.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#3D5166"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": false
+  }
+}

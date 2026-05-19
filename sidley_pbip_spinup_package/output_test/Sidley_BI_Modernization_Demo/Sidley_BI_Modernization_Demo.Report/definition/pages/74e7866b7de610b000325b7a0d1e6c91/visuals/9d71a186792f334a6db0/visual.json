@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "9d71a186792f334a6db0",
+  "position": {
+    "x": 980,
+    "y": 8,
+    "z": 50,
+    "height": 26,
+    "width": 288,
+    "tabOrder": 2
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "verticalAlignment": "top",
+                "horizontalTextAlignment": "left",
+                "textRuns": [
+                  {
+                    "value": "Certified extract \u00b7 data through",
+                    "textStyle": {
+                      "fontSize": "9pt",
+                      "color": "#5A6B7D"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": false
+  }
+}

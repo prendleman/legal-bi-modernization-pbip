@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "ede4b5631e24dfb64574",
+  "position": {
+    "x": 788,
+    "y": 206,
+    "z": 0,
+    "height": 265,
+    "width": 480,
+    "tabOrder": 31
+  },
+  "howCreated": "InsertVisualButton",
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_practice"
+                    }
+                  },
+                  "Property": "PracticeName"
+                }
+              },
+              "queryRef": "dim_practice.PracticeName",
+              "nativeQueryRef": "PracticeName"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Realization Rate"
+                }
+              },
+              "queryRef": "_Measures.Realization Rate",
+              "nativeQueryRef": "Realization Rate"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
