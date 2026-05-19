@@ -1,5 +1,0 @@
-﻿Neutralize package and generator paths
-
-Rename the repo package folder from sidley_pbip_spinup_package to legal_bi_pbip_kit and update the visible commands, docs, CI, Dependabot, preview scripts, and generated PBIP path references accordingly.
-
-Also rename the primary generator script to generate_legal_bi_pbip.py so the landing page and quickstart commands no longer carry Sidley-specific naming. The remaining Sidley references are intentional demo context, generated report asset names, public attorney-name attribution, and no-affiliation disclaimers.
