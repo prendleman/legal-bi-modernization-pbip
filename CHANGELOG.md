@@ -6,9 +6,18 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ## [Unreleased]
 
+### Added
+
+- `previews/` folder with data previews generated from synthetic gold CSVs:
+  - 8 per-page PNGs in `previews/pages/` rendered by `sidley_pbip_spinup_package/scripts/render_page_previews.py` (matplotlib + pandas).
+  - Single-page HTML dashboard mockup at `previews/dashboard_mockup.html` rendered by `sidley_pbip_spinup_package/scripts/build_html_mockup.py` (pandas + inline SVG, no extra deps).
+  - `previews/README.md` explains what these are (data previews, not Power BI screenshots), what the real PBIP build adds on top, and how to regenerate.
+- `sidley_pbip_spinup_package/requirements-preview.txt` pinning matplotlib + pandas for the preview pipeline.
+- Both root and package READMEs now embed the previews so the GitHub landing page is skim-friendly without launching Power BI Desktop.
+
 ### Planned
 
-- Power BI Desktop screenshots of all 8 report pages in `screenshots/` and embedded in both READMEs.
+- Power BI Desktop screenshots of all 8 report pages embedded alongside the previews.
 - RLS "View as role" comparison screenshots.
 
 ## [0.1.0] - 2026-05-19

@@ -1,0 +1,9 @@
+# Optional dependencies for the data-preview pipeline.
+# Required by:
+#   - scripts/render_page_previews.py
+#   - scripts/build_html_mockup.py
+# These render "data previews" (not Power BI screenshots) into previews/.
+# Install with:
+#   pip install -r sidley_pbip_spinup_package/requirements-preview.txt
+matplotlib>=3.7,<4.0
+pandas>=2.0,<3.0

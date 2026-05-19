@@ -7,6 +7,29 @@
 
 Built for a Sidley Austin **Senior Business Intelligence Engineer** interview process. A source-control-friendly Power BI Project (PBIP) demonstrating legal BI modernization on top of a curated Databricks lakehouse.
 
+## Data preview (not Power BI screenshots)
+
+The PBIP report opens in Power BI Desktop. To make this repo skim-friendly without
+Desktop, two scripts render the **same synthetic gold CSVs** into honest previews -
+clearly labeled as previews, not screenshots:
+
+[![Executive Overview preview](previews/pages/01_executive_overview.png)](previews/pages/01_executive_overview.png)
+
+| Page 2 | Page 3 | Page 4 |
+| --- | --- | --- |
+| [![Matter Profitability](previews/pages/02_matter_profitability.png)](previews/pages/02_matter_profitability.png) | [![Open Cases](previews/pages/03_open_pending_cases.png)](previews/pages/03_open_pending_cases.png) | [![Migration Tower](previews/pages/04_migration_control_tower.png)](previews/pages/04_migration_control_tower.png) |
+
+| Page 5 | Page 6 | Page 7 |
+| --- | --- | --- |
+| [![Stakeholder Backlog](previews/pages/05_stakeholder_backlog.png)](previews/pages/05_stakeholder_backlog.png) | [![Refresh Monitor](previews/pages/06_refresh_monitor.png)](previews/pages/06_refresh_monitor.png) | [![RLS Demo](previews/pages/07_rls_demo.png)](previews/pages/07_rls_demo.png) |
+
+| Page 8 | All-in-one HTML mockup |
+| --- | --- |
+| [![Visual Lab](previews/pages/08_visual_lab.png)](previews/pages/08_visual_lab.png) | [`previews/dashboard_mockup.html`](previews/dashboard_mockup.html) - open in any browser |
+
+See [`previews/README.md`](previews/README.md) for what these are, what they are not, and
+how to regenerate them.
+
 ## Architecture at a glance
 
 ```mermaid
