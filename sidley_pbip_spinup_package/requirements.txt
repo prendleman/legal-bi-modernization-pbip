@@ -3,4 +3,4 @@
 # pipeline via `py scripts\generate_sidley_pbip.py --databricks`.
 # `--dry-run` works without them.
 databricks-sdk>=0.30,<1.0
-databricks-sql-connector>=3.5,<4.0
+databricks-sql-connector>=4.2.6,<5.0
