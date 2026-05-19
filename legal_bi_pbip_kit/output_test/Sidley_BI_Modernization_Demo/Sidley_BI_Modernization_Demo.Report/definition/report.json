@@ -1,0 +1,66 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/1.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY24SU10",
+      "reportVersionAtImport": {
+        "visual": "2.4.0",
+        "report": "1.3.0",
+        "page": "1.4.0"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Sidley Com",
+      "reportVersionAtImport": {
+        "visual": "2.4.0",
+        "report": "1.3.0",
+        "page": "1.4.0"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "layoutOptimization": "None",
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY24SU10",
+          "path": "BaseThemes/CY24SU10.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Sidley Com",
+          "path": "SidleyCom.json",
+          "type": "CustomTheme"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  },
+  "annotations": [
+    {
+      "name": "demoPurpose",
+      "value": "Sidley Austin BI modernization interview demo"
+    },
+    {
+      "name": "candidatePackage",
+      "value": "8-page PBIR report + import semantic model (star schema, DAX in _Measures, Time Intelligence calc group, RLS sample roles). Regenerate: py scripts\\\\generate_legal_bi_pbip.py (optional --interview for smaller PBIX). Recruiter PBIX steps: docs/RECRUITER_HANDOFF.md"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Shim: run PBIP smoke from repo root (`S:\\MOPR\\IT\\sid`).
 
-The real script lives under `sidley_pbip_spinup_package/scripts/` and expects
-that directory as cwd so it can find `output/` and `generate_sidley_pbip.py`.
+The real script lives under `legal_bi_pbip_kit/scripts/` and expects
+that directory as cwd so it can find `output/` and `generate_legal_bi_pbip.py`.
 """
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 
 _REPO = Path(__file__).resolve().parents[1]
-_PKG = _REPO / "sidley_pbip_spinup_package"
+_PKG = _REPO / "legal_bi_pbip_kit"
 _SCRIPT = _PKG / "scripts" / "smoke_pbip.py"
 
 

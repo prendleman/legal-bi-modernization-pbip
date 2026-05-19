@@ -29,9 +29,9 @@ jobs:
 
       - name: Install demo dependencies (optional path; generator runs on stdlib)
         run: |
-          if [ -f sidley_pbip_spinup_package/requirements.txt ]; then
+          if [ -f legal_bi_pbip_kit/requirements.txt ]; then
             python -m pip install --upgrade pip
-            python -m pip install -r sidley_pbip_spinup_package/requirements.txt
+            python -m pip install -r legal_bi_pbip_kit/requirements.txt
           fi
 
       - name: Run PBIP smoke

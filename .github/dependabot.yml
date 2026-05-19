@@ -1,7 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: "pip"
-    directory: "/sidley_pbip_spinup_package"
+    directory: "/legal_bi_pbip_kit"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5

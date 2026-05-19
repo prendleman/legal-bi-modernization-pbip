@@ -30,7 +30,7 @@ Sidley Austin LLP did not commission, sponsor, fund, or review this work, and
 no Sidley client, matter, billing, financial, employee, or confidential data
 is contained in this repository. Public Sidley.com attorney names appear in
 the synthetic `dim_attorney` table for realism only - see
-`sidley_pbip_spinup_package/docs/ATTORNEY_NAMES_ATTRIBUTION.md`.
+`legal_bi_pbip_kit/docs/ATTORNEY_NAMES_ATTRIBUTION.md`.
 
 "Sidley Austin" and related marks are the property of Sidley Austin LLP. Their
 use in this repository is descriptive only and does not imply affiliation,

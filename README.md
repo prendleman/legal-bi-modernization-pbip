@@ -3,7 +3,7 @@
 [![validate](https://github.com/prendleman/legal-bi-modernization-pbip/actions/workflows/validate.yml/badge.svg)](https://github.com/prendleman/legal-bi-modernization-pbip/actions/workflows/validate.yml)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-> **Synthetic data only.** This demo uses synthetic professional-services / legal-operations data only. It contains **no Sidley, client, matter, financial, or confidential data**. Public Sidley.com attorney names appear in `dim_attorney` for realism only; see [`ATTORNEY_NAMES_ATTRIBUTION.md`](sidley_pbip_spinup_package/docs/ATTORNEY_NAMES_ATTRIBUTION.md). Sidley Austin did not commission, sponsor, or review this repo.
+> **Synthetic data only.** This demo uses synthetic professional-services / legal-operations data only. It contains **no Sidley, client, matter, financial, or confidential data**. Public Sidley.com attorney names appear in `dim_attorney` for realism only; see [`ATTORNEY_NAMES_ATTRIBUTION.md`](legal_bi_pbip_kit/docs/ATTORNEY_NAMES_ATTRIBUTION.md). Sidley Austin did not commission, sponsor, or review this repo.
 
 Built as a role-aligned portfolio demo for a **Senior Business Intelligence Engineer** interview process. A source-control-friendly Power BI Project (PBIP) demonstrating legal BI modernization on top of a curated Databricks lakehouse.
 
@@ -52,24 +52,24 @@ git clone https://github.com/prendleman/legal-bi-modernization-pbip
 cd legal-bi-modernization-pbip
 
 # Generate the PBIP + CSVs (no third-party deps)
-py sidley_pbip_spinup_package\scripts\generate_sidley_pbip.py
+py legal_bi_pbip_kit\scripts\generate_legal_bi_pbip.py
 
 # Optional CI smoke (regenerate + parse all JSON)
 py scripts\smoke_pbip.py
 
 # Open in Power BI Desktop
-start sidley_pbip_spinup_package\output_test\Sidley_BI_Modernization_Demo\Sidley_BI_Modernization_Demo.pbip
+start legal_bi_pbip_kit\output_test\Sidley_BI_Modernization_Demo\Sidley_BI_Modernization_Demo.pbip
 ```
 
 Databricks pipeline (dry run, no credentials needed):
 
 ```powershell
-py sidley_pbip_spinup_package\scripts\generate_sidley_pbip.py --databricks --dry-run
+py legal_bi_pbip_kit\scripts\generate_legal_bi_pbip.py --databricks --dry-run
 ```
 
 ## Start here
 
-**Full walkthrough lives in the package README**: [`sidley_pbip_spinup_package/README.md`](sidley_pbip_spinup_package/README.md)
+**Full walkthrough lives in the package README**: [`legal_bi_pbip_kit/README.md`](legal_bi_pbip_kit/README.md)
 
 It covers the architecture, fast-start commands, JD mapping, deployment story, and every doc listed below.
 
@@ -77,17 +77,17 @@ It covers the architecture, fast-start commands, JD mapping, deployment story, a
 
 | Area | Where to look |
 | --- | --- |
-| Generator (one-command PBIP regen + UC pipeline) | [`sidley_pbip_spinup_package/scripts/generate_sidley_pbip.py`](sidley_pbip_spinup_package/scripts/generate_sidley_pbip.py) |
-| 8-page PBIP report + TMSL semantic model | [`sidley_pbip_spinup_package/output_test/Sidley_BI_Modernization_Demo/`](sidley_pbip_spinup_package/output_test/Sidley_BI_Modernization_Demo) |
-| DAX measures, model design, page build plan | [`DAX_MEASURES.dax`](sidley_pbip_spinup_package/docs/DAX_MEASURES.dax) &middot; [`MODEL_DESIGN.md`](sidley_pbip_spinup_package/docs/MODEL_DESIGN.md) &middot; [`PAGE_BUILD_PLAN.md`](sidley_pbip_spinup_package/docs/PAGE_BUILD_PLAN.md) |
-| **DAX deep dive** (design choices behind key measures) | [`DAX_DEEP_DIVE.md`](sidley_pbip_spinup_package/docs/DAX_DEEP_DIVE.md) |
-| **Migration case study** (1 legacy Cognos report end-to-end) | [`MIGRATION_CASE_STUDY.md`](sidley_pbip_spinup_package/docs/MIGRATION_CASE_STUDY.md) |
-| Databricks integration (CSV <-> UC SQL Warehouse) | [`DATABRICKS_INTEGRATION.md`](sidley_pbip_spinup_package/docs/DATABRICKS_INTEGRATION.md) |
-| Productionization (asset bundles, UC, MLflow hook) | [`PRODUCTIONIZATION_UC_MLFLOW.md`](sidley_pbip_spinup_package/docs/PRODUCTIONIZATION_UC_MLFLOW.md) |
-| Governance (data classification, RLS, certification) | [`AI_GOVERNANCE.md`](sidley_pbip_spinup_package/docs/AI_GOVERNANCE.md) |
-| Dev/Test/Prod deployment + retirement flow | [`DEPLOYMENT.md`](sidley_pbip_spinup_package/docs/DEPLOYMENT.md) |
-| JD-to-demo mapping + interview talk track | [`JD_TO_DEMO_MAP.md`](sidley_pbip_spinup_package/docs/JD_TO_DEMO_MAP.md) &middot; [`INTERVIEW_TALK_TRACK.md`](sidley_pbip_spinup_package/docs/INTERVIEW_TALK_TRACK.md) |
-| Databricks Asset Bundle template | [`databricks/asset_bundle/`](sidley_pbip_spinup_package/databricks/asset_bundle) |
+| Generator (one-command PBIP regen + UC pipeline) | [`legal_bi_pbip_kit/scripts/generate_legal_bi_pbip.py`](legal_bi_pbip_kit/scripts/generate_legal_bi_pbip.py) |
+| 8-page PBIP report + TMSL semantic model | [`legal_bi_pbip_kit/output_test/Sidley_BI_Modernization_Demo/`](legal_bi_pbip_kit/output_test/Sidley_BI_Modernization_Demo) |
+| DAX measures, model design, page build plan | [`DAX_MEASURES.dax`](legal_bi_pbip_kit/docs/DAX_MEASURES.dax) &middot; [`MODEL_DESIGN.md`](legal_bi_pbip_kit/docs/MODEL_DESIGN.md) &middot; [`PAGE_BUILD_PLAN.md`](legal_bi_pbip_kit/docs/PAGE_BUILD_PLAN.md) |
+| **DAX deep dive** (design choices behind key measures) | [`DAX_DEEP_DIVE.md`](legal_bi_pbip_kit/docs/DAX_DEEP_DIVE.md) |
+| **Migration case study** (1 legacy Cognos report end-to-end) | [`MIGRATION_CASE_STUDY.md`](legal_bi_pbip_kit/docs/MIGRATION_CASE_STUDY.md) |
+| Databricks integration (CSV <-> UC SQL Warehouse) | [`DATABRICKS_INTEGRATION.md`](legal_bi_pbip_kit/docs/DATABRICKS_INTEGRATION.md) |
+| Productionization (asset bundles, UC, MLflow hook) | [`PRODUCTIONIZATION_UC_MLFLOW.md`](legal_bi_pbip_kit/docs/PRODUCTIONIZATION_UC_MLFLOW.md) |
+| Governance (data classification, RLS, certification) | [`AI_GOVERNANCE.md`](legal_bi_pbip_kit/docs/AI_GOVERNANCE.md) |
+| Dev/Test/Prod deployment + retirement flow | [`DEPLOYMENT.md`](legal_bi_pbip_kit/docs/DEPLOYMENT.md) |
+| JD-to-demo mapping + interview talk track | [`JD_TO_DEMO_MAP.md`](legal_bi_pbip_kit/docs/JD_TO_DEMO_MAP.md) &middot; [`INTERVIEW_TALK_TRACK.md`](legal_bi_pbip_kit/docs/INTERVIEW_TALK_TRACK.md) |
+| Databricks Asset Bundle template | [`databricks/asset_bundle/`](legal_bi_pbip_kit/databricks/asset_bundle) |
 
 ## 90-second pitch
 
