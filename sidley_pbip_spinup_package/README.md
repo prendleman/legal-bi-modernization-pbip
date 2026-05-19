@@ -103,9 +103,15 @@ output/Sidley_BI_Modernization_Demo/
     SQL_GOLD_LAYER_SAMPLES.sql             # Sample joins for SQL depth (JD)
     DEPLOYMENT.md                            # Dev/Test/Prod, RLS, retirement flow
     DATABRICKS_INTEGRATION.md                # Architecture + config + pipeline
+    PRODUCTIONIZATION_UC_MLFLOW.md           # Asset bundle + UC + future MLflow hooks
+    AI_GOVERNANCE.md                         # Data classification, RLS, certification, Copilot framing
     gold_layer_ddl.sql                       # CREATE OR REPLACE TABLE (Delta)
     databricks_notebook.py                   # Bronze -> silver -> gold PySpark
     data_quality_report.md                   # FK / PK / coverage validation
+  databricks/
+    asset_bundle/
+      README.md                              # Databricks Asset Bundles walkthrough
+      databricks.template.yml                # DAB template (bronze->silver->gold + CSV export)
 ```
 
 ## Highlights aimed at the Sidley JD
@@ -183,9 +189,10 @@ The semantic model includes **Chicago Office Demo** (`dim_office[OfficeName] = "
 
 1. Confirm source-of-truth KPI definitions with Finance, Marketing / BD, and practice leadership.
 2. Use Databricks medallion architecture for ingestion, transformations, and curated gold tables (DDL is in `docs/gold_layer_ddl.sql`; the notebook in `docs/databricks_notebook.py` is the production starting point).
-3. Build a certified semantic model with governed measures and the time-intelligence calc group.
-4. Create thin reports for each major stakeholder audience.
-5. Set up Power BI deployment pipelines (Dev / Test / Prod) with the data-source parameter overridden per stage.
-6. Add RLS by office, practice, and leadership group; mature to dynamic RLS via an `office_user_map` table.
-7. Monitor refresh reliability and adoption via `fact_refresh_log` and the Refresh Monitor page.
-8. Retire legacy Cognos / SSRS reports only after parallel validation captured in `fact_legacy_report_inventory`.
+3. Deploy the lakehouse pipeline via **Databricks Asset Bundles** (template in `databricks/asset_bundle/`); see `docs/PRODUCTIONIZATION_UC_MLFLOW.md` for UC + refresh-gate patterns.
+4. Build a certified semantic model with governed measures and the time-intelligence calc group.
+5. Create thin reports for each major stakeholder audience.
+6. Set up Power BI deployment pipelines (Dev / Test / Prod) with the data-source parameter overridden per stage.
+7. Add RLS by office, practice, and leadership group; mature to dynamic RLS via an `office_user_map` table (see `docs/AI_GOVERNANCE.md`).
+8. Monitor refresh reliability and adoption via `fact_refresh_log` and the Refresh Monitor page.
+9. Retire legacy Cognos / SSRS reports only after parallel validation captured in `fact_legacy_report_inventory`.
