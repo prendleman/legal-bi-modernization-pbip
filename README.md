@@ -5,7 +5,7 @@
 
 > **Synthetic data only.** This demo uses synthetic professional-services / legal-operations data only. It contains **no Sidley, client, matter, financial, or confidential data**. Public Sidley.com attorney names appear in `dim_attorney` for realism only; see [`ATTORNEY_NAMES_ATTRIBUTION.md`](sidley_pbip_spinup_package/docs/ATTORNEY_NAMES_ATTRIBUTION.md). Sidley Austin did not commission, sponsor, or review this repo.
 
-Built for a Sidley Austin **Senior Business Intelligence Engineer** interview process. A source-control-friendly Power BI Project (PBIP) demonstrating legal BI modernization on top of a curated Databricks lakehouse.
+Built as a role-aligned portfolio demo for a **Senior Business Intelligence Engineer** interview process. A source-control-friendly Power BI Project (PBIP) demonstrating legal BI modernization on top of a curated Databricks lakehouse.
 
 ## Data preview (not Power BI screenshots)
 
