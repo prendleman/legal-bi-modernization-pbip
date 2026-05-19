@@ -1,3 +1,0 @@
-﻿Remove temporary commit message file
-
-Remove the local commit message helper file that was accidentally included in the previous commit.
