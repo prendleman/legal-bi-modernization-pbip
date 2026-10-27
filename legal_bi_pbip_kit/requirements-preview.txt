@@ -6,4 +6,4 @@
 # Install with:
 #   pip install -r legal_bi_pbip_kit/requirements-preview.txt
 matplotlib>=3.11.1,<4.0
-pandas>=3.0.5,<4.0
+pandas>=3.1.0,<4.0
