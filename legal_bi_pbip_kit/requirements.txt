@@ -3,4 +3,4 @@
 # pipeline via `py scripts\generate_legal_bi_pbip.py --databricks`.
 # `--dry-run` works without them.
 databricks-sdk>=0.125.0,<1.0
-databricks-sql-connector>=4.4.0,<5.0
+databricks-sql-connector>=4.8.0,<5.0
